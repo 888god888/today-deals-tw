@@ -8,6 +8,7 @@ const els = {
 };
 
 const categoryIcons = { "免費": "🎁", "餐飲": "🍔", "購物": "🛍", "交通": "🛵", "金融": "💳", "任務": "📱", "其他": "✨" };
+const excludedTerms = ["衛生棉", "護墊", "生理褲", "月經", "私密處", "私密保養", "口紅", "唇膏", "粉底", "睫毛膏", "眼影", "腮紅", "彩妝", "美妝", "卸妝", "化妝", "女裝", "洋裝", "胸罩", "女性內衣", "高跟鞋", "女鞋", "美甲", "指甲油", "假睫毛", "女香", "女性香水", "女用"];
 
 function escapeText(value) { const span = document.createElement("span"); span.textContent = value || ""; return span.textContent; }
 function daysUntil(dateText) { if (!dateText) return null; const end = new Date(`${dateText}T23:59:59+08:00`); return Math.ceil((end - new Date()) / 86400000); }
@@ -20,14 +21,21 @@ function deadlineLabel(deal) {
   return deal.end_date.replaceAll("-", "/");
 }
 
+function isExcludedDeal(deal) {
+  const text = [deal.title, deal.brand, deal.summary, deal.benefit, deal.eligibility, deal.steps, deal.limits].join(" ").toLowerCase();
+  return excludedTerms.some(term => text.includes(term.toLowerCase()));
+}
+
 function visibleDeals() {
   const q = state.query.toLowerCase();
   return state.deals.filter(deal => {
+    const searchable = [deal.title, deal.brand, deal.summary, deal.benefit, deal.eligibility, deal.steps, deal.limits].join(" ").toLowerCase();
+    if (isExcludedDeal(deal)) return false;
     if (deal.end_date && daysUntil(deal.end_date) < 0) return false;
     if (state.category !== "全部" && deal.category !== state.category) return false;
     if (state.officialOnly && deal.source_type !== "official") return false;
     if (state.savedOnly && !state.saved.has(deal.id)) return false;
-    return !q || [deal.title, deal.brand, deal.summary, deal.claim, deal.source_name].join(" ").toLowerCase().includes(q);
+    return !q || `${searchable} ${deal.coupon_code || ""} ${deal.source_name || ""}`.toLowerCase().includes(q);
   }).sort((a, b) => {
     if (state.sort === "newest") return String(b.published_at || "").localeCompare(String(a.published_at || ""));
     if (state.sort === "ending") return String(a.end_date || "9999-12-31").localeCompare(String(b.end_date || "9999-12-31"));
@@ -55,8 +63,12 @@ function render() {
     if (deal.source_type === "official") sourceBadge.classList.add("official");
     node.querySelector(".brand-name").textContent = deal.brand || deal.source_name;
     node.querySelector("h3").textContent = deal.title;
-    node.querySelector(".deal-summary").textContent = deal.summary || "請開啟活動頁查看完整說明。";
-    node.querySelector(".claim-text").textContent = deal.claim || "依活動頁說明參加";
+    node.querySelector(".deal-summary").textContent = deal.summary || "已整理活動的主要辦法如下。";
+    node.querySelector(".benefit-text").textContent = deal.benefit || deal.summary || "優惠內容請見下方說明";
+    node.querySelector(".eligibility-text").textContent = deal.eligibility || "一般使用者；若為分眾或會員限定會以活動頁顯示為準";
+    node.querySelector(".steps-text").textContent = deal.steps || deal.claim || "開啟活動頁後依頁面指示參加";
+    node.querySelector(".limits-text").textContent = deal.limits || "名額、庫存及適用門市以主辦單位即時公告為準";
+    if (deal.coupon_code) { node.querySelector(".code-row").hidden = false; node.querySelector(".coupon-code").textContent = deal.coupon_code; }
     const deadline = node.querySelector(".deadline");
     deadline.textContent = deadlineLabel(deal);
     if (days !== null && days <= 3) deadline.classList.add("soon");
@@ -76,7 +88,7 @@ function render() {
 }
 
 function renderSummary(data) {
-  const available = data.deals.filter(d => !d.end_date || daysUntil(d.end_date) >= 0);
+  const available = data.deals.filter(d => !isExcludedDeal(d) && (!d.end_date || daysUntil(d.end_date) >= 0));
   document.querySelector("#dealTotal").textContent = available.length;
   document.querySelector("#freeTotal").textContent = available.filter(d => d.category === "免費").length;
   document.querySelector("#urgentTotal").textContent = available.filter(d => { const days = daysUntil(d.end_date); return days !== null && days >= 0 && days <= 3; }).length;

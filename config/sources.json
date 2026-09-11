@@ -1,10 +1,18 @@
 {
+  "preferences": {
+    "exclude_terms": [
+      "衛生棉", "護墊", "生理褲", "月經", "私密處", "私密保養",
+      "口紅", "唇膏", "粉底", "睫毛膏", "眼影", "腮紅", "彩妝", "美妝", "卸妝", "化妝",
+      "女裝", "洋裝", "胸罩", "女性內衣", "高跟鞋", "女鞋", "美甲", "指甲油", "假睫毛",
+      "女香", "女性香水", "女用"
+    ]
+  },
   "ptt": {
     "enabled": true,
     "name": "PTT 省錢板",
     "url": "https://www.ptt.cc/bbs/Lifeismoney/index.html",
-    "pages": 2,
-    "article_limit": 20
+    "pages": 4,
+    "article_limit": 40
   },
   "mcdonalds": {
     "enabled": true,
@@ -17,5 +25,29 @@
     "name": "肯德基台灣",
     "url": "https://www.kfcclub.com.tw/coupon",
     "item_limit": 16
+  },
+  "starbucks": {
+    "enabled": true,
+    "name": "星巴克台灣",
+    "url": "https://www.starbucks.com.tw/stores/allevent.jspx",
+    "item_limit": 24
+  },
+  "familymart": {
+    "enabled": true,
+    "name": "全家便利商店",
+    "url": "https://www.family.com.tw/Marketing/zh/News",
+    "item_limit": 24
+  },
+  "hilife": {
+    "enabled": true,
+    "name": "萊爾富",
+    "url": "https://www.hilife.com.tw/marketingActivity1.aspx",
+    "item_limit": 24
+  },
+  "linepay": {
+    "enabled": true,
+    "name": "LINE Pay 優惠",
+    "url": "https://pay.line.me/portal/tw/about/promotions",
+    "item_limit": 24
   }
 }

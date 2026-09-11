@@ -1,0 +1,21 @@
+{
+  "ptt": {
+    "enabled": true,
+    "name": "PTT 省錢板",
+    "url": "https://www.ptt.cc/bbs/Lifeismoney/index.html",
+    "pages": 2,
+    "article_limit": 20
+  },
+  "mcdonalds": {
+    "enabled": true,
+    "name": "麥當勞台灣",
+    "url": "https://www.mcdonalds.com/tw/zh-tw/whats-hot.html",
+    "item_limit": 20
+  },
+  "kfc": {
+    "enabled": true,
+    "name": "肯德基台灣",
+    "url": "https://www.kfcclub.com.tw/coupon",
+    "item_limit": 16
+  }
+}

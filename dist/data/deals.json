@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-09-11T09:00:00+08:00",
+  "is_demo": true,
+  "sources": [
+    {"name": "PTT 省錢板", "status": "ok", "count": 4},
+    {"name": "麥當勞台灣", "status": "ok", "count": 2},
+    {"name": "品牌官方活動", "status": "ok", "count": 2}
+  ],
+  "deals": [
+    {"id":"sample-family-0911","title":"特定咖啡、飯糰與義大利麵限時優惠","brand":"全家便利商店","summary":"指定商品於活動時段開放會員限量購買，數量依 APP 顯示為準。","claim":"活動日上午 10 點開啟全家 APP「優惠趣」搶購","category":"餐飲","source_type":"community","source_name":"PTT 省錢板","published_at":"2026-09-11T08:10:00+08:00","end_date":"2026-09-11","score":92,"url":"https://www.ptt.cc/bbs/Lifeismoney/index.html"},
+    {"id":"sample-mcd-card","title":"手機點餐刷 CUBE 卡最高享 12% 回饋","brand":"麥當勞 × 國泰世華","summary":"期間內使用麥當勞 APP 手機點餐，符合指定付款與領券條件可獲回饋。","claim":"先領券，再於麥當勞 APP 用 CUBE 信用卡完成手機點餐","category":"金融","source_type":"official","source_name":"麥當勞台灣","published_at":"2026-09-01T10:00:00+08:00","end_date":"2026-10-31","score":88,"url":"https://www.mcdonalds.com/tw/zh-tw/whats-hot.html"},
+    {"id":"sample-line-point","title":"完成指定步驟領 LINE POINTS 1 點","brand":"LINE","summary":"小額點數任務通常限量，若活動頁顯示額滿即代表已結束。","claim":"開啟活動連結，依頁面指示加入或完成互動","category":"任務","source_type":"community","source_name":"PTT 省錢板","published_at":"2026-09-11T07:40:00+08:00","end_date":"2026-09-12","score":78,"url":"https://www.ptt.cc/bbs/Lifeismoney/index.html"},
+    {"id":"sample-goshare","title":"免費領 GoShare 騎乘金 25 元","brand":"GoShare","summary":"限量騎乘金序號，適用方式與期限以 GoShare APP 顯示為準。","claim":"取得序號後至 GoShare APP 兌換專區輸入","category":"交通","source_type":"community","source_name":"PTT 省錢板","published_at":"2026-09-11T07:10:00+08:00","end_date":"2026-09-13","score":86,"url":"https://www.ptt.cc/bbs/Lifeismoney/index.html"},
+    {"id":"sample-survey","title":"填完餐廳滿意度問卷，立即獲得當月好禮","brand":"麥當勞","summary":"完成指定問卷後，獎勵會派發至麥當勞 APP 的回饋優惠。","claim":"開啟麥當勞 APP 填寫餐廳滿意度問卷","category":"免費","source_type":"official","source_name":"麥當勞台灣","published_at":"2026-09-10T12:00:00+08:00","end_date":null,"score":83,"url":"https://www.mcdonalds.com/tw/zh-tw/whats-hot.html"},
+    {"id":"sample-pchome","title":"分眾會員免費領 P 幣 100 點","brand":"PChome","summary":"此為分眾活動，只有收到通知或在會員頁看到入口的帳號可領。","claim":"登入 PChome 會員，確認個人活動頁是否出現領取入口","category":"免費","source_type":"community","source_name":"PTT 省錢板","published_at":"2026-09-11T06:50:00+08:00","end_date":"2026-09-14","score":80,"url":"https://www.ptt.cc/bbs/Lifeismoney/index.html"},
+    {"id":"sample-kfc","title":"優惠券專區不定期限時組合價","brand":"肯德基","summary":"線上訂餐、外帶與外送可用券不同，結帳前請確認適用通路。","claim":"至官方優惠券專區選券，依券面代碼與通路使用","category":"餐飲","source_type":"official","source_name":"肯德基台灣","published_at":"2026-09-10T09:00:00+08:00","end_date":null,"score":72,"url":"https://www.kfcclub.com.tw/coupon"},
+    {"id":"sample-shop","title":"指定日用品券後特價 184 元","brand":"蝦皮購物","summary":"價格可能因帳號優惠券與免運資格不同，請以結帳頁為準。","claim":"先領賣場券與平台券，再將指定商品加入購物車結帳","category":"購物","source_type":"community","source_name":"PTT 省錢板","published_at":"2026-09-11T08:30:00+08:00","end_date":"2026-09-12","score":69,"url":"https://www.ptt.cc/bbs/Lifeismoney/index.html"}
+  ]
+}

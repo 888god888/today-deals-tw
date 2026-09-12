@@ -5,6 +5,12 @@
       "口紅", "唇膏", "粉底", "睫毛膏", "眼影", "腮紅", "彩妝", "美妝", "卸妝", "化妝",
       "女裝", "洋裝", "胸罩", "女性內衣", "高跟鞋", "女鞋", "美甲", "指甲油", "假睫毛",
       "女香", "女性香水", "女用"
+    ],
+    "shopping_interest_terms": [
+      "3C", "手機", "iPhone", "Android", "Apple", "平板", "電腦", "筆電", "螢幕", "耳機", "相機", "家電", "遊戲", "電玩",
+      "食品", "飲料", "零食", "日用", "衛生紙", "清潔", "運動", "戶外", "汽車", "機車", "票券",
+      "全站", "免運", "券", "神券", "回饋", "P幣", "蝦幣", "購物金", "OPENPOINT",
+      "新戶", "會員", "登記送", "買一送一", "滿額", "品牌券"
     ]
   },
   "ptt": {
@@ -26,12 +32,6 @@
     "url": "https://www.kfcclub.com.tw/coupon",
     "item_limit": 16
   },
-  "starbucks": {
-    "enabled": true,
-    "name": "星巴克台灣",
-    "url": "https://www.starbucks.com.tw/stores/allevent.jspx",
-    "item_limit": 24
-  },
   "familymart": {
     "enabled": true,
     "name": "全家便利商店",
@@ -49,5 +49,25 @@
     "name": "LINE Pay 優惠",
     "url": "https://pay.line.me/portal/tw/about/promotions",
     "item_limit": 24
+  },
+  "pchome": {
+    "enabled": true,
+    "name": "PChome 24h",
+    "url": "https://24h.pchome.com.tw/activity/check-in",
+    "item_limit": 12
+  },
+  "yahoo": {
+    "enabled": true,
+    "name": "Yahoo 購物中心",
+    "url": "https://tw.buy.yahoo.com/",
+    "parser": "shopping_links",
+    "item_limit": 24
+  },
+  "shopee": {
+    "enabled": true,
+    "name": "蝦皮購物",
+    "url": "https://shopee.tw/",
+    "parser": "shopping_links",
+    "item_limit": 20
   }
 }

@@ -28,6 +28,12 @@ DEFAULT_EXCLUDED_TERMS = (
     "眼影", "腮紅", "彩妝", "美妝", "卸妝", "化妝", "女裝", "洋裝", "胸罩", "女性內衣", "高跟鞋",
     "女鞋", "美甲", "指甲油", "假睫毛", "女香", "女性香水", "女用",
 )
+DEFAULT_SHOPPING_INTEREST_TERMS = (
+    "3c", "手機", "iphone", "android", "apple", "平板", "電腦", "筆電", "螢幕", "耳機", "相機", "家電", "遊戲", "電玩", "食品",
+    "飲料", "零食", "日用", "衛生紙", "清潔", "運動", "戶外", "汽車", "機車", "票券", "全站", "免運",
+    "券", "神券", "回饋", "p幣", "蝦幣", "購物金", "openpoint", "新戶", "會員", "登記送",
+    "買一送一", "滿額", "品牌券",
+)
 
 
 @dataclass
@@ -319,6 +325,52 @@ def scrape_official_cards(key: str, cfg: dict[str, Any], brand: str, excluded_te
         return SourceResult(key, name, [], False, clean(str(exc), 100))
 
 
+def scrape_shopping_links(key: str, cfg: dict[str, Any], brand: str, excluded_terms: list[str], interest_terms: list[str]) -> SourceResult:
+    """Extract concrete platform promotions while skipping generic navigation and product noise."""
+    name, url = cfg["name"], cfg["url"]
+    try:
+        soup = BeautifulSoup(fetch(url), "html.parser")
+        candidates: list[tuple[str, str, str]] = []
+        seen_titles: set[str] = set()
+        for anchor in soup.select("a[href]"):
+            title = clean(anchor.get_text(" ", strip=True) or anchor.get("aria-label") or anchor.get("title"), 150)
+            lowered = title.lower()
+            if not 8 <= len(title) <= 150 or title in seen_titles:
+                continue
+            if title in {"查看更多", "看更多", "活動合集", "領取", "立即領取", "立即購買", "馬上搶", "回首頁"}:
+                continue
+            has_interest = any(term.lower() in lowered for term in interest_terms)
+            has_offer = any(word.lower() in lowered for word in KEYWORDS) or bool(re.search(r"\d+(?:\.\d+)?\s*折|\$\s*[\d,]+|\d+\s*%", title))
+            if not has_interest or not has_offer or is_unwanted(title, excluded_terms):
+                continue
+            item_url = urljoin(url, anchor.get("href", ""))
+            if not item_url.startswith("https://"):
+                continue
+            parent = anchor.find_parent(["article", "li", "section", "div"])
+            context = clean(parent.get_text(" ", strip=True) if parent else title, 260)
+            if len(context) > 230 or is_unwanted(context, excluded_terms):
+                context = title
+            candidates.append((title, context, item_url))
+            seen_titles.add(title)
+
+        deals: list[dict[str, Any]] = []
+        for title, context, item_url in candidates[: int(cfg.get("item_limit", 24))]:
+            details = infer_details(title, context, context)
+            end_date = parse_date(context)
+            published = NOW.isoformat(timespec="seconds")
+            deals.append({
+                "id": make_id(key, item_url, title), "source_key": key, "title": title, "brand": brand,
+                **details, "claim": details["steps"], "category": "購物", "source_type": "official", "source_name": name,
+                "published_at": published, "end_date": end_date,
+                "score": score_deal(title, context, "official", published, end_date), "url": item_url,
+            })
+        if not deals:
+            raise ValueError("頁面未找到符合偏好的購物優惠")
+        return SourceResult(key, name, deals, True)
+    except Exception as exc:
+        return SourceResult(key, name, [], False, clean(str(exc), 100))
+
+
 def load_json(path: Path, fallback: Any) -> Any:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -354,18 +406,22 @@ def update() -> dict[str, Any]:
         raise SystemExit("缺少抓取套件，請先執行 pip install -r requirements.txt") from exc
     config = load_json(CONFIG_FILE, {})
     excluded_terms = config.get("preferences", {}).get("exclude_terms", list(DEFAULT_EXCLUDED_TERMS))
+    interest_terms = config.get("preferences", {}).get("shopping_interest_terms", list(DEFAULT_SHOPPING_INTEREST_TERMS))
     old_data = load_json(DATA_FILE, {"deals": [], "sources": []})
     old_deals = old_data.get("deals", [])
     results: list[SourceResult] = []
     if config.get("ptt", {}).get("enabled"):
         results.append(scrape_ptt("ptt", config["ptt"], excluded_terms))
     official_sources = {
-        "mcdonalds": "麥當勞", "kfc": "肯德基", "starbucks": "星巴克", "familymart": "全家便利商店",
-        "hilife": "萊爾富", "linepay": "LINE Pay",
+        "mcdonalds": "麥當勞", "kfc": "肯德基", "familymart": "全家便利商店", "hilife": "萊爾富",
+        "linepay": "LINE Pay", "pchome": "PChome 24h", "yahoo": "Yahoo 購物中心", "shopee": "蝦皮購物",
     }
     for key, brand in official_sources.items():
         if config.get(key, {}).get("enabled"):
-            results.append(scrape_official_cards(key, config[key], brand, excluded_terms))
+            if config[key].get("parser") == "shopping_links":
+                results.append(scrape_shopping_links(key, config[key], brand, excluded_terms, interest_terms))
+            else:
+                results.append(scrape_official_cards(key, config[key], brand, excluded_terms))
 
     if results and not any(result.ok for result in results):
         old_data["updated_at"] = NOW.isoformat(timespec="seconds")

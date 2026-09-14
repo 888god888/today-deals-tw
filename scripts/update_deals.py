@@ -26,14 +26,34 @@ KEYWORDS = ("免費", "優惠", "折", "回饋", "贈", "送", "特價", "好康
 DEFAULT_EXCLUDED_TERMS = (
     "衛生棉", "護墊", "生理褲", "月經", "私密處", "私密保養", "口紅", "唇膏", "粉底", "睫毛膏",
     "眼影", "腮紅", "彩妝", "美妝", "卸妝", "化妝", "女裝", "洋裝", "胸罩", "女性內衣", "高跟鞋",
-    "女鞋", "美甲", "指甲油", "假睫毛", "女香", "女性香水", "女用",
+    "女鞋", "美甲", "指甲油", "假睫毛", "女香", "女性香水", "女用", "星巴克",
 )
 DEFAULT_SHOPPING_INTEREST_TERMS = (
-    "3c", "手機", "iphone", "android", "apple", "平板", "電腦", "筆電", "螢幕", "耳機", "相機", "家電", "遊戲", "電玩", "食品",
-    "飲料", "零食", "日用", "衛生紙", "清潔", "運動", "戶外", "汽車", "機車", "票券", "全站", "免運",
-    "券", "神券", "回饋", "p幣", "蝦幣", "購物金", "openpoint", "新戶", "會員", "登記送",
-    "買一送一", "滿額", "品牌券",
+    "3c", "手機", "iphone", "android", "apple", "平板", "電腦", "筆電", "螢幕", "耳機", "音響", "相機",
+    "家電", "遊戲", "電玩", "票券", "食品", "飲料", "零食", "日用", "衛生紙", "清潔", "男裝", "男鞋", "運動", "戶外",
 )
+DEFAULT_INTEREST_CATEGORIES = ("3C", "遊戲娛樂", "免費", "任務", "餐飲食品", "家電日用", "男性運動", "金融支付")
+PRIMARY_CATEGORY_ORDER = ("3C", "遊戲娛樂", "餐飲食品", "家電日用", "男性運動", "金融支付", "免費", "任務", "交通", "其他")
+CATEGORY_KEYWORDS = {
+    "3C": (
+        "3c", "iphone", "android", "apple", "平板", "電腦", "筆電", "螢幕", "耳機", "音響", "喇叭", "相機",
+        "ssd", "記憶體", "顯示卡", "gpu", "cpu", "充電", "行動電源", "路由器", "oled", "鍵盤", "滑鼠",
+    ),
+    "遊戲娛樂": ("遊戲", "電玩", "steam", "playstation", "ps5", "xbox", "switch", "電影", "影城", "展覽", "演唱會", "ktv", "票券"),
+    "餐飲食品": (
+        "咖啡", "餐飲", "餐點", "漢堡", "飯糰", "飲料", "炸雞", "披薩", "甜點", "麥當勞", "肯德基", "全家", "7-eleven",
+        "7-11", "萊爾富", "okmart", "超商", "食品", "零食", "牛排", "早餐", "便當", "茶飲",
+    ),
+    "家電日用": (
+        "家電", "冰箱", "洗衣機", "電視", "冷氣", "除濕機", "吸塵器", "掃地機", "電鍋", "氣炸鍋", "清潔", "日用",
+        "衛生紙", "家具", "寢具", "廚房", "收納",
+    ),
+    "男性運動": ("男裝", "男鞋", "男性", "男士", "刮鬍", "球鞋", "運動", "健身", "戶外", "露營", "跑鞋", "球衣"),
+    "金融支付": ("信用卡", "支付", "回饋金", "刷卡", "銀行", "line pay", "悠遊付", "街口", "pi錢包", "icash", "openpoint"),
+    "免費": ("免費", "0元", "零元", "免費領", "贈送", "贈品", "好禮", "line point", "p幣", "蝦幣", "購物金"),
+    "任務": ("任務", "簽到", "下載", "問卷", "登錄", "登入", "加入好友", "綁定"),
+    "交通": ("騎乘", "車資", "goshare", "irent", "uber", "台鐵", "高鐵", "交通", "機車", "汽車"),
+}
 
 
 @dataclass
@@ -139,21 +159,61 @@ def parse_date(text: str) -> str | None:
     return max(valid).date().isoformat() if valid else None
 
 
-def classify(text: str) -> str:
+def classify_tags(text: str) -> list[str]:
     lowered = text.lower()
-    if any(k in lowered for k in ("免費", "0元", "零元", "免費領", "贈送", "送一", "line point", "line point")):
-        return "免費"
-    if any(k in lowered for k in ("咖啡", "餐", "堡", "飯糰", "飲", "雞", "披薩", "甜點", "麥當勞", "肯德基", "全家", "7-11", "超商")):
-        return "餐飲"
-    if any(k in lowered for k in ("信用卡", "支付", "回饋金", "刷卡", "銀行", "line pay", "悠遊付", "街口")):
-        return "金融"
-    if any(k in lowered for k in ("騎乘", "車資", "goshare", "irent", "uber", "台鐵", "高鐵", "交通")):
-        return "交通"
-    if any(k in lowered for k in ("任務", "簽到", "下載", "問卷", "app", "登錄", "加入好友")):
-        return "任務"
-    if any(k in lowered for k in ("蝦皮", "pchome", "momo", "免運", "券後", "購物", "折價券", "特價")):
-        return "購物"
-    return "其他"
+    matched = {category for category, keywords in CATEGORY_KEYWORDS.items() if any(keyword in lowered for keyword in keywords)}
+    if "手機" in lowered and not any(phrase in lowered for phrase in ("手機點餐", "手機支付", "手機綁定", "手機驗證")):
+        matched.add("3C")
+    if re.search(r"(?<![a-z])app(?![a-z])", lowered):
+        matched.add("任務")
+    tags = [category for category in PRIMARY_CATEGORY_ORDER if category in matched]
+    return tags or ["其他"]
+
+
+def classify(text: str) -> str:
+    return classify_tags(text)[0]
+
+
+def is_meaningful_deal(text: str, threshold: str = "medium", *, shopping: bool = False) -> bool:
+    """Keep tangible benefits and reject ordinary prices or token discounts."""
+    if threshold == "loose":
+        return any(word.lower() in text.lower() for word in KEYWORDS)
+
+    lowered = clean(text, 1000).lower().replace(",", "")
+    if not lowered:
+        return False
+
+    strong_free = any(term in lowered for term in ("免費", "0元", "零元", "買一送一", "第二件0元", "免運"))
+    reward_task = any(term in lowered for term in ("簽到", "任務", "問卷", "登錄", "加入好友")) and any(
+        term in lowered for term in ("領", "送", "贈", "point", "點", "p幣", "蝦幣", "購物金", "好禮")
+    )
+    gift_offer = any(term in lowered for term in ("贈送", "贈品", "滿額送", "登記送", "送好禮"))
+    if strong_free or reward_task or gift_offer:
+        return True
+
+    discount_rates = [float(value) for value in re.findall(r"(?<!\d)(\d{1,2}(?:\.\d)?)\s*折", lowered)]
+    discount_rates = [rate / 10 if rate > 10 else rate for rate in discount_rates]
+    if any(rate <= 8.0 for rate in discount_rates):
+        return True
+
+    percentages = [int(value) for value in re.findall(r"(\d{1,3})\s*%", lowered)]
+    if any(value >= 10 for value in percentages) and any(term in lowered for term in ("回饋", "折", "省", "現折")):
+        return True
+
+    money_patterns = (
+        r"(?:現折|折抵|折價|折|回饋|省|購物金|折價券|優惠券)\s*(?:nt\$?|\$)?\s*(\d{2,6})",
+        r"(?:nt\$?|\$)?\s*(\d{2,6})\s*元?\s*(?:現折|折抵|折價|回饋|購物金|券)",
+    )
+    amounts = [int(value) for pattern in money_patterns for value in re.findall(pattern, lowered)]
+    if any(amount >= 50 for amount in amounts):
+        return True
+
+    if discount_rates:
+        return False
+
+    if shopping:
+        return any(term in lowered for term in ("神券", "破盤", "下殺", "限時瘋搶")) and bool(re.search(r"\d", lowered))
+    return any(term in lowered for term in ("優惠券專區", "限時組合價", "神券", "破盤價"))
 
 
 def infer_brand(text: str, fallback: str) -> str:
@@ -264,7 +324,7 @@ def scrape_ptt(key: str, cfg: dict[str, Any], excluded_terms: list[str]) -> Sour
             end_date = parse_date(full_text)
             deals.append({
                 "id": make_id(key, url, title), "source_key": key, "title": display_title,
-                "brand": infer_brand(full_text, "網友分享"), **details, "claim": details["steps"], "category": classify(full_text),
+                "brand": infer_brand(full_text, "網友分享"), **details, "claim": details["steps"], "category": classify(full_text), "tags": classify_tags(full_text),
                 "source_type": "community", "source_name": name, "published_at": published, "end_date": end_date,
                 "score": score_deal(title, body, "community", published, end_date), "url": url
             })
@@ -314,7 +374,7 @@ def scrape_official_cards(key: str, cfg: dict[str, Any], brand: str, excluded_te
             published = NOW.isoformat(timespec="seconds")
             deals.append({
                 "id": make_id(key, item_url, title), "source_key": key, "title": title, "brand": brand,
-                **details, "claim": details["steps"], "category": classify(full_text),
+                **details, "claim": details["steps"], "category": classify(full_text), "tags": classify_tags(full_text),
                 "source_type": "official", "source_name": name, "published_at": published, "end_date": end_date,
                 "score": score_deal(title, full_text, "official", published, end_date), "url": item_url
             })
@@ -341,7 +401,7 @@ def scrape_shopping_links(key: str, cfg: dict[str, Any], brand: str, excluded_te
                 continue
             has_interest = any(term.lower() in lowered for term in interest_terms)
             has_offer = any(word.lower() in lowered for word in KEYWORDS) or bool(re.search(r"\d+(?:\.\d+)?\s*折|\$\s*[\d,]+|\d+\s*%", title))
-            if not has_interest or not has_offer or is_unwanted(title, excluded_terms):
+            if not has_interest or not has_offer or is_unwanted(title, excluded_terms) or not is_meaningful_deal(title, shopping=True):
                 continue
             item_url = urljoin(url, anchor.get("href", ""))
             if not item_url.startswith("https://"):
@@ -360,7 +420,8 @@ def scrape_shopping_links(key: str, cfg: dict[str, Any], brand: str, excluded_te
             published = NOW.isoformat(timespec="seconds")
             deals.append({
                 "id": make_id(key, item_url, title), "source_key": key, "title": title, "brand": brand,
-                **details, "claim": details["steps"], "category": "購物", "source_type": "official", "source_name": name,
+                **details, "claim": details["steps"], "category": classify(f"{title} {context}"), "tags": classify_tags(f"{title} {context}"),
+                "source_type": "official", "source_name": name,
                 "published_at": published, "end_date": end_date,
                 "score": score_deal(title, context, "official", published, end_date), "url": item_url,
             })
@@ -378,14 +439,26 @@ def load_json(path: Path, fallback: Any) -> Any:
         return fallback
 
 
-def normalize(deal: dict[str, Any], excluded_terms: list[str]) -> dict[str, Any] | None:
+def normalize(
+    deal: dict[str, Any], excluded_terms: list[str], interest_categories: list[str], threshold: str,
+    excluded_categories: list[str] | None = None,
+) -> dict[str, Any] | None:
     required = ("id", "title", "url", "source_name", "source_type")
     if any(not deal.get(field) for field in required):
         return None
     searchable = " ".join(str(deal.get(field, "")) for field in ("title", "brand", "summary", "benefit", "eligibility", "steps", "limits"))
     if is_unwanted(searchable, excluded_terms):
         return None
-    deal["category"] = deal.get("category") if deal.get("category") in {"免費", "餐飲", "購物", "交通", "金融", "任務", "其他"} else "其他"
+    tags = classify_tags(searchable)
+    existing_tags = deal.get("tags", []) if isinstance(deal.get("tags"), list) else []
+    tags = [category for category in PRIMARY_CATEGORY_ORDER if category in set(tags + existing_tags)]
+    blocked = set(excluded_categories or [])
+    if blocked.intersection(tags) or not set(interest_categories).intersection(tags):
+        return None
+    if not is_meaningful_deal(searchable, threshold, shopping=deal.get("source_key") in {"yahoo", "shopee"}):
+        return None
+    deal["tags"] = tags
+    deal["category"] = next((category for category in PRIMARY_CATEGORY_ORDER if category in tags and category in interest_categories), tags[0])
     deal["summary"] = clean(deal.get("summary"), 180)
     deal["benefit"] = clean(deal.get("benefit") or deal.get("summary") or deal.get("title"), 160)
     deal["eligibility"] = clean(deal.get("eligibility") or "一般使用者；實際資格以活動頁為準", 160)
@@ -407,6 +480,9 @@ def update() -> dict[str, Any]:
     config = load_json(CONFIG_FILE, {})
     excluded_terms = config.get("preferences", {}).get("exclude_terms", list(DEFAULT_EXCLUDED_TERMS))
     interest_terms = config.get("preferences", {}).get("shopping_interest_terms", list(DEFAULT_SHOPPING_INTEREST_TERMS))
+    interest_categories = config.get("preferences", {}).get("interest_categories", list(DEFAULT_INTEREST_CATEGORIES))
+    excluded_categories = config.get("preferences", {}).get("excluded_categories", ["交通"])
+    threshold = config.get("preferences", {}).get("deal_threshold", "medium")
     old_data = load_json(DATA_FILE, {"deals": [], "sources": []})
     old_deals = old_data.get("deals", [])
     results: list[SourceResult] = []
@@ -424,8 +500,13 @@ def update() -> dict[str, Any]:
                 results.append(scrape_official_cards(key, config[key], brand, excluded_terms))
 
     if results and not any(result.ok for result in results):
+        filtered_old = [
+            deal for raw in old_deals
+            if (deal := normalize(raw, excluded_terms, interest_categories, threshold, excluded_categories))
+        ]
         old_data["updated_at"] = NOW.isoformat(timespec="seconds")
-        old_data["sources"] = [{"key": result.key, "name": result.name, "status": "error", "count": len([d for d in old_deals if d.get("source_key") == result.key or d.get("source_name") == result.name]), "message": result.message} for result in results]
+        old_data["deals"] = filtered_old
+        old_data["sources"] = [{"key": result.key, "name": result.name, "status": "error", "count": len([d for d in filtered_old if d.get("source_key") == result.key or d.get("source_name") == result.name]), "message": result.message} for result in results]
         return old_data
 
     merged: list[dict[str, Any]] = []
@@ -438,7 +519,7 @@ def update() -> dict[str, Any]:
     unique: dict[str, dict[str, Any]] = {}
     cutoff = NOW.date() - timedelta(days=14)
     for raw in merged:
-        deal = normalize(raw, excluded_terms)
+        deal = normalize(raw, excluded_terms, interest_categories, threshold, excluded_categories)
         if not deal:
             continue
         if deal.get("end_date"):
@@ -458,7 +539,7 @@ def validate(data: dict[str, Any]) -> list[str]:
         return ["deals 必須是陣列"]
     ids: set[str] = set()
     for index, deal in enumerate(data["deals"]):
-        for field in ("id", "title", "url", "category", "source_type", "source_name", "summary", "benefit", "eligibility", "steps", "limits"):
+        for field in ("id", "title", "url", "category", "tags", "source_type", "source_name", "summary", "benefit", "eligibility", "steps", "limits"):
             if not deal.get(field):
                 errors.append(f"第 {index + 1} 筆缺少 {field}")
         if deal.get("id") in ids:
@@ -466,6 +547,8 @@ def validate(data: dict[str, Any]) -> list[str]:
         ids.add(deal.get("id"))
         if deal.get("url") and not str(deal["url"]).startswith("https://"):
             errors.append(f"非 HTTPS 網址: {deal['url']}")
+        if deal.get("tags") and not isinstance(deal["tags"], list):
+            errors.append(f"第 {index + 1} 筆 tags 必須是陣列")
     return errors
 
 

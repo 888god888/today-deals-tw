@@ -7,7 +7,7 @@ const els = {
   savedButton: document.querySelector("#savedButton"), savedCount: document.querySelector("#savedCount"), sourceList: document.querySelector("#sourceList")
 };
 
-const categoryIcons = { "免費": "🎁", "餐飲": "🍔", "購物": "🛍", "交通": "🛵", "金融": "💳", "任務": "📱", "其他": "✨" };
+const categoryIcons = { "免費": "🎁", "任務": "📱", "餐飲食品": "🍔", "3C": "💻", "遊戲娛樂": "🎮", "家電日用": "🏠", "男性運動": "👟", "金融支付": "💳", "其他": "✨" };
 const excludedTerms = ["衛生棉", "護墊", "生理褲", "月經", "私密處", "私密保養", "口紅", "唇膏", "粉底", "睫毛膏", "眼影", "腮紅", "彩妝", "美妝", "卸妝", "化妝", "女裝", "洋裝", "胸罩", "女性內衣", "高跟鞋", "女鞋", "美甲", "指甲油", "假睫毛", "女香", "女性香水", "女用"];
 
 function escapeText(value) { const span = document.createElement("span"); span.textContent = value || ""; return span.textContent; }
@@ -32,7 +32,8 @@ function visibleDeals() {
     const searchable = [deal.title, deal.brand, deal.summary, deal.benefit, deal.eligibility, deal.steps, deal.limits].join(" ").toLowerCase();
     if (isExcludedDeal(deal)) return false;
     if (deal.end_date && daysUntil(deal.end_date) < 0) return false;
-    if (state.category !== "全部" && deal.category !== state.category) return false;
+    const tags = Array.isArray(deal.tags) && deal.tags.length ? deal.tags : [deal.category];
+    if (state.category !== "全部" && !tags.includes(state.category)) return false;
     if (state.officialOnly && deal.source_type !== "official") return false;
     if (state.savedOnly && !state.saved.has(deal.id)) return false;
     return !q || `${searchable} ${deal.coupon_code || ""} ${deal.source_name || ""}`.toLowerCase().includes(q);
@@ -57,7 +58,8 @@ function render() {
     const card = node.querySelector(".deal-card");
     const days = daysUntil(deal.end_date);
     if (days !== null && days <= 3) card.classList.add("urgent");
-    node.querySelector(".category-badge").textContent = `${categoryIcons[deal.category] || "✨"} ${deal.category}`;
+    const tags = Array.isArray(deal.tags) && deal.tags.length ? deal.tags : [deal.category];
+    node.querySelector(".category-badge").textContent = tags.slice(0, 2).map(tag => `${categoryIcons[tag] || "✨"} ${tag}`).join(" · ");
     const sourceBadge = node.querySelector(".source-badge");
     sourceBadge.textContent = deal.source_type === "official" ? "官方" : "社群情報";
     if (deal.source_type === "official") sourceBadge.classList.add("official");
@@ -90,7 +92,7 @@ function render() {
 function renderSummary(data) {
   const available = data.deals.filter(d => !isExcludedDeal(d) && (!d.end_date || daysUntil(d.end_date) >= 0));
   document.querySelector("#dealTotal").textContent = available.length;
-  document.querySelector("#freeTotal").textContent = available.filter(d => d.category === "免費").length;
+  document.querySelector("#freeTotal").textContent = available.filter(d => (d.tags || [d.category]).includes("免費")).length;
   document.querySelector("#urgentTotal").textContent = available.filter(d => { const days = daysUntil(d.end_date); return days !== null && days >= 0 && days <= 3; }).length;
   const updated = new Date(data.updated_at);
   document.querySelector("#updatedAt").textContent = Number.isNaN(updated.valueOf()) ? "更新時間未提供" : `更新於 ${new Intl.DateTimeFormat("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }).format(updated)}`;

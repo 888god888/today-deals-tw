@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-15T08:05:23+08:00",
+  "updated_at": "2026-09-15T12:51:52+08:00",
   "is_demo": false,
   "sources": [
     {
       "key": "ptt",
       "name": "PTT 省錢板",
       "status": "ok",
-      "count": 8,
+      "count": 13,
       "message": ""
     },
     {
@@ -55,7 +55,7 @@
       "key": "yahoo",
       "name": "Yahoo 購物中心",
       "status": "ok",
-      "count": 5,
+      "count": 3,
       "message": ""
     },
     {
@@ -67,6 +67,30 @@
     }
   ],
   "deals": [
+    {
+      "id": "yahoo-a233688a37c6",
+      "source_key": "yahoo",
+      "title": "廚房家電33折起 33折起",
+      "brand": "Yahoo 購物中心",
+      "summary": "9/15爆品限定價【UNDER ARMOUR】UA 男/女 慢跑鞋 休閒鞋 籃球鞋多款任選 $899 統一旗艦館，指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
+      "benefit": "指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
+      "eligibility": "9/15爆品限定價【UNDER ARMOUR】UA 男/女 慢跑鞋 休閒鞋 籃球鞋多款任選 $899 統一旗艦館",
+      "steps": "指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
+      "category": "家電日用",
+      "tags": [
+        "家電日用",
+        "男性運動"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-15T12:51:52+08:00",
+      "end_date": "2026-09-15",
+      "score": 92,
+      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=3&act=todaybest3_main_01_v7"
+    },
     {
       "id": "sample-mcd-card",
       "title": "手機點餐刷 CUBE 卡最高享 12% 回饋",
@@ -90,56 +114,6 @@
       "end_date": "2026-10-31",
       "score": 90,
       "url": "https://www.mcdonalds.com/tw/zh-tw/whats-hot.html"
-    },
-    {
-      "id": "yahoo-5a6d0cbf789c",
-      "source_key": "yahoo",
-      "title": "季節家電聯合品牌慶 直降8折起 8折起",
-      "brand": "Yahoo 購物中心",
-      "summary": "【勝崎生鮮】澎湃海陸燒烤饗宴10件組(2150公克/1包)-Yahoo獨家 $1,299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "benefit": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "eligibility": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "steps": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
-      "coupon_code": "",
-      "claim": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "category": "餐飲食品",
-      "tags": [
-        "餐飲食品",
-        "家電日用",
-        "男性運動"
-      ],
-      "source_type": "official",
-      "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-15T08:05:23+08:00",
-      "end_date": "2027-07-11",
-      "score": 88,
-      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=8&act=todaybest8_main_01_v7"
-    },
-    {
-      "id": "yahoo-d6963d0a64ea",
-      "source_key": "yahoo",
-      "title": "運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "brand": "Yahoo 購物中心",
-      "summary": "【勝崎生鮮】澎湃海陸燒烤饗宴10件組(2150公克/1包)-Yahoo獨家 $1,299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "benefit": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "eligibility": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "steps": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
-      "coupon_code": "",
-      "claim": "299 季節家電聯合品牌慶 直降8折起 8折起 專科 超微米完美泡泡沐浴乳 補充包(清新花香/甜蜜花果香)350ml 滿額折 白蘭氏結帳88折 滿額送7-11商品卡 88折 居家新主張↘直降3折起 3折起 運動大牌限時3折起 下單抽1000超贈點 3折起",
-      "category": "餐飲食品",
-      "tags": [
-        "餐飲食品",
-        "家電日用",
-        "男性運動"
-      ],
-      "source_type": "official",
-      "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-15T08:05:23+08:00",
-      "end_date": "2027-07-11",
-      "score": 88,
-      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=12&act=todaybest12_main_01_v7"
     },
     {
       "id": "sample-survey",
@@ -170,13 +144,13 @@
       "source_key": "yahoo",
       "title": "人氣零食7折起滿99出貨限時出清滿199打95折",
       "brand": "Yahoo 購物中心",
-      "summary": "人氣零食7折起滿99出貨限時出清滿199打95折 Adidasx聯合品牌 滿千折百 adidas限時均一價",
-      "benefit": "人氣零食7折起滿99出貨限時出清滿199打95折 Adidasx聯合品牌 滿千折百 adidas限時均一價",
+      "summary": "人氣零食7折起滿99出貨限時出清滿199打95折 NIKE限時下殺 結帳$1899 adidas限時均一價",
+      "benefit": "人氣零食7折起滿99出貨限時出清滿199打95折 NIKE限時下殺 結帳$1899 adidas限時均一價",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
-      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "steps": "人氣零食7折起滿99出貨限時出清滿199打95折 NIKE限時下殺 結帳$1899 adidas限時均一價",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
       "coupon_code": "",
-      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "claim": "人氣零食7折起滿99出貨限時出清滿199打95折 NIKE限時下殺 結帳$1899 adidas限時均一價",
       "category": "餐飲食品",
       "tags": [
         "餐飲食品",
@@ -184,10 +158,34 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-15T08:05:23+08:00",
+      "published_at": "2026-09-15T12:51:52+08:00",
       "end_date": null,
       "score": 84,
       "url": "https://tw.buy.yahoo.com/?sub=1035"
+    },
+    {
+      "id": "yahoo-bbbd9760296c",
+      "source_key": "yahoo",
+      "title": "商店 運動世界 TNF 斜背包 滿500享8折",
+      "brand": "Yahoo 購物中心",
+      "summary": "商店 運動世界 TNF 斜背包 滿500享8折 商店 班尼斯名床 天然乳膠枕頭 領券現折100 商店 健康加油讚 以色列芙婷寶 買3送1優惠組",
+      "benefit": "商店 運動世界 TNF 斜背包 滿500享8折 商店 班尼斯名床 天然乳膠枕頭 領券現折100 商店 健康加油讚 以色列芙婷寶 買3送1優惠組",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "男性運動",
+      "tags": [
+        "男性運動",
+        "金融支付"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-15T12:51:52+08:00",
+      "end_date": null,
+      "score": 84,
+      "url": "https://tw.buy.yahoo.com/ystore/sportworld5566/productList"
     },
     {
       "id": "sample-pchome",
@@ -237,52 +235,77 @@
       "url": "https://shopee.tw/"
     },
     {
-      "id": "yahoo-3bcbfe125fa4",
-      "source_key": "yahoo",
-      "title": "【soundcore 官方授權直營】soundcore Space 2 主動降噪無線耳罩式耳機 $ 4,790 登記送3%",
-      "brand": "Yahoo 購物中心",
-      "summary": "【soundcore 官方授權直營】soundcore Space 2 主動降噪無線耳罩式耳機 $ 4,790 登記送3%",
-      "benefit": "790 登記送3%",
-      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
-      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "id": "ptt-9215d55728f8",
+      "source_key": "ptt",
+      "title": "熊貓pro專屬 必勝客比薩免費領",
+      "brand": "foodpanda",
+      "summary": "【活動名稱】：熊貓pro專屬 必勝客比薩免費領",
+      "benefit": "1 張優惠碼限折抵單一品項",
+      "eligibility": "】享指定專區品項 $0 元",
+      "steps": "輸入優惠碼【；優惠詳情以 app 及官網結帳頁面顯示為主",
+      "limits": "碼每人限用 1 次；此優惠限指定 PRO 用戶於必勝客指定門市外帶自取",
       "coupon_code": "",
-      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "category": "3C",
+      "claim": "輸入優惠碼【；優惠詳情以 app 及官網結帳頁面顯示為主",
+      "category": "餐飲食品",
       "tags": [
-        "3C",
-        "金融支付"
+        "餐飲食品",
+        "免費",
+        "任務"
       ],
-      "source_type": "official",
-      "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-15T08:05:23+08:00",
-      "end_date": null,
-      "score": 80,
-      "url": "https://tw.buy.yahoo.com/gdsale/soundcore-官方授權直營-soundcore-Space-2-主動降噪無線耳罩式耳機-12144080.html"
+      "source_type": "community",
+      "source_name": "PTT 省錢板",
+      "published_at": "2026-09-15T09:00:00+08:00",
+      "end_date": "2026-09-30",
+      "score": 78,
+      "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1789444642.A.0A9.html"
     },
     {
-      "id": "yahoo-bc27ce6ba189",
-      "source_key": "yahoo",
-      "title": "ASUS S5406SAL 14吋筆電 (Ultra 5 226V/16GB/512GB SSD/莓果粉/Vivobook S14 OLED) $ 34,999 $37,999 登記送1000",
-      "brand": "Yahoo 購物中心",
-      "summary": "ASUS S5406SAL 14吋筆電 (Ultra 5 226V/16GB/512GB SSD/莓果粉/Vivobook S14 OLED) $ 34,999 $37,999 登記送1000",
-      "benefit": "999 登記送1000",
+      "id": "ptt-caa838dc9a75",
+      "source_key": "ptt",
+      "title": "酷朋 恰好香香豆 330g一包38元",
+      "brand": "蝦皮",
+      "summary": "剛在酷澎看到恰好香香豆 330g*3包 特價 $114，算下來約打 51 折，平均一包只要 $38",
+      "benefit": "算下來約打 51 折",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
       "coupon_code": "",
       "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "category": "3C",
+      "category": "餐飲食品",
       "tags": [
-        "3C",
+        "餐飲食品",
         "金融支付"
       ],
-      "source_type": "official",
-      "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-15T08:05:23+08:00",
+      "source_type": "community",
+      "source_name": "PTT 省錢板",
+      "published_at": "2026-09-15T09:00:00+08:00",
       "end_date": null,
-      "score": 80,
-      "url": "https://tw.buy.yahoo.com/gdsale/ASUS-S5406SAL-14吋筆電-Ultra-5-226V-16GB-512GB-SSD-莓果-12185241.html"
+      "score": 74,
+      "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1789432929.A.B16.html"
+    },
+    {
+      "id": "ptt-b9bb75d4e979",
+      "source_key": "ptt",
+      "title": "全家優惠趣 椒鹽大雞排6折券(已領完)",
+      "brand": "全家",
+      "summary": "沒有麵包那麼搶手就來這邊分享了",
+      "benefit": "吃過6折勉強可以接受",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "餐飲食品",
+      "tags": [
+        "餐飲食品",
+        "金融支付"
+      ],
+      "source_type": "community",
+      "source_name": "PTT 省錢板",
+      "published_at": "2026-09-15T09:00:00+08:00",
+      "end_date": null,
+      "score": 74,
+      "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1789438610.A.F5A.html"
     },
     {
       "id": "ptt-463692f4a7f8",

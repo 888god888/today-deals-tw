@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-16T08:05:23+08:00",
+  "updated_at": "2026-09-16T12:47:16+08:00",
   "is_demo": false,
   "sources": [
     {
       "key": "ptt",
       "name": "PTT 省錢板",
-      "status": "ok",
-      "count": 23,
-      "message": ""
+      "status": "error",
+      "count": 7,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
     },
     {
       "key": "mcdonalds",
@@ -55,7 +55,7 @@
       "key": "yahoo",
       "name": "Yahoo 購物中心",
       "status": "ok",
-      "count": 3,
+      "count": 6,
       "message": ""
     },
     {
@@ -67,30 +67,6 @@
     }
   ],
   "deals": [
-    {
-      "id": "yahoo-a233688a37c6",
-      "source_key": "yahoo",
-      "title": "廚房家電33折起 33折起",
-      "brand": "Yahoo 購物中心",
-      "summary": "9/15爆品限定價 加碼3%贈點回饋【UNDER ARMOUR】UA 男/女 慢跑鞋 休閒鞋 籃球鞋多款任選 $899 統一旗艦館，指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
-      "benefit": "9/15爆品限定價 加碼3%贈點回饋【UNDER ARMOUR】UA 男/女 慢跑鞋 休閒鞋 籃球鞋多款任選 $899 統一旗艦館",
-      "eligibility": "指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
-      "steps": "指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
-      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
-      "coupon_code": "",
-      "claim": "指定滿額送OP點數 5折起 廚房家電33折起 33折起 LVMH集團品牌慶 結帳75折 75折 統一藥妝指定品滿額送 $滿額送 NB潮鞋999起最高再折500 領券折上折 $999",
-      "category": "家電日用",
-      "tags": [
-        "家電日用",
-        "男性運動"
-      ],
-      "source_type": "official",
-      "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T08:05:23+08:00",
-      "end_date": "2026-09-15",
-      "score": 92,
-      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=3&act=todaybest3_main_01_v7"
-    },
     {
       "id": "sample-mcd-card",
       "title": "手機點餐刷 CUBE 卡最高享 12% 回饋",
@@ -114,6 +90,56 @@
       "end_date": "2026-10-31",
       "score": 90,
       "url": "https://www.mcdonalds.com/tw/zh-tw/whats-hot.html"
+    },
+    {
+      "id": "yahoo-77eba4ea15f1",
+      "source_key": "yahoo",
+      "title": "手機&耳機熱銷推薦 通勤族必備享受 68折",
+      "brand": "Yahoo 購物中心",
+      "summary": "Livi優活抽取式衛生紙100抽x10包x6袋/箱(買1送1箱) $899 保健大牌 全館5折起 指定品滿額送豪禮 5折起 手機&耳機熱銷推薦 通勤族必備享受 68折 冷氣大牌 送888超贈點 9折起 COLD STONE Take It 歡樂禮券(10張組) $888 夏日戶外趣5折起 3折起",
+      "benefit": "Livi優活抽取式衛生紙100抽x10包x6袋/箱(買1送1箱) $899 保健大牌 全館5折起 指定品滿額送豪禮 5折起 手機&耳機熱銷推薦 通勤族必備享受 68折 冷氣大牌 送888超贈點 9折起 COLD STONE Take It 歡樂禮券(10張組) $888 夏日戶外趣5折起 3折起",
+      "eligibility": "Livi優活抽取式衛生紙100抽x10包x6袋/箱(買1送1箱) $899 保健大牌 全館5折起 指定品滿額送豪禮 5折起 手機&耳機熱銷推薦 通勤族必備享受 68折 冷氣大牌 送888超贈點 9折起 COLD STONE Take It 歡樂禮券(10張組) $888 夏日戶外趣5折起 3折起",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "3C",
+      "tags": [
+        "3C",
+        "家電日用",
+        "男性運動"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-16T12:47:16+08:00",
+      "end_date": null,
+      "score": 88,
+      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=9&act=todaybest9_main_01_v7"
+    },
+    {
+      "id": "yahoo-05a43f65e9ec",
+      "source_key": "yahoo",
+      "title": "夏日戶外趣5折起 3折起",
+      "brand": "Yahoo 購物中心",
+      "summary": "Livi優活抽取式衛生紙100抽x10包x6袋/箱(買1送1箱) $899 保健大牌 全館5折起 指定品滿額送豪禮 5折起 手機&耳機熱銷推薦 通勤族必備享受 68折 冷氣大牌 送888超贈點 9折起 COLD STONE Take It 歡樂禮券(10張組) $888 夏日戶外趣5折起 3折起",
+      "benefit": "Livi優活抽取式衛生紙100抽x10包x6袋/箱(買1送1箱) $899 保健大牌 全館5折起 指定品滿額送豪禮 5折起 手機&耳機熱銷推薦 通勤族必備享受 68折 冷氣大牌 送888超贈點 9折起 COLD STONE Take It 歡樂禮券(10張組) $888 夏日戶外趣5折起 3折起",
+      "eligibility": "Livi優活抽取式衛生紙100抽x10包x6袋/箱(買1送1箱) $899 保健大牌 全館5折起 指定品滿額送豪禮 5折起 手機&耳機熱銷推薦 通勤族必備享受 68折 冷氣大牌 送888超贈點 9折起 COLD STONE Take It 歡樂禮券(10張組) $888 夏日戶外趣5折起 3折起",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "3C",
+      "tags": [
+        "3C",
+        "家電日用",
+        "男性運動"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-16T12:47:16+08:00",
+      "end_date": null,
+      "score": 88,
+      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=12&act=todaybest12_main_01_v7"
     },
     {
       "id": "sample-survey",
@@ -140,6 +166,29 @@
       "url": "https://www.mcdonalds.com/tw/zh-tw/whats-hot.html"
     },
     {
+      "id": "yahoo-61fb3461fae0",
+      "source_key": "yahoo",
+      "title": "螢幕滿額送5% 滿件最高折300再抽千點 $滿額送",
+      "brand": "Yahoo 購物中心",
+      "summary": "螢幕滿額送5% 滿件最高折300再抽千點 $滿額送",
+      "benefit": "螢幕滿額送5% 滿件最高折300再抽千點 $滿額送",
+      "eligibility": "螢幕滿額送5% 滿件最高折300再抽千點 $滿額送",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "3C",
+      "tags": [
+        "3C"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-16T12:47:16+08:00",
+      "end_date": null,
+      "score": 84,
+      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=18&act=todaybest18_main_01_v7"
+    },
+    {
       "id": "yahoo-6ab3862690db",
       "source_key": "yahoo",
       "title": "人氣零食7折起滿99出貨限時出清滿199打95折",
@@ -158,34 +207,10 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T08:05:23+08:00",
+      "published_at": "2026-09-16T12:47:16+08:00",
       "end_date": null,
       "score": 84,
       "url": "https://tw.buy.yahoo.com/?sub=1035"
-    },
-    {
-      "id": "yahoo-bbbd9760296c",
-      "source_key": "yahoo",
-      "title": "商店 運動世界 TNF 斜背包 滿500享8折",
-      "brand": "Yahoo 購物中心",
-      "summary": "商店 運動世界 TNF 斜背包 滿500享8折 商店 班尼斯名床 天然乳膠枕頭 領券現折100 商店 健康加油讚 以色列芙婷寶 買3送1優惠組",
-      "benefit": "商店 運動世界 TNF 斜背包 滿500享8折 商店 班尼斯名床 天然乳膠枕頭 領券現折100 商店 健康加油讚 以色列芙婷寶 買3送1優惠組",
-      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
-      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
-      "coupon_code": "",
-      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "category": "男性運動",
-      "tags": [
-        "男性運動",
-        "金融支付"
-      ],
-      "source_type": "official",
-      "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T08:05:23+08:00",
-      "end_date": null,
-      "score": 84,
-      "url": "https://tw.buy.yahoo.com/ystore/sportworld5566/productList"
     },
     {
       "id": "sample-pchome",
@@ -233,6 +258,54 @@
       "end_date": "2026-09-22",
       "score": 83,
       "url": "https://shopee.tw/"
+    },
+    {
+      "id": "yahoo-bc27ce6ba189",
+      "source_key": "yahoo",
+      "title": "ASUS S5406SAL 14吋筆電 (Ultra 5 226V/16GB/512GB SSD/莓果粉/Vivobook S14 OLED) $ 34,999 $37,999 登記送1000",
+      "brand": "Yahoo 購物中心",
+      "summary": "ASUS S5406SAL 14吋筆電 (Ultra 5 226V/16GB/512GB SSD/莓果粉/Vivobook S14 OLED) $ 34,999 $37,999 登記送1000",
+      "benefit": "999 登記送1000",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "3C",
+      "tags": [
+        "3C",
+        "金融支付"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-16T12:47:16+08:00",
+      "end_date": null,
+      "score": 80,
+      "url": "https://tw.buy.yahoo.com/gdsale/ASUS-S5406SAL-14吋筆電-Ultra-5-226V-16GB-512GB-SSD-莓果-12185241.html"
+    },
+    {
+      "id": "yahoo-ff1634ae720e",
+      "source_key": "yahoo",
+      "title": "【soundcore 官方授權直營】soundcore C50i 開放式藍牙耳夾耳機 $ 1,790 登記送3%",
+      "brand": "Yahoo 購物中心",
+      "summary": "【soundcore 官方授權直營】soundcore C50i 開放式藍牙耳夾耳機 $ 1,790 登記送3%",
+      "benefit": "790 登記送3%",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "3C",
+      "tags": [
+        "3C",
+        "金融支付"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-16T12:47:16+08:00",
+      "end_date": null,
+      "score": 80,
+      "url": "https://tw.buy.yahoo.com/gdsale/soundcore-官方授權直營-soundcore-C50i-開放式藍牙耳夾耳機-12131225.html"
     },
     {
       "id": "ptt-9215d55728f8",

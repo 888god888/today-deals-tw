@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T12:47:16+08:00",
+  "updated_at": "2026-09-16T22:57:50+08:00",
   "is_demo": false,
   "sources": [
     {
@@ -7,7 +7,7 @@
       "name": "PTT 省錢板",
       "status": "error",
       "count": 7,
-      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+      "message": "500 Server Error: Internal Server Error for url: https://www.ptt.cc/bbs/Lifeismoney/index.html"
     },
     {
       "key": "mcdonalds",
@@ -111,7 +111,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T12:47:16+08:00",
+      "published_at": "2026-09-16T22:57:50+08:00",
       "end_date": null,
       "score": 88,
       "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=9&act=todaybest9_main_01_v7"
@@ -136,7 +136,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T12:47:16+08:00",
+      "published_at": "2026-09-16T22:57:50+08:00",
       "end_date": null,
       "score": 88,
       "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=12&act=todaybest12_main_01_v7"
@@ -183,7 +183,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T12:47:16+08:00",
+      "published_at": "2026-09-16T22:57:50+08:00",
       "end_date": null,
       "score": 84,
       "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=18&act=todaybest18_main_01_v7"
@@ -207,7 +207,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T12:47:16+08:00",
+      "published_at": "2026-09-16T22:57:50+08:00",
       "end_date": null,
       "score": 84,
       "url": "https://tw.buy.yahoo.com/?sub=1035"
@@ -278,7 +278,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T12:47:16+08:00",
+      "published_at": "2026-09-16T22:57:50+08:00",
       "end_date": null,
       "score": 80,
       "url": "https://tw.buy.yahoo.com/gdsale/ASUS-S5406SAL-14吋筆電-Ultra-5-226V-16GB-512GB-SSD-莓果-12185241.html"
@@ -302,7 +302,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-16T12:47:16+08:00",
+      "published_at": "2026-09-16T22:57:50+08:00",
       "end_date": null,
       "score": 80,
       "url": "https://tw.buy.yahoo.com/gdsale/soundcore-官方授權直營-soundcore-C50i-開放式藍牙耳夾耳機-12131225.html"

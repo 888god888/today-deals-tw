@@ -84,6 +84,7 @@ kbd { color: var(--muted); border: 1px solid var(--line); border-radius: 5px; pa
 .category-badge { color: #101426; background: var(--mint); }
 .source-badge { color: var(--muted); background: rgba(255,255,255,.06); border: 1px solid var(--line); }
 .source-badge.official { color: var(--blue); background: rgba(114,167,255,.1); border-color: rgba(114,167,255,.2); }
+.source-badge.discovery { color: var(--coral); background: rgba(255,107,87,.1); border-color: rgba(255,107,87,.22); }
 .save-deal { width: 42px; height: 42px; flex: 0 0 auto; color: var(--muted); background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 50%; font-size: 1.2rem; cursor: pointer; }
 .save-deal:hover, .save-deal[aria-pressed="true"] { color: var(--coral); background: rgba(255,107,87,.12); border-color: rgba(255,107,87,.3); }
 .brand-name { margin: 24px 0 5px; color: var(--yellow); font-size: .78rem; font-weight: 800; letter-spacing: .08em; }

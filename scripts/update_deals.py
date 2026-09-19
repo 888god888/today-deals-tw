@@ -4,16 +4,20 @@
 from __future__ import annotations
 
 import argparse
+import html as html_lib
 import hashlib
 import json
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import datetime, timedelta
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import quote_plus, urljoin, urlparse
+from xml.etree import ElementTree
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -38,6 +42,7 @@ CATEGORY_KEYWORDS = {
     "3C": (
         "3c", "iphone", "android", "apple", "平板", "電腦", "筆電", "螢幕", "耳機", "音響", "喇叭", "相機",
         "ssd", "記憶體", "顯示卡", "gpu", "cpu", "充電", "行動電源", "路由器", "oled", "鍵盤", "滑鼠",
+        "razer", "雷蛇", "logitech", "羅技", "rog", "微星", "msi", "benq", "hyperx", "steelseries",
     ),
     "遊戲娛樂": ("遊戲", "電玩", "steam", "playstation", "ps5", "xbox", "switch", "電影", "影城", "展覽", "演唱會", "ktv", "票券"),
     "餐飲食品": (
@@ -174,10 +179,63 @@ def classify(text: str) -> str:
     return classify_tags(text)[0]
 
 
+def analyze_discount(text: str) -> dict[str, Any] | None:
+    """Return a concrete strong-discount signal; vague sale wording is not enough."""
+    lowered = clean(text, 2400).lower().replace(",", "")
+    if not lowered:
+        return None
+    if any(term in lowered for term in ("買一送一", "第二件0元", "第2件0元")):
+        return {"label": "買一送一（約 5 折）", "score": 98, "kind": "bogo"}
+    if any(term in lowered for term in ("免費領", "免費兌換", "0元領", "零元領", "免費下載")):
+        return {"label": "可免費取得", "score": 96, "kind": "free"}
+
+    price_pairs = re.findall(
+        r"原價\s*(?:nt\$?|\$)?\s*(\d{2,7}).{0,30}?(?:特價|優惠價|下殺|只要|現價)\s*(?:nt\$?|\$)?\s*(\d{2,7})",
+        lowered,
+    )
+    for original_text, current_text in price_pairs:
+        original, current = int(original_text), int(current_text)
+        if original > current > 0:
+            saved_pct = round((original - current) / original * 100)
+            if saved_pct >= 25:
+                return {
+                    "label": f"原價 NT${original:,}，現價 NT${current:,}，省 {saved_pct}%",
+                    "score": min(100, 76 + saved_pct), "kind": "price_pair",
+                }
+
+    rates = [float(value) for value in re.findall(r"(?<!\d)(\d{1,2}(?:\.\d)?)\s*折", lowered)]
+    rates = [rate / 10 if rate > 10 else rate for rate in rates]
+    strong_rates = [rate for rate in rates if 0 < rate <= 7.5]
+    if strong_rates:
+        rate = min(strong_rates)
+        return {"label": f"最低 {rate:g} 折", "score": min(99, round(104 - rate * 5)), "kind": "rate"}
+
+    percentages = [int(value) for value in re.findall(r"(\d{1,3})\s*%", lowered)]
+    strong_percentages = [value for value in percentages if value >= 15]
+    if strong_percentages and any(term in lowered for term in ("回饋", "折扣", "現折", "省", "off")):
+        value = max(strong_percentages)
+        return {"label": f"最高 {value}% 優惠／回饋", "score": min(96, 74 + value), "kind": "percent"}
+
+    money_patterns = (
+        r"(?:現折|折抵|折價|省|回饋)\s*(?:nt\$?|\$)?\s*(\d{3,7})",
+        r"(?:nt\$?|\$)?\s*(\d{3,7})\s*元?\s*(?:現折|折抵|折價|回饋)",
+    )
+    amounts = [int(value) for pattern in money_patterns for value in re.findall(pattern, lowered)]
+    if any(amount >= 1000 for amount in amounts):
+        amount = max(amounts)
+        return {"label": f"可省／回饋 NT${amount:,}", "score": min(94, 76 + amount // 500), "kind": "amount"}
+
+    if any(term in lowered for term in ("歷史最低", "史低", "腰斬", "跳水", "破盤")) and re.search(r"\d", lowered):
+        return {"label": "情報來源標示歷史低價／破盤價", "score": 88, "kind": "low_claim"}
+    return None
+
+
 def is_meaningful_deal(text: str, threshold: str = "medium", *, shopping: bool = False) -> bool:
     """Keep tangible benefits and reject ordinary prices or token discounts."""
     if threshold == "loose":
         return any(word.lower() in text.lower() for word in KEYWORDS)
+    if threshold == "strong":
+        return analyze_discount(text) is not None
 
     lowered = clean(text, 1000).lower().replace(",", "")
     if not lowered:
@@ -432,6 +490,159 @@ def scrape_shopping_links(key: str, cfg: dict[str, Any], brand: str, excluded_te
         return SourceResult(key, name, [], False, clean(str(exc), 100))
 
 
+def scrape_news_radar(key: str, cfg: dict[str, Any], excluded_terms: list[str]) -> SourceResult:
+    """Discover short-lived deals that fixed merchant homepages often miss."""
+    name = cfg["name"]
+    try:
+        deals: list[dict[str, Any]] = []
+        seen: set[str] = set()
+        for query in cfg.get("queries", []):
+            url = (
+                "https://news.google.com/rss/search?q=" + quote_plus(query)
+                + "&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+            )
+            response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=20)
+            response.raise_for_status()
+            root = ElementTree.fromstring(response.content)
+            for item in root.findall(".//item"):
+                raw_title = clean(item.findtext("title"), 180)
+                item_url = clean(item.findtext("link"), 500)
+                source_node = item.find("source")
+                publisher = clean(source_node.text if source_node is not None else "即時情報", 60)
+                title = re.sub(rf"\s+-\s+{re.escape(publisher)}$", "", raw_title).strip()
+                description = html_lib.unescape(item.findtext("description") or "")
+                description = clean(BeautifulSoup(description, "html.parser").get_text(" ", strip=True), 360)
+                full_text = f"{title} {description}"
+                lowered = full_text.lower()
+                if not title or not item_url.startswith("https://") or title in seen:
+                    continue
+                discount = analyze_discount(full_text)
+                if is_unwanted(full_text, excluded_terms) or not discount:
+                    continue
+                # The site is for Taiwan shoppers; discard obvious overseas-only deal posts.
+                overseas = any(term in lowered for term in ("amazon", "亞馬遜", "美元", "us$", "£", "英鎊"))
+                taiwan = any(term in lowered for term in ("台灣", "全台", "pchome", "momo", "蝦皮", "yahoo", "新台幣", "nt$"))
+                if overseas and not taiwan:
+                    continue
+                published_raw = item.findtext("pubDate") or ""
+                try:
+                    published = parsedate_to_datetime(published_raw).astimezone(TZ).isoformat(timespec="seconds")
+                except (TypeError, ValueError):
+                    published = NOW.isoformat(timespec="seconds")
+                details = infer_details(title, description, description or title)
+                end_date = parse_date(full_text)
+                deals.append({
+                    "id": make_id(key, item_url, title), "source_key": key, "title": title,
+                    "brand": infer_brand(full_text, publisher), **details, "claim": details["steps"],
+                    "category": classify(full_text), "tags": classify_tags(full_text),
+                    "source_type": "discovery", "source_name": f"即時雷達 · {publisher}",
+                    "published_at": published, "end_date": end_date,
+                    "score": max(discount["score"], min(98, score_deal(title, description, "community", published, end_date) + 8)),
+                    "deal_strength": "strong", "discount_label": discount["label"],
+                    "url": item_url,
+                })
+                seen.add(title)
+                if len(deals) >= int(cfg.get("item_limit", 36)):
+                    break
+            if len(deals) >= int(cfg.get("item_limit", 36)):
+                break
+            time.sleep(0.15)
+        if not deals:
+            raise ValueError("近期沒有找到符合門檻的即時優惠")
+        return SourceResult(key, name, deals, True)
+    except Exception as exc:
+        return SourceResult(key, name, [], False, clean(str(exc), 100))
+
+
+def scrape_web_discovery(key: str, cfg: dict[str, Any], excluded_terms: list[str]) -> SourceResult:
+    """Search the public web and social indexes without assuming any brand in advance."""
+    name = cfg["name"]
+    try:
+        queries = [
+            str(query).format(year=NOW.year, month=NOW.month, date=NOW.date().isoformat())
+            for query in cfg.get("queries", [])
+        ]
+
+        def search(query: str) -> list[dict[str, str]]:
+            response = None
+            for attempt in range(2):
+                response = requests.get(
+                    "https://search.brave.com/search",
+                    params={"q": query, "source": "web", "tf": cfg.get("freshness", "pm")},
+                    headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"},
+                    timeout=25,
+                )
+                if response.status_code != 429:
+                    break
+                time.sleep(2 + attempt * 2)
+            if response is None or response.status_code == 429:
+                return []
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+            rows: list[dict[str, str]] = []
+            for result in soup.select("div.result-content"):
+                anchor = result.select_one("a.l1[href]")
+                title_node = result.select_one(".search-snippet-title")
+                snippet_node = result.select_one(".generic-snippet .content")
+                if not anchor or not title_node:
+                    continue
+                rows.append({
+                    "url": clean(anchor.get("href"), 600),
+                    "title": clean(title_node.get_text(" ", strip=True), 200),
+                    "snippet": clean(snippet_node.get_text(" ", strip=True) if snippet_node else "", 500),
+                })
+                if len(rows) >= int(cfg.get("results_per_query", 12)):
+                    break
+            return rows
+
+        result_groups: list[list[dict[str, str]]] = []
+        for query in queries:
+            try:
+                result_groups.append(search(query))
+            except Exception:
+                result_groups.append([])
+            time.sleep(2.5)
+
+        deals: list[dict[str, Any]] = []
+        seen: set[str] = set()
+        for rows in result_groups:
+            for row in rows:
+                title, item_url, snippet = row["title"], row["url"], row["snippet"]
+                domain = urlparse(item_url).netloc.lower().removeprefix("www.")
+                full_text = f"{title} {snippet}"
+                discount = analyze_discount(full_text)
+                if not title or not item_url.startswith("https://") or item_url in seen:
+                    continue
+                if domain in {"search.brave.com", "brave.com"} or is_unwanted(full_text, excluded_terms) or not discount:
+                    continue
+                tags = classify_tags(full_text)
+                if tags == ["其他"]:
+                    continue
+                details = infer_details(title, snippet, snippet or title)
+                details["benefit"] = clean(f"{discount['label']}；{details['benefit']}", 160)
+                end_date = parse_date(full_text)
+                source_label = "Threads" if "threads.com" in domain else domain
+                deals.append({
+                    "id": make_id(key, item_url, title), "source_key": key, "title": title,
+                    "brand": infer_brand(full_text, source_label), **details, "claim": details["steps"],
+                    "category": classify(full_text), "tags": tags,
+                    "source_type": "discovery", "source_name": f"全網雷達 · {source_label}",
+                    "published_at": NOW.isoformat(timespec="seconds"), "end_date": end_date,
+                    "score": discount["score"] + (2 if "threads.com" in domain else 0),
+                    "deal_strength": "strong", "discount_label": discount["label"], "url": item_url,
+                })
+                seen.add(item_url)
+                if len(deals) >= int(cfg.get("item_limit", 50)):
+                    break
+            if len(deals) >= int(cfg.get("item_limit", 50)):
+                break
+        if not deals:
+            raise ValueError("近期搜尋結果沒有通過強折扣門檻的情報")
+        return SourceResult(key, name, deals, True)
+    except Exception as exc:
+        return SourceResult(key, name, [], False, clean(str(exc), 100))
+
+
 def load_json(path: Path, fallback: Any) -> Any:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -457,6 +668,11 @@ def normalize(
         return None
     if not is_meaningful_deal(searchable, threshold, shopping=deal.get("source_key") in {"yahoo", "shopee"}):
         return None
+    discount = analyze_discount(searchable)
+    if discount:
+        deal["deal_strength"] = "strong"
+        deal["discount_label"] = deal.get("discount_label") or discount["label"]
+        deal["score"] = max(int(deal.get("score", 50)), int(discount["score"]))
     deal["tags"] = tags
     deal["category"] = next((category for category in PRIMARY_CATEGORY_ORDER if category in tags and category in interest_categories), tags[0])
     deal["summary"] = clean(deal.get("summary"), 180)
@@ -482,22 +698,31 @@ def update() -> dict[str, Any]:
     interest_terms = config.get("preferences", {}).get("shopping_interest_terms", list(DEFAULT_SHOPPING_INTEREST_TERMS))
     interest_categories = config.get("preferences", {}).get("interest_categories", list(DEFAULT_INTEREST_CATEGORIES))
     excluded_categories = config.get("preferences", {}).get("excluded_categories", ["交通"])
-    threshold = config.get("preferences", {}).get("deal_threshold", "medium")
+    threshold = config.get("preferences", {}).get("deal_threshold", "strong")
     old_data = load_json(DATA_FILE, {"deals": [], "sources": []})
     old_deals = old_data.get("deals", [])
     results: list[SourceResult] = []
     if config.get("ptt", {}).get("enabled"):
         results.append(scrape_ptt("ptt", config["ptt"], excluded_terms))
+    if config.get("news_radar", {}).get("enabled"):
+        results.append(scrape_news_radar("news_radar", config["news_radar"], excluded_terms))
+    if config.get("web_discovery", {}).get("enabled"):
+        results.append(scrape_web_discovery("web_discovery", config["web_discovery"], excluded_terms))
     official_sources = {
         "mcdonalds": "麥當勞", "kfc": "肯德基", "familymart": "全家便利商店", "hilife": "萊爾富",
         "linepay": "LINE Pay", "pchome": "PChome 24h", "yahoo": "Yahoo 購物中心", "shopee": "蝦皮購物",
     }
-    for key, brand in official_sources.items():
-        if config.get(key, {}).get("enabled"):
-            if config[key].get("parser") == "shopping_links":
-                results.append(scrape_shopping_links(key, config[key], brand, excluded_terms, interest_terms))
-            else:
-                results.append(scrape_official_cards(key, config[key], brand, excluded_terms))
+    enabled_official = [(key, brand) for key, brand in official_sources.items() if config.get(key, {}).get("enabled")]
+
+    def scrape_official_source(item: tuple[str, str]) -> SourceResult:
+        key, brand = item
+        if config[key].get("parser") == "shopping_links":
+            return scrape_shopping_links(key, config[key], brand, excluded_terms, interest_terms)
+        return scrape_official_cards(key, config[key], brand, excluded_terms)
+
+    if enabled_official:
+        with ThreadPoolExecutor(max_workers=min(5, len(enabled_official))) as pool:
+            results.extend(pool.map(scrape_official_source, enabled_official))
 
     if results and not any(result.ok for result in results):
         filtered_old = [

@@ -12,7 +12,7 @@
     ],
     "interest_categories": ["3C", "遊戲娛樂", "免費", "任務", "餐飲食品", "家電日用", "男性運動", "金融支付"],
     "excluded_categories": ["交通"],
-    "deal_threshold": "medium"
+    "deal_threshold": "strong"
   },
   "ptt": {
     "enabled": true,
@@ -20,6 +20,32 @@
     "url": "https://www.ptt.cc/bbs/Lifeismoney/index.html",
     "pages": 4,
     "article_limit": 40
+  },
+  "news_radar": {
+    "enabled": true,
+    "name": "即時優惠雷達",
+    "item_limit": 36,
+    "queries": [
+      "台灣 (特價 OR 下殺 OR 限時優惠 OR 買一送一) (3C OR 電競 OR 家電) when:3d",
+      "台灣 (電競周邊 OR 滑鼠 OR 鍵盤 OR 耳機 OR 螢幕) (特價 OR 下殺 OR 破盤 OR 歷史最低) when:7d",
+      "(Steam OR PlayStation OR Nintendo OR Xbox) (免費 OR 特價 OR 折扣) when:3d",
+      "(PChome OR momo OR 蝦皮 OR Yahoo購物) (破盤 OR 下殺 OR 限時特價) when:3d"
+    ]
+  },
+  "web_discovery": {
+    "enabled": true,
+    "name": "全網強折扣雷達",
+    "freshness": "pm",
+    "results_per_query": 12,
+    "item_limit": 50,
+    "queries": [
+      "台灣 {year}年{month}月 (歷史最低 OR 破盤 OR 跳水 OR 下殺) (3C OR 電競 OR 家電)",
+      "site:threads.com 台灣 (原價 特價 OR 下殺 OR 歷史最低) (3C OR 電競 OR 家電 OR 遊戲)",
+      "site:threads.com 台灣 (買一送一 OR 免費領 OR 5折 OR 6折 OR 7折) -美妝 -女裝",
+      "台灣 (限時5折 OR 限時6折 OR 限時7折 OR 現折1000 OR 現折2000) (PChome OR momo OR 蝦皮 OR Yahoo購物)",
+      "台灣 (免費領 OR 買一送一 OR 高額回饋) (超商 OR 餐飲 OR APP OR 遊戲)",
+      "(site:dcard.tw OR site:mobile01.com OR site:ptt.cc) (歷史最低 OR 破盤 OR 下殺 OR 買一送一) 台灣"
+    ]
   },
   "mcdonalds": {
     "enabled": true,

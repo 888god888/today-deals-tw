@@ -31,6 +31,7 @@ function visibleDeals() {
   return state.deals.filter(deal => {
     const searchable = [deal.title, deal.brand, deal.summary, deal.benefit, deal.eligibility, deal.steps, deal.limits].join(" ").toLowerCase();
     if (isExcludedDeal(deal)) return false;
+    if (deal.deal_strength !== "strong") return false;
     if (deal.end_date && daysUntil(deal.end_date) < 0) return false;
     const tags = Array.isArray(deal.tags) && deal.tags.length ? deal.tags : [deal.category];
     if (state.category !== "全部" && !tags.includes(state.category)) return false;
@@ -61,8 +62,10 @@ function render() {
     const tags = Array.isArray(deal.tags) && deal.tags.length ? deal.tags : [deal.category];
     node.querySelector(".category-badge").textContent = tags.slice(0, 2).map(tag => `${categoryIcons[tag] || "✨"} ${tag}`).join(" · ");
     const sourceBadge = node.querySelector(".source-badge");
-    sourceBadge.textContent = deal.source_type === "official" ? "官方" : "社群情報";
+    const sourceLabels = { official: "官方", community: "社群情報", discovery: "即時雷達" };
+    sourceBadge.textContent = sourceLabels[deal.source_type] || "優惠情報";
     if (deal.source_type === "official") sourceBadge.classList.add("official");
+    if (deal.source_type === "discovery") sourceBadge.classList.add("discovery");
     node.querySelector(".brand-name").textContent = deal.brand || deal.source_name;
     node.querySelector("h3").textContent = deal.title;
     node.querySelector(".deal-summary").textContent = deal.summary || "已整理活動的主要辦法如下。";
@@ -90,10 +93,11 @@ function render() {
 }
 
 function renderSummary(data) {
-  const available = data.deals.filter(d => !isExcludedDeal(d) && (!d.end_date || daysUntil(d.end_date) >= 0));
+  const available = data.deals.filter(d => d.deal_strength === "strong" && !isExcludedDeal(d) && (!d.end_date || daysUntil(d.end_date) >= 0));
   document.querySelector("#dealTotal").textContent = available.length;
   document.querySelector("#freeTotal").textContent = available.filter(d => (d.tags || [d.category]).includes("免費")).length;
   document.querySelector("#urgentTotal").textContent = available.filter(d => { const days = daysUntil(d.end_date); return days !== null && days >= 0 && days <= 3; }).length;
+  document.querySelector("#discoveryTotal").textContent = available.filter(d => d.source_type === "discovery").length;
   const updated = new Date(data.updated_at);
   document.querySelector("#updatedAt").textContent = Number.isNaN(updated.valueOf()) ? "更新時間未提供" : `更新於 ${new Intl.DateTimeFormat("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }).format(updated)}`;
   document.querySelector("#demoNotice").hidden = !data.is_demo;

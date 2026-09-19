@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T11:19:59+08:00",
+  "updated_at": "2026-09-19T12:35:28+08:00",
   "is_demo": false,
   "sources": [
     {
@@ -13,7 +13,7 @@
       "key": "news_radar",
       "name": "即時優惠雷達",
       "status": "ok",
-      "count": 9,
+      "count": 10,
       "message": ""
     },
     {
@@ -27,7 +27,7 @@
       "key": "mcdonalds",
       "name": "麥當勞台灣",
       "status": "error",
-      "count": 2,
+      "count": 1,
       "message": "HTTPSConnectionPool(host='www.mcdonalds.com', port=443): Read timed out. (read timeout=20)"
     },
     {
@@ -62,7 +62,7 @@
       "key": "pchome",
       "name": "PChome 24h",
       "status": "error",
-      "count": 1,
+      "count": 0,
       "message": "頁面未找到可辨識的優惠項目"
     },
     {
@@ -133,6 +133,32 @@
       "deal_strength": "strong",
       "url": "https://www.ptt.cc/bbs/Lifeismoney/index.html",
       "discount_label": "買一送一（約 5 折）"
+    },
+    {
+      "id": "news_radar-342e5a039ba1",
+      "source_key": "news_radar",
+      "title": "【TGS 2026】Steam 特賣開跑！最大 90% OFF 12 款大作、獨立遊戲精選",
+      "brand": "SouNova 少女星",
+      "summary": "【TGS 2026】Steam 特賣開跑！最大 90% OFF 12 款大作、獨立遊戲精選 SouNova 少女星",
+      "benefit": "【TGS 2026】Steam 特賣開跑！最大 90% OFF 12 款大作、獨立遊戲精選",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "遊戲娛樂",
+      "tags": [
+        "遊戲娛樂",
+        "金融支付"
+      ],
+      "source_type": "discovery",
+      "source_name": "即時雷達 · SouNova 少女星",
+      "published_at": "2026-09-19T12:00:00+08:00",
+      "end_date": null,
+      "score": 96,
+      "deal_strength": "strong",
+      "discount_label": "最高 90% 優惠／回饋",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBmTTBpNkt3SU83bi02YTFSb0Q5ZHJXNlpRQ2dpUkU5aHc0eDNGN2FBZi1aMW9OemQ4bGpJejkyYVQ0eHpkdXRucGw2c0NYbThhVjYybnlMbEFvTWg2Z1NIOEp4Mjc?oc=5"
     },
     {
       "id": "news_radar-b59cc0eccea8",
@@ -219,14 +245,14 @@
       "id": "news_radar-f48ad9d6569f",
       "source_key": "news_radar",
       "title": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站",
-      "brand": "gank.fanpiece.com",
-      "summary": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 gank.fanpiece.com",
-      "benefit": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 gank.fanpiece.com",
+      "brand": "GANK 電玩誌",
+      "summary": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 GANK 電玩誌",
+      "benefit": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 GANK 電玩誌",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
-      "steps": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 gank.fanpiece.com",
+      "steps": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 GANK 電玩誌",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
       "coupon_code": "",
-      "claim": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 gank.fanpiece.com",
+      "claim": "Steam 9 月免費贈送《垂死之光：困獸》武器包限時免費領取| 遊戲情報站 GANK 電玩誌",
       "category": "遊戲娛樂",
       "tags": [
         "遊戲娛樂",
@@ -234,7 +260,7 @@
         "免費"
       ],
       "source_type": "discovery",
-      "source_name": "即時雷達 · gank.fanpiece.com",
+      "source_name": "即時雷達 · GANK 電玩誌",
       "published_at": "2026-09-16T13:33:41+08:00",
       "end_date": null,
       "score": 96,
@@ -297,9 +323,9 @@
       "id": "news_radar-4a7cd1bc0edf",
       "source_key": "news_radar",
       "title": "Anker多功能擴充座螢幕架限時特價 筆電周邊升級享30%折扣",
-      "brand": "n.yam.com",
-      "summary": "Anker多功能擴充座螢幕架限時特價 筆電周邊升級享30%折扣 n.yam.com",
-      "benefit": "Anker多功能擴充座螢幕架限時特價 筆電周邊升級享30%折扣 n.yam.com",
+      "brand": "蕃新聞",
+      "summary": "Anker多功能擴充座螢幕架限時特價 筆電周邊升級享30%折扣 蕃新聞",
+      "benefit": "Anker多功能擴充座螢幕架限時特價 筆電周邊升級享30%折扣 蕃新聞",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
@@ -311,7 +337,7 @@
         "金融支付"
       ],
       "source_type": "discovery",
-      "source_name": "即時雷達 · n.yam.com",
+      "source_name": "即時雷達 · 蕃新聞",
       "published_at": "2026-09-12T14:22:00+08:00",
       "end_date": null,
       "score": 96,
@@ -390,7 +416,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-19T11:19:59+08:00",
+      "published_at": "2026-09-19T12:35:28+08:00",
       "end_date": null,
       "score": 89,
       "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=6&act=todaybest6_main_01_v7",
@@ -440,7 +466,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-19T11:19:59+08:00",
+      "published_at": "2026-09-19T12:35:28+08:00",
       "end_date": null,
       "score": 84,
       "url": "https://tw.buy.yahoo.com/?sub=1035",

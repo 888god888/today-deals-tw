@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T12:52:37+08:00",
+  "updated_at": "2026-09-22T22:51:32+08:00",
   "is_demo": false,
   "sources": [
     {
@@ -13,7 +13,7 @@
       "key": "news_radar",
       "name": "即時優惠雷達",
       "status": "ok",
-      "count": 8,
+      "count": 10,
       "message": ""
     },
     {
@@ -28,7 +28,7 @@
       "name": "麥當勞台灣",
       "status": "error",
       "count": 1,
-      "message": "HTTPSConnectionPool(host='www.mcdonalds.com', port=443): Read timed out. (read timeout=20)"
+      "message": "403 Client Error: Forbidden for url: https://www.mcdonalds.com/tw/zh-tw/whats-hot.html"
     },
     {
       "key": "kfc",
@@ -113,8 +113,8 @@
       "source_key": "news_radar",
       "title": "秋日飲品優惠連環發！先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻",
       "brand": "PChome",
-      "summary": "秋日飲品優惠連環發！先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 PChome Online新聞",
-      "benefit": "先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 PChome Online新聞",
+      "summary": "秋日飲品優惠連環發！先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 news.pchome.com.tw",
+      "benefit": "先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 news.pchome.com.tw",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
@@ -126,7 +126,7 @@
         "金融支付"
       ],
       "source_type": "discovery",
-      "source_name": "即時雷達 · PChome Online新聞",
+      "source_name": "即時雷達 · news.pchome.com.tw",
       "published_at": "2026-09-21T12:57:46+08:00",
       "end_date": null,
       "score": 98,
@@ -161,6 +161,34 @@
       "discount_label": "買一送一（約 5 折）"
     },
     {
+      "id": "news_radar-6f2debedff29",
+      "source_key": "news_radar",
+      "title": "Steam 限免遊戲《Deadshot》《Sputnika Game》射擊、益智遊戲免費領取中",
+      "brand": "applealmond.com",
+      "summary": "Steam 限免遊戲《Deadshot》《Sputnika Game》射擊、益智遊戲免費領取中 applealmond.com",
+      "benefit": "Steam 限免遊戲《Deadshot》《Sputnika Game》射擊、益智遊戲免費領取中 applealmond.com",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "Steam 限免遊戲《Deadshot》《Sputnika Game》射擊、益智遊戲免費領取中 applealmond.com",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "Steam 限免遊戲《Deadshot》《Sputnika Game》射擊、益智遊戲免費領取中 applealmond.com",
+      "category": "3C",
+      "tags": [
+        "3C",
+        "遊戲娛樂",
+        "金融支付",
+        "免費"
+      ],
+      "source_type": "discovery",
+      "source_name": "即時雷達 · applealmond.com",
+      "published_at": "2026-09-22T20:54:00+08:00",
+      "end_date": null,
+      "score": 96,
+      "deal_strength": "strong",
+      "discount_label": "可免費取得",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9CV0ZRcVFsekNxWmNPOG5oVmc2R1JOcVhhLTJ0Y202aG5PUC15SWZOSDNJdlBudTYzTEVZSXhGZHhNeXlLbjNHaVR4WFjSAVJBVV95cUxPblpCQk9rdjIxUVJlQlVLVDJWSXJvUFJXMnA1VVBZNVVkVGNEaHF0WHRmb0FPNWQ5M1BZeElUQUs4UkhDQkl6WXJPUFlnVDlscGl3?oc=5"
+    },
+    {
       "id": "news_radar-0e92b5508cf0",
       "source_key": "news_radar",
       "title": "Xbox 玩家 9/29 起可免費領取 PC 版 The Witcher 3 Remastered",
@@ -188,12 +216,12 @@
       "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQV2k0NlhYdFBNSVR0Z3RjVHdEVDNRajVqNHJvem40SDNrekpJWWRpU3RUbXNBNWxMcHNSSTBtcEVpRDhlNzI2TVNWdzJFSEVqQ3JyanRCdHB0dUZrSzQ2MlBid1lxZnJQbVhETmRydXFfY2lmVjI4cVJHQkJJcWtDUnUyM0hEV0lZU2FMYzg4aWFfMDdyckhRVS1henNsUE5SdVZWbmpuaE5rRTdCOTFLa3NZSHg2di02aDU0N3BwWDMwWlB0bklSZ0VzN213Mks0NGlNT2pLZ3RuWHM4eTZXYW1Qa1JDbGZKdXU4VFVqX256TWRsRE44?oc=5"
     },
     {
-      "id": "news_radar-d07e2c0dc32e",
+      "id": "news_radar-3ae2e1ffb312",
       "source_key": "news_radar",
-      "title": "CFK 秋季特賣開跑 Steam 與 Nintendo Switch 全平台最高 80% OFF - 遊戲新聞 - PChome Online 新聞",
-      "brand": "PChome",
-      "summary": "CFK 秋季特賣開跑 Steam 與 Nintendo Switch 全平台最高 80% OFF - 遊戲新聞 - PChome Online 新聞 PChome Online新聞",
-      "benefit": "CFK 秋季特賣開跑 Steam 與 Nintendo Switch 全平台最高 80% OFF - 遊戲新聞 - PChome Online 新聞",
+      "title": "CFK 秋季特賣開跑 Steam 與 Nintendo Switch 全平台最高 80% OFF",
+      "brand": "GNN 新聞網",
+      "summary": "CFK 秋季特賣開跑 Steam 與 Nintendo Switch 全平台最高 80% OFF GNN 新聞網",
+      "benefit": "CFK 秋季特賣開跑 Steam 與 Nintendo Switch 全平台最高 80% OFF",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
@@ -205,13 +233,13 @@
         "金融支付"
       ],
       "source_type": "discovery",
-      "source_name": "即時雷達 · PChome Online新聞",
+      "source_name": "即時雷達 · GNN 新聞網",
       "published_at": "2026-09-21T18:11:19+08:00",
       "end_date": null,
       "score": 96,
       "deal_strength": "strong",
       "discount_label": "最高 80% 優惠／回饋",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNN3hTeVFiOV9IUW5zVE1TZzhPMTMwWFl0QkpzUlJXeS1LaDdNTXVNMEctZldmcUVCaUhwc3ZxalYydFpWQWdaYUJ2N1FLSUlWcUszc295SUFkTDlzQzBjb2tIRWduWjlfNnhzd29sTG5NemxHNE1CVHBubEszajVDVmRQWEU?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE84Z3Z2XzlZR2hrQ3ZianI5dWxiVXZXb256N0kyNHROZUdicGdCWmVoS05DVXVZMlh6UFJxQmg1OVRNSUliaFpoMjVzTFpyQnN1NHFXNWNMd2o?oc=5"
     },
     {
       "id": "news_radar-36d889da0cf3",
@@ -319,6 +347,32 @@
       "discount_label": "可免費取得"
     },
     {
+      "id": "news_radar-be8975e058d5",
+      "source_key": "news_radar",
+      "title": "《REMNANT II》Steam 史上最低 2 折至 9 月 29 日 3 款 DLC 同步 6.5 折",
+      "brand": "Ludens Media",
+      "summary": "《REMNANT II》Steam 史上最低 2 折至 9 月 29 日 3 款 DLC 同步 6.5 折 Ludens Media",
+      "benefit": "《REMNANT II》Steam 史上最低 2 折至 9 月 29 日 3 款 DLC 同步 6.5 折 Ludens Media",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "遊戲娛樂",
+      "tags": [
+        "遊戲娛樂",
+        "金融支付"
+      ],
+      "source_type": "discovery",
+      "source_name": "即時雷達 · Ludens Media",
+      "published_at": "2026-09-22T18:09:00+08:00",
+      "end_date": "2027-06-05",
+      "score": 94,
+      "deal_strength": "strong",
+      "discount_label": "最低 2 折",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9JeUpmS1RPNXMzWEsxQWo1LS04WUh6blByTEdpem5mQkptdUpBRXJWVGlLX3JkNzRpZzhmSU5NUy03R3F4bEZxM3huanFfR2pCR3dMdXVsemMxUUpENjRVT3BIQl9FNjhzdW9FalMxMTg?oc=5"
+    },
+    {
       "id": "sample-tech",
       "source_key": "shopee",
       "title": "電腦週邊滿 8,000 現折 500 元",
@@ -362,7 +416,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-22T12:52:37+08:00",
+      "published_at": "2026-09-22T22:51:32+08:00",
       "end_date": null,
       "score": 89,
       "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=7&act=todaybest7_main_01_v7",
@@ -388,7 +442,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-22T12:52:37+08:00",
+      "published_at": "2026-09-22T22:51:32+08:00",
       "end_date": null,
       "score": 89,
       "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=10&act=todaybest10_main_01_v7",
@@ -439,7 +493,7 @@
       ],
       "source_type": "official",
       "source_name": "Yahoo 購物中心",
-      "published_at": "2026-09-22T12:52:37+08:00",
+      "published_at": "2026-09-22T22:51:32+08:00",
       "end_date": null,
       "score": 88,
       "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=19&act=todaybest19_main_01_v7",
@@ -475,11 +529,11 @@
       "source_key": "news_radar",
       "title": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠",
       "brand": "PChome",
-      "summary": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 PChome Online新聞",
-      "benefit": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 PChome Online新聞",
+      "summary": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 news.pchome.com.tw",
+      "benefit": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 news.pchome.com.tw",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "limits": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 PChome Online新聞",
+      "limits": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 news.pchome.com.tw",
       "coupon_code": "",
       "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
       "category": "餐飲食品",
@@ -488,7 +542,7 @@
         "金融支付"
       ],
       "source_type": "discovery",
-      "source_name": "即時雷達 · PChome Online新聞",
+      "source_name": "即時雷達 · news.pchome.com.tw",
       "published_at": "2026-09-21T10:30:02+08:00",
       "end_date": "2026-09-28",
       "score": 86,

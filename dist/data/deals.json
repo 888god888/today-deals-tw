@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T08:05:27+08:00",
+  "updated_at": "2026-09-24T12:47:09+08:00",
   "is_demo": false,
   "sources": [
     {
@@ -13,7 +13,7 @@
       "key": "news_radar",
       "name": "即時優惠雷達",
       "status": "ok",
-      "count": 13,
+      "count": 12,
       "message": ""
     },
     {
@@ -69,7 +69,7 @@
       "key": "yahoo",
       "name": "Yahoo 購物中心",
       "status": "ok",
-      "count": 3,
+      "count": 4,
       "message": ""
     },
     {
@@ -113,8 +113,8 @@
       "source_key": "news_radar",
       "title": "秋日飲品優惠連環發！先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻",
       "brand": "PChome",
-      "summary": "秋日飲品優惠連環發！先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 PChome Online 新聞",
-      "benefit": "先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 PChome Online 新聞",
+      "summary": "秋日飲品優惠連環發！先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 news.pchome.com.tw",
+      "benefit": "先喝道買一送一抽星宇機票 85℃教師節咖啡下殺35折寄杯省翻 news.pchome.com.tw",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
@@ -126,7 +126,7 @@
         "金融支付"
       ],
       "source_type": "discovery",
-      "source_name": "即時雷達 · PChome Online 新聞",
+      "source_name": "即時雷達 · news.pchome.com.tw",
       "published_at": "2026-09-21T12:57:46+08:00",
       "end_date": null,
       "score": 98,
@@ -180,7 +180,7 @@
       ],
       "source_type": "discovery",
       "source_name": "即時雷達 · GANK 電玩誌",
-      "published_at": "2026-09-24T05:13:00+08:00",
+      "published_at": "2026-09-24T05:12:27+08:00",
       "end_date": null,
       "score": 96,
       "deal_strength": "strong",
@@ -397,12 +397,38 @@
       "discount_label": "可省／回饋 NT$8,000"
     },
     {
+      "id": "yahoo-31651ff44476",
+      "source_key": "yahoo",
+      "title": "日用洗沐↘全館3折起 3折起",
+      "brand": "Yahoo 購物中心",
+      "summary": "日用洗沐↘全館3折起 3折起",
+      "benefit": "日用洗沐↘全館3折起 3折起",
+      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
+      "coupon_code": "",
+      "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
+      "category": "家電日用",
+      "tags": [
+        "家電日用",
+        "金融支付"
+      ],
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-24T12:47:09+08:00",
+      "end_date": null,
+      "score": 89,
+      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=10&act=todaybest10_main_01_v7",
+      "deal_strength": "strong",
+      "discount_label": "最低 3 折"
+    },
+    {
       "id": "news_radar-a3183999ffe6",
       "source_key": "news_radar",
       "title": "台灣旅客奢華行倍增 韓際新世界免稅店3折起 - 生活新聞 - PChome Online 新聞",
       "brand": "PChome",
-      "summary": "台灣旅客奢華行倍增 韓際新世界免稅店3折起 - 生活新聞 - PChome Online 新聞 PChome Online 新聞",
-      "benefit": "台灣旅客奢華行倍增 韓際新世界免稅店3折起 - 生活新聞 - PChome Online 新聞 PChome Online 新聞",
+      "summary": "台灣旅客奢華行倍增 韓際新世界免稅店3折起 - 生活新聞 - PChome Online 新聞 news.pchome.com.tw",
+      "benefit": "台灣旅客奢華行倍增 韓際新世界免稅店3折起 - 生活新聞 - PChome Online 新聞 news.pchome.com.tw",
       "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
       "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
@@ -414,7 +440,7 @@
         "其他"
       ],
       "source_type": "discovery",
-      "source_name": "即時雷達 · PChome Online 新聞",
+      "source_name": "即時雷達 · news.pchome.com.tw",
       "published_at": "2026-09-23T04:23:52+08:00",
       "end_date": null,
       "score": 89,
@@ -499,30 +525,29 @@
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5nYTRSd1RFVF9TWGN1ZXJUVEdRYTNaa0pEMzJTbVR5WTN6T0pkZERQN3doWGtIWkRsYjBQbTc5TGxVdHJialk1Rk9Dem1Ec1VDTVR1b0l4Z2s?oc=5"
     },
     {
-      "id": "news_radar-ec258abc1183",
-      "source_key": "news_radar",
-      "title": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠",
-      "brand": "PChome",
-      "summary": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 PChome Online 新聞",
-      "benefit": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 PChome Online 新聞",
-      "eligibility": "一般使用者；若為會員、分眾或指定支付限定，以活動頁顯示為準",
+      "id": "yahoo-ee7d984c8e55",
+      "source_key": "yahoo",
+      "title": "夏季促銷 電玩遊戲全館5折起 5折起",
+      "brand": "Yahoo 購物中心",
+      "summary": "專科 淨荳煥膚修護精華 30mL 滿額折 Acer品牌週 $1788起 $1,788 SKECHERS 狂歡5折起 滿額最高再9折 滿額折 【美國康寧】CORELLE 哈利波特餐具五件組(Yahoo獨家) $1,380 《于美人xFeeling18》18做好事一路發_公益鐵盒餅乾*1盒(320g/盒)_企業送禮、節慶送禮、伴手禮 $650",
+      "benefit": "380 《于美人xFeeling18》18做好事一路發_公益鐵盒餅乾*1盒(320g/盒)_企業送禮、節慶送禮、伴手禮 $650 夏季促銷 電玩遊戲全館5折起 5折起",
+      "eligibility": "專科 淨荳煥膚修護精華 30mL 滿額折 Acer品牌週 $1788起 $1",
       "steps": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "limits": "85℃教師節「大杯咖啡第二杯35折」 全台門市9/28當天限時優惠 PChome Online 新聞",
+      "limits": "名額、庫存、活動期限與適用門市以主辦單位即時狀態為準",
       "coupon_code": "",
       "claim": "開啟活動頁確認可領取或購買後，依頁面指示完成",
-      "category": "餐飲食品",
+      "category": "遊戲娛樂",
       "tags": [
-        "餐飲食品",
-        "金融支付"
+        "遊戲娛樂"
       ],
-      "source_type": "discovery",
-      "source_name": "即時雷達 · PChome Online 新聞",
-      "published_at": "2026-09-21T10:30:02+08:00",
-      "end_date": "2026-09-28",
-      "score": 86,
+      "source_type": "official",
+      "source_name": "Yahoo 購物中心",
+      "published_at": "2026-09-24T12:47:09+08:00",
+      "end_date": null,
+      "score": 84,
+      "url": "https://tw.buy.yahoo.com/bestbuy/?anchor=18&act=todaybest18_main_01_v7",
       "deal_strength": "strong",
-      "discount_label": "最低 3.5 折",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTlNlQUV2YXBTYk5IUS05U0pIdkhhNElQS09sZkVRNFhBTzhVT3RoTTRBOENGYV9qSXlMbEZRbXlJd3dEa3REZWNZTFczVG5rVGNlZF8xdWdNeTR1ZUdhY01CVktDUlJQalJaOVZPNU9iQ3FyekxvTFVzVGxvbkNseUJhQ0FvdGI2OGdkSWRQeE8?oc=5"
+      "discount_label": "最低 5 折"
     },
     {
       "id": "news_radar-9260794ef150",

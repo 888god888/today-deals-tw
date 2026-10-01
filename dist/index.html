@@ -1,129 +1,56 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101426">
-  <meta name="description" content="每天整理台灣免費領取、大特惠與完成任務可得好康。">
-  <title>今天有好康｜台灣每日優惠整理</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101426'/%3E%3Cpath d='M14 23h36l-4 28H18z' fill='%23ffd84d'/%3E%3Cpath d='M23 25c0-8 3-12 9-12s9 4 9 12' fill='none' stroke='%23ff6b57' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M25 37h14' stroke='%23101426' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <meta name="description" content="先看大折扣與少門檻優惠，領取條件、來源證據和更新狀態透明呈現。">
+  <title>今天有好康｜大折扣，少門檻</title>
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
   <header class="topbar">
-    <a class="brand" href="#" aria-label="回到全部好康">
-      <span class="brand-mark" aria-hidden="true">袋</span>
-      <span><strong>今天有好康</strong><small>省下來，就是賺到</small></span>
-    </a>
-    <button class="saved-button" id="savedButton" type="button" aria-pressed="false">
-      <span aria-hidden="true">♥</span> 收藏 <b id="savedCount">0</b>
-    </button>
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">袋</span><span><strong>今天有好康</strong><small>大折扣，少門檻</small></span></a>
+    <button id="savedButton" class="saved-button" aria-pressed="false">♡ 收藏 <b id="savedCount">0</b></button>
   </header>
-
   <main>
-    <div class="demo-notice" id="demoNotice" hidden><strong>目前顯示示範資料</strong><span>第一次執行每日更新後，就會自動換成最新內容。</span></div>
-    <section class="overview" aria-labelledby="pageTitle">
-      <div class="overview-copy">
-        <p class="eyebrow"><span class="live-dot"></span> 每日自動整理</p>
-        <h1 id="pageTitle">今天，<br><em>有什麼可以拿？</em></h1>
-        <p class="intro">每天動態掃描 Threads、論壇、新聞與購物活動頁，不預設品牌；只留下免費、買一送一、7.5 折以下或其他能證明折扣夠大的情報。</p>
+    <section class="heading"><div><p class="eyebrow">不限定品牌 · 先看能怎麼拿</p><h1>值得出手的，先看這裡。</h1></div><p id="updatedAt">讀取資料中…</p></section>
+    <div id="coverageNotice" class="notice" role="status" hidden></div>
+    <section class="toolbar" aria-label="優惠篩選">
+      <div class="tabs" id="statusTabs" role="group" aria-label="核對程度">
+        <button class="tab active" data-status="easy" aria-pressed="true">大折扣・少門檻 <b id="easyTotal">0</b></button>
+        <button class="tab" data-status="conditional" aria-pressed="false">有參加條件 <b id="conditionalTotal">0</b></button>
+        <button class="tab" data-status="candidate" aria-pressed="false">待核對情報 <b id="pendingTotal">0</b></button>
       </div>
-      <aside class="today-card" aria-label="今日好康摘要">
-        <span class="today-label">TODAY'S FINDS</span>
-        <strong id="dealTotal">—</strong>
-        <span>筆可用好康</span>
-        <div class="today-stats">
-          <p><b id="freeTotal">—</b><small>免費領</small></p>
-          <p><b id="urgentTotal">—</b><small>快截止</small></p>
-          <p><b id="discoveryTotal">—</b><small>動態發現</small></p>
-        </div>
-        <p class="updated" id="updatedAt">正在讀取最新資料…</p>
-      </aside>
-    </section>
-
-    <section class="toolbar" aria-label="篩選好康">
-      <label class="search-box">
-        <span aria-hidden="true">⌕</span>
-        <span class="sr-only">搜尋好康</span>
-        <input id="searchInput" type="search" placeholder="搜尋品牌、優惠或條件…" autocomplete="off">
-        <kbd>/</kbd>
-      </label>
-      <div class="filters" id="filters" role="group" aria-label="好康分類">
-        <button class="filter active" type="button" data-category="全部">全部</button>
-        <button class="filter" type="button" data-category="免費">🎁 免費</button>
-        <button class="filter" type="button" data-category="任務">📱 APP任務</button>
-        <button class="filter" type="button" data-category="餐飲食品">🍔 餐飲食品</button>
-        <button class="filter" type="button" data-category="3C">💻 3C</button>
-        <button class="filter" type="button" data-category="遊戲娛樂">🎮 遊戲票券</button>
-        <button class="filter" type="button" data-category="家電日用">🏠 家電日用</button>
-        <button class="filter" type="button" data-category="男性運動">👟 男性運動</button>
-        <button class="filter" type="button" data-category="金融支付">💳 金融支付</button>
+      <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜尋優惠或條件</span><input id="searchInput" type="search" placeholder="搜尋優惠、商品或條件…" autocomplete="off"><kbd>/</kbd></label>
+      <div class="filters" id="filters" role="group" aria-label="分類">
+        <button class="filter active" data-category="全部" aria-pressed="true">全部</button>
+        <button class="filter" data-category="免費" aria-pressed="false">免費領</button>
+        <button class="filter" data-category="3C" aria-pressed="false">3C</button>
+        <button class="filter" data-category="遊戲娛樂" aria-pressed="false">遊戲娛樂</button>
+        <button class="filter" data-category="餐飲食品" aria-pressed="false">餐飲食品</button>
+        <button class="filter" data-category="任務" aria-pressed="false">簡單任務</button>
+        <button class="filter" data-category="家電日用" aria-pressed="false">家電日用</button>
+        <button class="filter" data-category="男性運動" aria-pressed="false">男性運動</button>
+        <button class="filter" data-category="金融支付" aria-pressed="false">金融支付</button>
       </div>
-      <div class="sort-row">
-        <label class="check-control"><input id="officialOnly" type="checkbox"><span>只看官方來源</span></label>
-        <label class="select-control">排序
-          <select id="sortSelect">
-            <option value="recommended">推薦優先</option>
-            <option value="newest">最新發布</option>
-            <option value="ending">即將截止</option>
-          </select>
-        </label>
-      </div>
+      <div class="sort-row"><label><input id="officialOnly" type="checkbox"> 官方頁面來源</label><label>排序 <select id="sortSelect"><option value="recommended">實用優先</option><option value="discount">折扣幅度</option><option value="newest">最新發現</option><option value="ending">即將截止</option></select></label></div>
     </section>
-
-    <section class="results-head">
-      <div><p class="eyebrow">CURATED FOR TODAY</p><h2 id="resultTitle">全部好康</h2></div>
-      <p id="resultCount" aria-live="polite">載入中…</p>
-    </section>
-
-    <section class="deal-grid" id="dealGrid" aria-label="好康列表"></section>
-
-    <section class="empty-state" id="emptyState" hidden>
-      <span aria-hidden="true">∅</span>
-      <h2>這個條件暫時沒有好康</h2>
-      <p>換個分類或清除搜尋字詞看看。</p>
-      <button id="clearFilters" type="button">顯示全部</button>
-    </section>
-
-    <section class="source-panel" aria-labelledby="sourceTitle">
-      <div><p class="eyebrow">DATA HEALTH</p><h2 id="sourceTitle">資料來源狀態</h2></div>
-      <div class="source-list" id="sourceList"><p>正在確認…</p></div>
-      <p class="source-note">全網雷達會隨每天的搜尋結果自動換品牌與商品；普通特價、單純現價、9 折與 95 折不會收錄。Threads 內容透過公開搜尋索引取得，實際結帳價、名額與庫存仍以原始活動頁為準。</p>
-    </section>
+    <section class="results-head"><div><h2 id="resultTitle">大折扣・少門檻</h2><p id="statusExplanation">已讀內文、達折扣門檻，且未辨識到特殊資格；不代表已確認庫存或結帳價。</p></div><p id="resultCount" aria-live="polite">載入中…</p></section>
+    <section class="deal-grid" id="dealGrid" aria-label="優惠列表"></section>
+    <section id="emptyState" class="empty-state" hidden><h2 id="emptyTitle">目前沒有符合條件的優惠</h2><p id="emptyCopy">尚無資料；第一次執行更新後會顯示結果，不以範例優惠充數。</p><div class="empty-actions"><button id="clearFilters">清除篩選</button><button id="viewPending">查看待核對情報</button></div></section>
+    <details class="source-panel" id="sourcePanel"><summary>來源與本輪抓取狀態 <span id="sourceSummary"></span></summary><div id="sourceList" class="source-list"></div><p class="source-note">「可讀」只代表取得資料，不代表每筆都是好優惠。跨品牌搜尋為選配；Threads 使用公開搜尋索引，可能漏文或讀不到內文，沒有全站即時涵蓋保證。未讀條款、原價比較未確認、最高回饋等會另列待核對。</p></details>
+    <p class="privacy-note">收藏與「不實用」隱藏只儲存在這台瀏覽器。<button id="resetHidden" class="text-button">恢復已隱藏項目</button></p>
   </main>
-
-  <footer>
-    <p><strong>今天有好康</strong> · 每天幫你把零碎優惠收成一袋</p>
-    <a href="#sourceTitle">查看資料來源狀態</a>
-  </footer>
-
+  <footer>僅整理公開情報 · 下單或領取前仍須核對活動頁、適用資格與庫存</footer>
   <template id="dealTemplate">
     <article class="deal-card">
-      <div class="deal-top">
-        <div class="deal-badges"><span class="category-badge"></span><span class="source-badge"></span></div>
-        <button class="save-deal" type="button" aria-label="收藏這筆好康" aria-pressed="false">♡</button>
-      </div>
-      <p class="brand-name"></p>
+      <div class="deal-top"><div class="deal-badges"><span class="category-badge"></span><span class="source-badge"></span></div><button class="save-deal" aria-label="收藏優惠" aria-pressed="false">♡</button></div>
       <h3></h3>
-      <p class="deal-summary"></p>
-      <div class="benefit-box"><span>你能拿到</span><strong class="benefit-text"></strong></div>
-      <dl class="deal-details">
-        <div class="detail-row eligibility-row"><dt>參加條件</dt><dd class="eligibility-text"></dd></div>
-        <div class="detail-row steps-row"><dt>操作方式</dt><dd class="steps-text"></dd></div>
-        <div class="detail-row limits-row"><dt>注意限制</dt><dd class="limits-text"></dd></div>
-        <div class="detail-row code-row" hidden><dt>優惠碼</dt><dd><code class="coupon-code"></code></dd></div>
-      </dl>
-      <div class="deal-meta">
-        <p><span>期限</span><b class="deadline"></b></p>
-        <p><span>來源</span><b class="source-name"></b></p>
-      </div>
-      <a class="deal-link" target="_blank" rel="noopener noreferrer">開啟原始活動頁核對 <span aria-hidden="true">↗</span></a>
+      <p class="benefit-text"></p><p class="ease-text"></p>
+      <p class="steps-preview"></p><div class="hurdles"></div>
+      <div class="deal-meta"><span class="deadline"></span><span class="checked-at"></span></div>
+      <details class="deal-details"><summary>看條件與來源證據</summary><dl><div><dt>參加條件</dt><dd class="eligibility-text"></dd></div><div><dt>操作方式</dt><dd class="steps-text"></dd></div><div><dt>注意限制</dt><dd class="limits-text"></dd></div><div class="code-row" hidden><dt>優惠碼</dt><dd><code class="coupon-code"></code><button class="copy-code">複製</button></dd></div></dl><p class="evidence-label"></p><blockquote class="evidence-text"></blockquote><p class="source-name"></p></details>
+      <div class="card-actions"><a class="deal-link" target="_blank" rel="noopener noreferrer">查看原文 ↗</a><button class="hide-deal">不實用，隱藏</button></div>
     </article>
   </template>
 </body>

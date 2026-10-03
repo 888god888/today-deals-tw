@@ -1,8 +1,8 @@
 {
   "schema_version": 6,
   "is_demo": false,
-  "attempted_at": "2026-10-03T13:15:59+08:00",
-  "updated_at": "2026-10-03T13:15:59+08:00",
+  "attempted_at": "2026-10-03T22:43:30+08:00",
+  "updated_at": "2026-10-03T22:43:30+08:00",
   "run_status": "partial",
   "sources": [
     {
@@ -16,7 +16,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "ptt_steam",
@@ -29,20 +29,20 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "news_radar",
       "name": "即時優惠雷達",
-      "status": "ok",
-      "message": "3/6 個訂閱／查詢可讀",
-      "harvested": 36,
+      "status": "error",
+      "message": "0/6 個訂閱／查詢可讀；來源讀取逾時",
+      "harvested": 0,
       "easy": 0,
       "conditional": 0,
       "candidate": 34,
-      "rejected": 2,
-      "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "rejected": 0,
+      "retained": 34,
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "web_discovery",
@@ -55,7 +55,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "mcdonalds",
@@ -68,7 +68,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "kfc",
@@ -81,7 +81,7 @@
       "candidate": 2,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "familymart",
@@ -94,7 +94,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "hilife",
@@ -107,7 +107,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "linepay",
@@ -120,7 +120,7 @@
       "candidate": 2,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "pchome",
@@ -133,20 +133,20 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "yahoo",
       "name": "Yahoo 購物中心",
-      "status": "ok",
-      "message": "",
+      "status": "partial",
+      "message": "1 個內頁讀取失敗；未核對項目不列首頁",
       "harvested": 24,
       "easy": 0,
       "conditional": 0,
-      "candidate": 20,
-      "rejected": 4,
-      "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "candidate": 39,
+      "rejected": 2,
+      "retained": 17,
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     },
     {
       "key": "shopee",
@@ -159,17 +159,17 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-03T13:15:59+08:00"
+      "attempted_at": "2026-10-03T22:43:30+08:00"
     }
   ],
   "seen_history": {
     "db0fad23fef25f9e": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "4b91d702aae99ca4": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "5aeb929d7368ca71": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -177,7 +177,7 @@
     },
     "15871e7ab6df1ed5": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "efe8cce92d2bdf35": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -193,7 +193,7 @@
     },
     "b93ed243627bab42": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "e863c323df08e3fd": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -205,19 +205,19 @@
     },
     "a7bd1848c9968e98": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "5f66af41f6e6d102": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "70886dc1b36b6f06": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "54d8c8c9f2b92e6b": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "5ce6f61410332a39": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -225,7 +225,7 @@
     },
     "942aac2d5a995b18": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "c1cf2ea3f505efa3": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -237,7 +237,7 @@
     },
     "99d58775600ecd21": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "4909e86ac1900bd0": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -309,19 +309,19 @@
     },
     "ae835eb16af5143a": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "d986b6bd5b02e8ec": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "593190cafd930eaa": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "1122671490fd1fb7": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "655ce7f7304382f4": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -341,19 +341,19 @@
     },
     "11fef60ba1eecfe7": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "938c08c50fab1f30": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "70ec6a1e7f059da1": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "964be39f0ce2e791": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "525d241a448fcb8c": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -361,11 +361,11 @@
     },
     "77796a5750ccb877": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "702b5c71912e2455": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "030c9fe8cc8b2b1c": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -377,23 +377,23 @@
     },
     "10bf689247326c62": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "0c4bd74c98a671d3": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "06e7dc4930bffd6b": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "4fbaef8f10078ff1": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "12b10f3fc9acceea": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "f79443a6ca3a2cba": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -429,7 +429,7 @@
     },
     "154c7b315c6e7563": {
       "first": "2026-10-02T01:01:27+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "940d11e17229dee6": {
       "first": "2026-10-02T01:01:27+08:00",
@@ -437,15 +437,15 @@
     },
     "2f2e2b9069ba9908": {
       "first": "2026-10-02T01:01:27+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "f30ec4058e85f96c": {
       "first": "2026-10-02T01:01:27+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "dc6bb471bf09f03c": {
       "first": "2026-10-02T01:01:27+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "6eb9a9a1a11acc4f": {
       "first": "2026-10-02T01:01:27+08:00",
@@ -453,7 +453,7 @@
     },
     "4576fe3995f0a989": {
       "first": "2026-10-02T01:01:27+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "ae54ba922499b989": {
       "first": "2026-10-02T01:01:27+08:00",
@@ -573,7 +573,7 @@
     },
     "c531344d8cab84ca": {
       "first": "2026-10-02T08:05:27+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "de5741f4283b7ed2": {
       "first": "2026-10-02T08:05:27+08:00",
@@ -585,7 +585,7 @@
     },
     "d350173c1d520657": {
       "first": "2026-10-02T08:05:27+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "6672237305e2094d": {
       "first": "2026-10-02T08:05:27+08:00",
@@ -593,7 +593,7 @@
     },
     "7f56340d8ab44a87": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "d23989e4065adda3": {
       "first": "2026-10-02T13:34:07+08:00",
@@ -601,23 +601,23 @@
     },
     "f10964a5833419cc": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "2359d1c6fb237f59": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "e55b2fc0d8c45ce9": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "44525e9cfc8efd1a": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "a75d008c52cc62ce": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "e4c27a696920f32b": {
       "first": "2026-10-02T13:34:07+08:00",
@@ -625,11 +625,11 @@
     },
     "59682282806d4f26": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "6a08401fa09db099": {
       "first": "2026-10-02T13:34:07+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "05318a5a566f3236": {
       "first": "2026-10-02T13:34:07+08:00",
@@ -649,35 +649,35 @@
     },
     "83b66aded416d474": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "2c99c55faf232a87": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "bc57a34f19bd8fdd": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "3a60579365e545da": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "43638651e4963720": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "a17810fd37f96e4a": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "8480ec8ad5c1ec32": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "cf27da910cb8f6e2": {
       "first": "2026-10-03T00:16:00+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "88dc4046e7803d74": {
       "first": "2026-10-03T00:16:00+08:00",
@@ -769,19 +769,19 @@
     },
     "80a5c7b98fcfa07a": {
       "first": "2026-10-03T08:05:23+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "c270f4d6d9632e6e": {
       "first": "2026-10-03T08:05:23+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "1e9119f54d61d2dd": {
       "first": "2026-10-03T08:05:23+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "d42ebb7efcabb8fc": {
       "first": "2026-10-03T08:05:23+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "7875536f00f35e1a": {
       "first": "2026-10-03T08:05:23+08:00",
@@ -793,27 +793,27 @@
     },
     "a037800a3c9de0df": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "4b6bd673ef163fc2": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "2c5119660ecc2723": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "22c4af853911906e": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "a9cd51edfa9c8c6c": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "1aaba3461639fcf1": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "47d4ec1edecc8a52": {
       "first": "2026-10-03T13:15:59+08:00",
@@ -821,11 +821,87 @@
     },
     "0f7d143a8c131b82": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
     },
     "780d1fd3cc16df66": {
       "first": "2026-10-03T13:15:59+08:00",
-      "last": "2026-10-03T13:15:59+08:00"
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "fe97b56f28217ca0": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "0570c398f71c3494": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "99928133fe62a35c": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "675aa67c463b3df6": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "69717971d23cb268": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "b8afac7c5b308173": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "e100cff6c198dfd3": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "24743be1e2616d0e": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "96b55b6b6ca3938f": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "5efb781bdc685045": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "a800ca5a368ab6d4": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "19a3312f758ff63e": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "ba9fd3b488028154": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "8ee756fac72b8945": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "473ed1f2b5e67d43": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "fedfa71cbaf298c0": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "1c395fdcc742c6a9": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "dc6590faf47c102b": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
+    },
+    "cf49b194caaaa21f": {
+      "first": "2026-10-03T22:43:30+08:00",
+      "last": "2026-10-03T22:43:30+08:00"
     }
   },
   "deals": [],
@@ -860,7 +936,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -874,7 +951,8 @@
       "discount_label": "2 折",
       "ease_label": "待確認",
       "score": 38,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "a17810fd37f96e4a",
@@ -905,7 +983,8 @@
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -918,7 +997,8 @@
       "discount_label": "文中標示免費取得",
       "ease_label": "待確認",
       "score": 35,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "2359d1c6fb237f59",
@@ -948,7 +1028,8 @@
       "category": "遊戲娛樂",
       "status": "candidate",
       "reasons": [
-        "只取得標題或摘要，未讀到活動內文"
+        "只取得標題或摘要，未讀到活動內文",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -961,7 +1042,8 @@
       "discount_label": "文中標示免費取得",
       "ease_label": "待確認",
       "score": 35,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "11fef60ba1eecfe7",
@@ -993,7 +1075,8 @@
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1007,7 +1090,8 @@
       "discount_label": "3 折起／限部分品項",
       "ease_label": "待確認",
       "score": 34,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "77796a5750ccb877",
@@ -1038,7 +1122,8 @@
       "reasons": [
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1052,7 +1137,8 @@
       "discount_label": "3 折起／限部分品項",
       "ease_label": "待確認",
       "score": 34,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "0c4bd74c98a671d3",
@@ -1084,7 +1170,8 @@
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1098,7 +1185,8 @@
       "discount_label": "3 折起／限部分品項",
       "ease_label": "待確認",
       "score": 34,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "964be39f0ce2e791",
@@ -1129,7 +1217,8 @@
       "reasons": [
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1143,7 +1232,8 @@
       "discount_label": "3.3 折起／限部分品項",
       "ease_label": "待確認",
       "score": 33,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "a9cd51edfa9c8c6c",
@@ -1159,13 +1249,13 @@
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "140 筆結果\n最新上架\n最新上架\n推薦排序\n價格低到高\n價格高到低\n銷量\nadidas官方直營\n【adidas 愛迪達】 短袖上衣 T恤 童裝 JI6671\n$\n499\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 TIRO 25 COMPETITION 短袖球衣 T恤 吸濕排汗 童裝 IW0452\n$\n623\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 DANCE KNIT 童裝長褲 童裝 IS3777\n$\n459\n券\n加入購物車\n補貨中\nadidas官方直營\n【adidas 愛迪達】 長袖上衣 保暖 童裝 KC0221\n$\n1,066\n活動\n券\n貨到通知我\n補貨中\nadidas官方直營\n【adidas 愛迪達】 PREDATOR LEAGUE 足球鞋 運動鞋 童鞋 JI1150\n$\n1,312\n活動\n券\n貨到通知我\nadidas官方直營\n【adidas 愛迪達】 運動長褲 童裝 - Originals IL5039\n$\n559\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 VL COURT 2.0 運動休閒鞋 休閒鞋 童鞋 DB1837\n$\n820\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 ADIFOM SUPERSTAR 運動休閒鞋 貝殼鞋 嬰幼童鞋 - Originals JS0720\n$\n1,115\n活動\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 運動短褲 吸濕排汗 童裝 IR9408\n$\n359\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 短袖上衣 T恤 童裝 - Originals IY5455\n$\n599\n挑戰低價\n券\n加入購物車\n補貨中\nadidas官方直營\n【adidas 愛迪達】 運動長褲 保暖 童裝 KC5341\n$\n951\n活動\n券\n貨到通知我\nadidas官方直營\n【adidas 愛迪達】 SPORTSWEAR EXPRESS 運動外套 兒童 JC6945\n$\n1,299\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 連帽外套 童裝 JL6962\n$\n1,359\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 DISNEY RACER TR21 運動鞋 嬰幼童鞋 ID8012\n$\n656\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 CNY 運動長褲 兒童 JN4379\n$\n1,099\n挑戰低價\n券\n加入購物車\nadidas官方直營旗艦店\n【adidas 愛迪達】 運動外套 童裝 - Originals JC6817\n$\n2,099\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 AEROREADY 短袖上衣 吸濕排汗 童裝 IR6463\n$\n359\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 涼鞋 童鞋 ID7908\n$\n656\n挑戰低價\n券\n加入購物車\n補貨中\nadidas官方直營\n【adidas 愛迪達】 DURAMO SL 跑鞋 慢跑鞋 運動鞋 童鞋 IE0916\n$\n984\n活動\n券\n貨到通知我\n補貨中\nadidas官方直營\n【adidas 愛迪達】 OWNTHEGAME 3.0 運動鞋 童鞋 IF4594\n$\n1,370\n89折\n限時下殺\n券\n貨到通知我\n<\n1\n2\n3\n4\n5\n6\n7\n>",
+      "evidence": "140 筆結果\n最新上架\n最新上架\n推薦排序\n價格低到高\n價格高到低\n銷量\nadidas官方直營\n【adidas 愛迪達】 短袖上衣 T恤 童裝 JI6671\n$\n499\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 TIRO 25 COMPETITION 短袖球衣 T恤 吸濕排汗 童裝 IW0452\n$\n623\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 DANCE KNIT 童裝長褲 童裝 IS3777\n$\n459\n券\n加入購物車\n補貨中\nadidas官方直營\n【adidas 愛迪達】 長袖上衣 保暖 童裝 KC0221\n$\n1,066\n活動\n券\n貨到通知我\nadidas官方直營\n【adidas 愛迪達】 運動長褲 童裝 - Originals IL5039\n$\n559\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 VL COURT 2.0 運動休閒鞋 休閒鞋 童鞋 DB1837\n$\n820\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 ADIFOM SUPERSTAR 運動休閒鞋 貝殼鞋 嬰幼童鞋 - Originals JS0720\n$\n1,115\n活動\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 運動短褲 童裝 IT1798\n$\n399\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 短袖上衣 T恤 童裝 - Originals IY5455\n$\n599\n挑戰低價\n券\n加入購物車\n補貨中\nadidas官方直營\n【adidas 愛迪達】 運動長褲 保暖 童裝 KC5341\n$\n951\n活動\n券\n貨到通知我\nadidas官方直營\n【adidas 愛迪達】 SPORTSWEAR EXPRESS 運動外套 兒童 JC6945\n$\n1,299\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 連帽外套 童裝 JL6962\n$\n1,359\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 DISNEY RACER TR21 運動鞋 嬰幼童鞋 ID8012\n$\n656\n挑戰低價\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 SPORTSWEAR 運動外套 童裝 KV6983\n$\n1,345\n89折\n限時下殺\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 CNY 運動長褲 兒童 JN4379\n$\n1,099\n挑戰低價\n券\n加入購物車\nadidas官方直營旗艦店\n【adidas 愛迪達】 運動外套 童裝 - Originals JC6817\n$\n2,099\n券\n加入購物車\nadidas官方直營\n【adidas 愛迪達】 AEROREADY 短袖上衣 吸濕排汗 童裝 IR6463\n$\n359\n券\n加入購物車\n補貨中\nadidas官方直營\n【adidas 愛迪達】 ALL SPORTS NXT 短袖上衣 T恤 吸濕排汗 童裝 JJ1165\n$\n599\n券\n貨到通知我\nadidas官方直營\n【adidas 愛迪達】 涼鞋 童鞋 ID7908\n$\n656\n挑戰低價\n券\n加入購物車\n補貨中\nadidas官方直營\n【adidas 愛迪達】 DURAMO SL 跑鞋 慢跑鞋 運動鞋 童鞋 IE0916\n$\n984\n活動\n券\n貨到通知我\n<\n1\n2\n3\n4\n5\n6\n7\n>",
       "evidence_excerpt": "140 筆結果 最新上架 最新上架 推薦排序 價格低到高 價格高到低 銷量 adidas官方直營 【adidas 愛迪達】 短袖上衣 T恤 童裝 JI6671 $ 499 挑戰低價 券 加入購物車 adidas官方直營 【adidas 愛迪達】 TIRO 25 COMPETITION 短袖球衣 T恤 吸濕排汗 童裝 IW0452 $ 623 挑戰低價 券 加入購物車 adidas官方直營 【adidas 愛迪達】 DANCE KNIT 童裝長褲 童裝 IS3777 $ 459 券 加入購物車 補貨中 adidas官方直營 【adidas 愛迪達】 長袖上衣 保暖 童裝 KC0221 $ 1,0",
       "body_read": true,
       "body_note": "",
       "published_at": null,
       "first_seen_at": "2026-10-03T13:15:59+08:00",
-      "checked_at": "2026-10-03T13:15:59+08:00",
+      "checked_at": "2026-10-03T22:43:30+08:00",
       "tags": [
         "男性運動"
       ],
@@ -1218,7 +1308,8 @@
       "reasons": [
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1235,7 +1326,8 @@
       "discount_label": "90%（最高值）",
       "ease_label": "待確認",
       "score": 31,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "bc57a34f19bd8fdd",
@@ -1266,7 +1358,8 @@
       "reasons": [
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1280,7 +1373,8 @@
       "discount_label": "1 折起／限部分品項",
       "ease_label": "待確認",
       "score": 31,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "dc6bb471bf09f03c",
@@ -1310,7 +1404,8 @@
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1324,7 +1419,8 @@
       "discount_label": "1 折",
       "ease_label": "待確認",
       "score": 31,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "2f2e2b9069ba9908",
@@ -1356,7 +1452,8 @@
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1370,7 +1467,8 @@
       "discount_label": "1 折起／限部分品項",
       "ease_label": "待確認",
       "score": 31,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "c270f4d6d9632e6e",
@@ -1400,7 +1498,8 @@
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1414,7 +1513,8 @@
       "discount_label": "1.6 折",
       "ease_label": "待確認",
       "score": 29,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "780d1fd3cc16df66",
@@ -1446,7 +1546,8 @@
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1460,7 +1561,8 @@
       "discount_label": "5 折起／限部分品項",
       "ease_label": "待確認",
       "score": 28,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "6a08401fa09db099",
@@ -1492,7 +1594,8 @@
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1506,7 +1609,8 @@
       "discount_label": "5 折起／限部分品項",
       "ease_label": "待確認",
       "score": 28,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "f10964a5833419cc",
@@ -1536,7 +1640,8 @@
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1550,7 +1655,8 @@
       "discount_label": "2 折",
       "ease_label": "待確認",
       "score": 28,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "938c08c50fab1f30",
@@ -1582,7 +1688,8 @@
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1596,7 +1703,8 @@
       "discount_label": "5 折起／限部分品項",
       "ease_label": "待確認",
       "score": 28,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "2c99c55faf232a87",
@@ -1628,7 +1736,8 @@
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [
         "贈品可能需先消費"
@@ -1644,7 +1753,8 @@
       "discount_label": "2 折起／限部分品項",
       "ease_label": "待確認",
       "score": 28,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "10bf689247326c62",
@@ -1675,7 +1785,8 @@
       "reasons": [
         "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1689,7 +1800,8 @@
       "discount_label": "6 折起／限部分品項",
       "ease_label": "待確認",
       "score": 24,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
     },
     {
       "id": "2c5119660ecc2723",
@@ -1766,7 +1878,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "未達大折扣門檻",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1780,6 +1893,466 @@
       "discount_label": "7.7 折",
       "ease_label": "待確認",
       "score": 18,
+      "deal_strength": "unknown",
+      "retained": true
+    },
+    {
+      "id": "cf49b194caaaa21f",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "夜間快閃價 滿1件享8折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=797126",
+      "brand": "Yahoo 購物中心",
+      "summary": "夜間快閃價 滿1件享8折",
+      "benefit": "夜間快閃價 滿1件享8折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 20.0,
+        "label": "8 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8 折",
+      "ease_label": "待確認",
+      "score": 17,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "e100cff6c198dfd3",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "SEIKO精工表結帳83折 滿1件享83折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795612",
+      "brand": "Yahoo 購物中心",
+      "summary": "SEIKO精工表結帳83折 滿1件享83折",
+      "benefit": "SEIKO精工表結帳83折 滿1件享83折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 17.0,
+        "label": "8.3 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.3 折",
+      "ease_label": "待確認",
+      "score": 16,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "5efb781bdc685045",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "SEIKO精工表結帳83折 滿1件享83折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795619",
+      "brand": "Yahoo 購物中心",
+      "summary": "SEIKO精工表結帳83折 滿1件享83折",
+      "benefit": "SEIKO精工表結帳83折 滿1件享83折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 17.0,
+        "label": "8.3 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.3 折",
+      "ease_label": "待確認",
+      "score": 16,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "a800ca5a368ab6d4",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "CITIZEN 星辰錶結帳83折 滿1件享83折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795425",
+      "brand": "Yahoo 購物中心",
+      "summary": "CITIZEN 星辰錶結帳83折 滿1件享83折",
+      "benefit": "CITIZEN 星辰錶結帳83折 滿1件享83折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 17.0,
+        "label": "8.3 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.3 折",
+      "ease_label": "待確認",
+      "score": 16,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "8ee756fac72b8945",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【海盜船CORSAIR】★DIY組件享85折 滿1件享85折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795624",
+      "brand": "Yahoo 購物中心",
+      "summary": "【海盜船CORSAIR】★DIY組件享85折 滿1件享85折",
+      "benefit": "【海盜船CORSAIR】★DIY組件享85折 滿1件享85折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 15.0,
+        "label": "8.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.5 折",
+      "ease_label": "待確認",
+      "score": 15,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "1c395fdcc742c6a9",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "00:00 開賣 MIDO 美度錶結帳享86折 滿1件享86折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795405",
+      "brand": "Yahoo 購物中心",
+      "summary": "00:00 開賣 MIDO 美度錶結帳享86折 滿1件享86折",
+      "benefit": "00:00 開賣 MIDO 美度錶結帳享86折 滿1件享86折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "HTTP 404",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 14.0,
+        "label": "8.6 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.6 折",
+      "ease_label": "待確認",
+      "score": 15,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "dc6590faf47c102b",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "夜間快閃價 滿1件享85折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=797124",
+      "brand": "Yahoo 購物中心",
+      "summary": "夜間快閃價 滿1件享85折",
+      "benefit": "夜間快閃價 滿1件享85折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 15.0,
+        "label": "8.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.5 折",
+      "ease_label": "待確認",
+      "score": 15,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "0570c398f71c3494",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795569",
+      "brand": "Yahoo 購物中心",
+      "summary": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "benefit": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 12.0,
+        "label": "8.8 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.8 折",
+      "ease_label": "待確認",
+      "score": 14,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "99928133fe62a35c",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "大同廚房家電 9折 滿$99享9折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=796935",
+      "brand": "Yahoo 購物中心",
+      "summary": "大同廚房家電 9折 滿$99享9折",
+      "benefit": "大同廚房家電 9折 滿$99享9折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "家電日用"
+      ],
+      "category": "家電日用",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 10.0,
+        "label": "9 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9 折",
+      "ease_label": "待確認",
+      "score": 14,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "96b55b6b6ca3938f",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795551",
+      "brand": "Yahoo 購物中心",
+      "summary": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "benefit": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 12.0,
+        "label": "8.8 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.8 折",
+      "ease_label": "待確認",
+      "score": 14,
       "deal_strength": "unknown"
     },
     {
@@ -1812,7 +2385,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "未達大折扣門檻",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1826,7 +2400,8 @@
       "discount_label": "8.9 折",
       "ease_label": "待確認",
       "score": 14,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "d350173c1d520657",
@@ -1858,7 +2433,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "未達大折扣門檻",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1872,6 +2448,236 @@
       "discount_label": "8.9 折",
       "ease_label": "待確認",
       "score": 14,
+      "deal_strength": "unknown",
+      "retained": true
+    },
+    {
+      "id": "fe97b56f28217ca0",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "夜殺 NINJA 調理機/果汁機/隨行杯 滿$999享94折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=796994",
+      "brand": "Yahoo 購物中心",
+      "summary": "夜殺 NINJA 調理機/果汁機/隨行杯 滿$999享94折",
+      "benefit": "夜殺 NINJA 調理機/果汁機/隨行杯 滿$999享94折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 6.0,
+        "label": "9.4 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.4 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "ba9fd3b488028154",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "超值夜殺活動，滿999打95折！ 滿$999享95折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=794799",
+      "brand": "Yahoo 購物中心",
+      "summary": "超值夜殺活動，滿999打95折！ 滿$999享95折",
+      "benefit": "超值夜殺活動，滿999打95折！ 滿$999享95折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 5.0,
+        "label": "9.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.5 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "fedfa71cbaf298c0",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【網路設備】精選品牌★快閃95折 滿1件享95折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795210",
+      "brand": "Yahoo 購物中心",
+      "summary": "【網路設備】精選品牌★快閃95折 滿1件享95折",
+      "benefit": "【網路設備】精選品牌★快閃95折 滿1件享95折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 5.0,
+        "label": "9.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.5 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "675aa67c463b3df6",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "螢幕限時下殺96折 滿1件享96折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795518",
+      "brand": "Yahoo 購物中心",
+      "summary": "螢幕限時下殺96折 滿1件享96折",
+      "benefit": "螢幕限時下殺96折 滿1件享96折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "3C"
+      ],
+      "category": "3C",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 4.0,
+        "label": "9.6 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.6 折",
+      "ease_label": "待確認",
+      "score": 11,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "473ed1f2b5e67d43",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【網路設備】雙品牌優惠★快閃97折 滿1件享97折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795124",
+      "brand": "Yahoo 購物中心",
+      "summary": "【網路設備】雙品牌優惠★快閃97折 滿1件享97折",
+      "benefit": "【網路設備】雙品牌優惠★快閃97折 滿1件享97折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 3.0,
+        "label": "9.7 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.7 折",
+      "ease_label": "待確認",
+      "score": 11,
       "deal_strength": "unknown"
     },
     {
@@ -1902,7 +2708,8 @@
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1916,7 +2723,167 @@
       "discount_label": "6.9 折",
       "ease_label": "待確認",
       "score": 11,
-      "deal_strength": "strong"
+      "deal_strength": "strong",
+      "retained": true
+    },
+    {
+      "id": "69717971d23cb268",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "夜殺illy意利膠囊咖啡機 直降再送100顆膠囊 任選1件$5999",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=796287",
+      "brand": "Yahoo 購物中心",
+      "summary": "夜殺illy意利膠囊咖啡機 直降再送100顆膠囊 任選1件$5999",
+      "benefit": "夜殺illy意利膠囊咖啡機 直降再送100顆膠囊 任選1件$5999",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "餐飲食品"
+      ],
+      "category": "餐飲食品",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "b8afac7c5b308173",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【Seagate】★夜間限定下殺 任選1件$20890",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795765",
+      "brand": "Yahoo 購物中心",
+      "summary": "【Seagate】★夜間限定下殺 任選1件$20890",
+      "benefit": "【Seagate】★夜間限定下殺 任選1件$20890",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "24743be1e2616d0e",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "夜殺美國Blendtec生機調理機一件折3000 滿1件折$3000",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=796982",
+      "brand": "Yahoo 購物中心",
+      "summary": "夜殺美國Blendtec生機調理機一件折3000 滿1件折$3000",
+      "benefit": "夜殺美國Blendtec生機調理機一件折3000 滿1件折$3000",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "19a3312f758ff63e",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【Seagate】★夜間限定下殺 任選1件$4999",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795657",
+      "brand": "Yahoo 購物中心",
+      "summary": "【Seagate】★夜間限定下殺 任選1件$4999",
+      "benefit": "【Seagate】★夜間限定下殺 任選1件$4999",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-03T22:43:30+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
     },
     {
       "id": "22c4af853911906e",
@@ -1988,7 +2955,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -1996,7 +2964,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 10,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "d42ebb7efcabb8fc",
@@ -2028,7 +2997,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2036,7 +3006,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 10,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "ae835eb16af5143a",
@@ -2137,7 +3108,7 @@
       "body_note": "",
       "published_at": null,
       "first_seen_at": "2026-10-01T17:46:38+08:00",
-      "checked_at": "2026-10-03T13:15:59+08:00",
+      "checked_at": "2026-10-03T22:43:30+08:00",
       "tags": [
         "遊戲娛樂",
         "金融支付"
@@ -2225,7 +3196,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2233,7 +3205,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 10,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "4fbaef8f10078ff1",
@@ -2265,7 +3238,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2273,7 +3247,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 10,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "12b10f3fc9acceea",
@@ -2304,7 +3279,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2312,7 +3288,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 10,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "a037800a3c9de0df",
@@ -2343,7 +3320,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2351,7 +3329,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "8480ec8ad5c1ec32",
@@ -2383,7 +3362,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2391,7 +3371,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "1e9119f54d61d2dd",
@@ -2423,7 +3404,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2431,7 +3413,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "83b66aded416d474",
@@ -2462,7 +3445,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2470,7 +3454,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "80a5c7b98fcfa07a",
@@ -2501,7 +3486,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2509,7 +3495,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "44525e9cfc8efd1a",
@@ -2540,7 +3527,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2548,7 +3536,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "43638651e4963720",
@@ -2579,7 +3568,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2587,7 +3577,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "7f56340d8ab44a87",
@@ -2618,7 +3609,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2626,7 +3618,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "e55b2fc0d8c45ce9",
@@ -2657,7 +3650,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2665,7 +3659,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "a75d008c52cc62ce",
@@ -2696,7 +3691,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2704,7 +3700,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "154c7b315c6e7563",
@@ -2736,7 +3733,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2744,7 +3742,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "f30ec4058e85f96c",
@@ -2775,7 +3774,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2783,7 +3783,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "db0fad23fef25f9e",
@@ -2814,7 +3815,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2822,7 +3824,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "54d8c8c9f2b92e6b",
@@ -2853,7 +3856,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2861,7 +3865,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "5f66af41f6e6d102",
@@ -2892,7 +3897,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2900,7 +3906,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "70886dc1b36b6f06",
@@ -2931,7 +3938,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2939,7 +3947,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "4b91d702aae99ca4",
@@ -2970,7 +3979,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -2978,7 +3988,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "4576fe3995f0a989",
@@ -3009,7 +4020,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -3017,7 +4029,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "c531344d8cab84ca",
@@ -3047,7 +4060,8 @@
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證"
+        "折扣幅度或免費條件未獲數字佐證",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -3055,7 +4069,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "99d58775600ecd21",
@@ -3086,7 +4101,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -3094,7 +4110,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "942aac2d5a995b18",
@@ -3126,7 +4143,8 @@
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
         "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "品類尚未確認，暫不因陌生品牌直接排除",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -3134,7 +4152,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "15871e7ab6df1ed5",
@@ -3165,7 +4184,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -3173,7 +4193,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "b93ed243627bab42",
@@ -3204,7 +4225,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -3212,7 +4234,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     },
     {
       "id": "a7bd1848c9968e98",
@@ -3243,7 +4266,8 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
+        "領取／購買方式未確認",
+        "本輪未重新取得此情報，沿用舊內文，需重查"
       ],
       "hurdles": [],
       "end_date": null,
@@ -3251,7 +4275,8 @@
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
       "score": 0,
-      "deal_strength": "unknown"
+      "deal_strength": "unknown",
+      "retained": true
     }
   ]
 }

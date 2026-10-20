@@ -26,8 +26,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "dist/data/deals.json"
 CONFIG_FILE = ROOT / "config/sources.json"
 TZ = ZoneInfo("Asia/Taipei")
-UA = "TaiwanDailyDeals/6.0 (public activity index; GitHub Actions)"
-KEYWORDS = ("免費", "優惠", "折", "回饋", "贈", "送", "特價", "好康", "點數", "券", "下殺", "史低", "破盤")
+UA = "TaiwanDailyDeals/7.0 (public activity index; GitHub Actions)"
+KEYWORDS = ("免費", "優惠", "折", "回饋", "贈", "送", "特價", "好康", "點數", "券", "下殺", "史低", "破盤", "降價", "特賣", "限免", "跳水")
 CATEGORIES = {
     "3C": ("3c", "手機", "電腦", "筆電", "螢幕", "耳機", "音響", "相機", "ssd", "記憶體", "顯示卡", "充電器", "行動電源", "路由器", "鍵盤", "滑鼠", "電競", "平板"),
     "遊戲娛樂": ("遊戲", "電玩", "steam", "epic", "playstation", "ps5", "xbox", "switch", "電影", "影城", "展覽", "演唱會", "票券"),
@@ -39,6 +39,13 @@ CATEGORIES = {
     "任務": ("任務", "簽到", "問卷", "加入好友", "綁定"),
     "交通": ("騎乘", "車資", "goshare", "irent", "台鐵", "高鐵", "機車", "汽車"),
 }
+
+
+def candidate_title(title):
+    """Discovery is broader than approval: tagged deals need not say 折扣."""
+    return bool(re.search(r"\[(?:情報|特價|免費|特賣|限免)\]", title) or
+                any(word.lower() in title.lower() for word in KEYWORDS) or
+                re.search(r"(?:nt\$|新台幣|\$)\s*\d+", title, re.I))
 
 
 def clean(text, limit=180):
@@ -192,7 +199,7 @@ def collect_ptt(key, cfg, now):
                 if not a:
                     continue
                 title, article_url = a.get_text(" ", strip=True), urljoin(url, a["href"])
-                if article_url in seen or re.match(r"Re:|R:|\[(公告|問題|討論)\]", title) or not any(word.lower() in title.lower() for word in KEYWORDS):
+                if article_url in seen or re.match(r"Re:|R:|\[(公告|問題|討論)\]", title) or not candidate_title(title):
                     continue
                 seen.add(article_url)
                 stamp = re.search(r"/M\.(\d+)\.", article_url)
@@ -225,7 +232,7 @@ def collect_html(key, cfg, now):
         for a in soup.select(cfg.get("link_selector", "a[href]")):
             title = clean(a.get_text(" ", strip=True) or a.get("title") or a.get("aria-label"))
             url = urljoin(cfg["url"], a.get("href", ""))
-            if len(title) < 7 or not url.startswith("https://") or url in seen or not any(word in title for word in KEYWORDS):
+            if len(title) < 7 or not url.startswith("https://") or url in seen or not candidate_title(title):
                 continue
             if title in {"最新優惠", "優惠活動", "優惠券專區", "好康資訊", "活動專區"}:
                 continue
@@ -243,40 +250,63 @@ def collect_html(key, cfg, now):
 
 
 def collect_feed(key, cfg, now):
-    reader, result = Reader(20, 65), SourceResult(key, cfg["name"])
     urls = list(cfg.get("urls", [])) + ["https://news.google.com/rss/search?q=" + quote_plus(q.format(year=now.year, month=now.month)) + "&hl=zh-TW&gl=TW&ceid=TW:zh-Hant" for q in cfg.get("queries", [])]
-    successes, failures, seen = 0, [], set()
+    limit = min(100, max(1, int(cfg.get("item_limit", 40))))
+    reader, result = Reader(len(urls) + limit, 100), SourceResult(key, cfg["name"])
+    successes, failures, buckets = 0, [], []
+    atom = "{http://www.w3.org/2005/Atom}"
+    # Discover from EVERY query before spending the result budget on any one category.
     for url in urls:
+        bucket = []
         try:
             root = ET.fromstring(reader.get(url).content)
             if root.tag.split("}")[-1] not in {"rss", "feed", "RDF"}:
                 raise ValueError("回應不是 RSS/Atom")
             successes += 1
-            for item in root.findall(".//item") + root.findall("{http://www.w3.org/2005/Atom}entry"):
-                title = clean(item.findtext("title") or item.findtext("{http://www.w3.org/2005/Atom}title"))
+            for item in root.findall(".//item") + root.findall(atom + "entry"):
+                title = clean(item.findtext("title") or item.findtext(atom + "title"))
                 link = item.findtext("link")
                 if not link:
-                    node = item.find("{http://www.w3.org/2005/Atom}link")
+                    links = item.findall(atom + "link")
+                    node = next((n for n in links if n.get("rel", "alternate") == "alternate"), None)
                     link = node.get("href", "") if node is not None else ""
-                if not link.startswith("https://") or link in seen or not any(w in title for w in KEYWORDS):
+                if not link.startswith("https://") or not candidate_title(title):
                     continue
-                seen.add(link)
-                date = item.findtext("pubDate") or item.findtext("{http://www.w3.org/2005/Atom}published")
+                date = item.findtext("pubDate") or item.findtext(atom + "published") or item.findtext(atom + "updated")
                 try:
-                    published = (parsedate_to_datetime(date) if "GMT" in (date or "") or "," in (date or "") else datetime.fromisoformat(date)).astimezone(TZ).isoformat()
+                    published = (parsedate_to_datetime(date) if "GMT" in (date or "") or "," in (date or "") else datetime.fromisoformat(date)).astimezone(TZ)
+                    if now - published > timedelta(days=7):
+                        continue
+                    published = published.isoformat()
                 except (TypeError, ValueError):
                     published = None
-                desc = BeautifulSoup(item.findtext("description") or item.findtext("{http://www.w3.org/2005/Atom}summary") or "", "html.parser").get_text(" ", strip=True)
-                body, note = ("", "新聞索引摘要，尚未讀到原始條款") if urlparse(link).hostname == "news.google.com" else reader.body(link)
-                result.deals.append(record(key, cfg, title, link, body or desc, now, read=bool(body), published=published, note=note))
-                if len(result.deals) >= int(cfg.get("item_limit", 40)):
+                desc = BeautifulSoup(item.findtext("description") or item.findtext(atom + "summary") or "", "html.parser").get_text(" ", strip=True)
+                bucket.append((title, link, published, desc))
+                if len(bucket) >= limit:
                     break
         except Exception as exc:
             failures.append(error_message(exc))
-        if len(result.deals) >= int(cfg.get("item_limit", 40)):
+        buckets.append(bucket)
+    seen = set()
+    for position in range(limit):
+        for bucket in buckets:
+            if position >= len(bucket):
+                continue
+            title, link, published, desc = bucket[position]
+            canonical = canonical_url(link)
+            if canonical in seen:
+                continue
+            seen.add(canonical)
+            body, note = ("", "新聞索引摘要，尚未讀到原始條款") if urlparse(link).hostname == "news.google.com" else reader.body(link)
+            result.deals.append(record(key, cfg, title, link, body or desc, now, read=bool(body), published=published, note=note))
+            if len(result.deals) >= limit:
+                break
+        if len(result.deals) >= limit:
             break
+    if reader.detail_errors:
+        failures.append(f"{reader.detail_errors} 篇內文未讀取，列待核對")
     result.status = "partial" if successes and failures else "error" if not successes else "ok"
-    result.message = f"{successes}/{len(urls)} 個訂閱／查詢可讀" + ("；" + failures[0] if failures else "")
+    result.message = f"{successes}/{len(urls)} 個訂閱／查詢可讀；跨查詢輪流取樣" + ("；" + failures[0] if failures else "")
     return result
 
 
@@ -296,7 +326,7 @@ def collect_search(key, cfg, now):
             successes += 1
             for row in payload["web"].get("results", []):
                 url, title = row.get("url", ""), clean(row.get("title"))
-                if not url.startswith("https://") or url in seen or not any(w in title for w in KEYWORDS):
+                if not url.startswith("https://") or url in seen or not candidate_title(title):
                     continue
                 seen.add(url)
                 body, note = reader.body(url)

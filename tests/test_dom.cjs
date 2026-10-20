@@ -17,7 +17,7 @@ async function setup(data, storage = "corrupt") {
   dom.window.fetch = async () => ({ ok: true, json: async () => data });
   if (storage === "corrupt") dom.window.localStorage.setItem("deal-saves", "broken-json");
   if (storage === "disabled") { dom.window.Storage.prototype.getItem = () => { throw new Error("disabled"); }; dom.window.Storage.prototype.setItem = () => { throw new Error("disabled"); }; }
-  dom.window.eval(js); await new Promise(resolve => setImmediate(resolve));
+  dom.window.eval(fs.readFileSync(path.join(root, "feed.js"), "utf8")); dom.window.eval(js); await new Promise(resolve => setImmediate(resolve));
   return dom;
 }
 (async () => {
@@ -40,7 +40,7 @@ async function setup(data, storage = "corrupt") {
   check($("#statusTabs .active").getAttribute("aria-pressed"), "true");
   check($("#pendingTotal").textContent, "1");
   dom.window.close();
-  const empty = await setup(JSON.parse(fs.readFileSync(path.join(root, "data/deals.json"), "utf8")));
+  const empty = await setup({schema_version:6,is_demo:false,run_status:"not_run",sources:[],deals:[],conditional:[],pending:[]});
   check(empty.window.document.querySelectorAll(".deal-card").length, 0);
   check(empty.window.document.querySelector("#coverageNotice").textContent.includes("尚未執行抓取"), true); empty.window.close();
   const disabled = await setup(fixture, "disabled"); disabled.window.document.querySelector(".save-deal").click();

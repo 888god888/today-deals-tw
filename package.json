@@ -1,0 +1,8 @@
+{
+  "name": "today-deals-tw",
+  "version": "7.0.0",
+  "private": true,
+  "scripts": {"test": "node tests/test_dom.cjs && node tests/test_personalization.cjs"},
+  "devDependencies": {"jsdom": "30.1.3"},
+  "engines": {"node": ">=22"}
+}

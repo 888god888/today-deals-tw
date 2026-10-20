@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from quality import discount, deadline, triage, canonical_url
-from update_deals import SourceResult, Reader, AccessBlocked, merge_results, record, validate, safe_url, collect_ptt, collect_feed, collect_search, update
+from update_deals import SourceResult, Reader, AccessBlocked, merge_results, record, validate, safe_url, collect_ptt, collect_feed, collect_search, update, candidate_title
 
 NOW = datetime(2026, 10, 1, 12, tzinfo=ZoneInfo("Asia/Taipei"))
 PREFS = {"interest_categories": ["3C", "免費", "任務", "遊戲娛樂", "餐飲食品", "金融支付"], "exclude_terms": ["星巴克", "女裝"], "excluded_categories": ["交通"]}
@@ -191,6 +191,32 @@ class SafetyTests(unittest.TestCase):
 
 
 class CollectorTests(unittest.TestCase):
+
+    def test_tagged_brand_price_discovery(self):
+        self.assertTrue(candidate_title("[情報] BrandXYZ滑鼠 518"))
+        self.assertTrue(candidate_title("BrandXYZ $518"))
+        self.assertFalse(candidate_title("[問題] 滑鼠怎麼選"))
+
+    def test_feed_all_queries_get_a_turn(self):
+        def xml(prefix):
+            return ("<rss><channel>" + "".join(f"<item><title>{prefix}{i}特價</title><link>https://news.google.com/rss/articles/{prefix}{i}</link></item>" for i in range(5)) + "</channel></rss>").encode()
+        with patch.object(Reader, "get", side_effect=[Mock(content=xml("food")), Mock(content=xml("game")), Mock(content=xml("tech"))]) as get:
+            r = collect_feed("feed", {"name": "測試", "urls": ["https://example.org/a", "https://example.org/b", "https://example.org/c"], "item_limit": 3}, NOW)
+            self.assertEqual(get.call_count, 3)
+            self.assertEqual([d["title"] for d in r.deals], ["food0特價", "game0特價", "tech0特價"])
+
+    def test_feed_ignores_old_articles(self):
+        xml = b'<rss><channel><item><title>free \xe5\x85\x8d\xe8\xb2\xbb</title><link>https://news.google.com/old</link><pubDate>Thu, 01 Jan 2026 01:00:00 GMT</pubDate></item></channel></rss>'
+        with patch.object(Reader, "get", return_value=Mock(content=xml)):
+            self.assertEqual(collect_feed("feed", {"name": "測試", "urls": ["https://example.org/a"]}, NOW).deals, [])
+
+    def test_atom_default_alternate_and_updated(self):
+        xml = b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>free \xe5\x85\x8d\xe8\xb2\xbb</title><link rel="self" href="https://example.org/xml"/><link href="https://example.org/html"/><updated>2026-10-01T01:00:00Z</updated></entry></feed>'
+        with patch.object(Reader, "get", return_value=Mock(content=xml)), patch.object(Reader, "body", return_value=("", "not read")):
+            r = collect_feed("feed", {"name": "測試", "urls": ["https://example.org/a"]}, NOW)
+            self.assertEqual(r.deals[0]["url"], "https://example.org/html")
+            self.assertTrue(r.deals[0]["published_at"])
+
     def test_ptt_newest_first(self):
         timestamp = int(NOW.timestamp())
         html = f'<div class="r-ent"><div class="title"><a href="/bbs/Test/M.{timestamp-20}.A.html">[情報]舊耳機特價</a></div></div><div class="r-ent"><div class="title"><a href="/bbs/Test/M.{timestamp}.B.html">[情報]新耳機特價</a></div></div>'

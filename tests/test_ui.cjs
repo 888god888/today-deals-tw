@@ -38,6 +38,7 @@ const fixture = { schema_version: 6, is_demo: false, updated_at: now, attempted_
       check(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
       check(await page.locator("#coverageNotice").isVisible(), true);
       await page.locator(".save-deal").click(); check(await page.locator("#savedCount").textContent(), "1");
+      await page.locator("#filterPanel > summary").click();
       await page.locator('[data-status="conditional"]').click(); check(await page.locator(".hurdles").textContent(), "新戶／首購限定");
       await page.locator("#savedButton").click(); check(await page.locator("h3").textContent(), base.title);
       await page.locator('[data-status="easy"]').click();

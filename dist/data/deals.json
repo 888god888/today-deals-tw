@@ -1,8 +1,8 @@
 {
   "schema_version": 6,
   "is_demo": false,
-  "attempted_at": "2026-10-28T13:38:27+08:00",
-  "updated_at": "2026-10-28T13:38:27+08:00",
+  "attempted_at": "2026-10-29T00:36:48+08:00",
+  "updated_at": "2026-10-29T00:36:48+08:00",
   "run_status": "partial",
   "sources": [
     {
@@ -10,26 +10,26 @@
       "name": "PTT 省錢板",
       "status": "ok",
       "message": "",
-      "harvested": 25,
+      "harvested": 24,
       "easy": 0,
       "conditional": 0,
       "candidate": 17,
-      "rejected": 8,
+      "rejected": 7,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "ptt_steam",
       "name": "PTT Steam 遊戲情報",
       "status": "ok",
       "message": "",
-      "harvested": 3,
+      "harvested": 4,
       "easy": 0,
       "conditional": 0,
       "candidate": 3,
-      "rejected": 0,
+      "rejected": 1,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "news_radar",
@@ -39,10 +39,10 @@
       "harvested": 36,
       "easy": 0,
       "conditional": 0,
-      "candidate": 31,
-      "rejected": 5,
+      "candidate": 34,
+      "rejected": 2,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "web_discovery",
@@ -55,7 +55,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "mcdonalds",
@@ -68,7 +68,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "kfc",
@@ -81,7 +81,7 @@
       "candidate": 0,
       "rejected": 2,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "familymart",
@@ -94,7 +94,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "hilife",
@@ -107,7 +107,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "linepay",
@@ -120,7 +120,7 @@
       "candidate": 0,
       "rejected": 2,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "pchome",
@@ -133,7 +133,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "yahoo",
@@ -146,7 +146,7 @@
       "candidate": 24,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     },
     {
       "key": "shopee",
@@ -159,7 +159,7 @@
       "candidate": 0,
       "rejected": 0,
       "retained": 0,
-      "attempted_at": "2026-10-28T13:38:27+08:00"
+      "attempted_at": "2026-10-29T00:36:48+08:00"
     }
   ],
   "seen_history": {
@@ -309,19 +309,19 @@
     },
     "ae835eb16af5143a": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "d986b6bd5b02e8ec": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "593190cafd930eaa": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "1122671490fd1fb7": {
       "first": "2026-10-01T17:46:38+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "655ce7f7304382f4": {
       "first": "2026-10-01T17:46:38+08:00",
@@ -4661,7 +4661,7 @@
     },
     "3d1b00896fea17dc": {
       "first": "2026-10-23T12:45:51+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "4101c7f88fce21ff": {
       "first": "2026-10-23T12:45:51+08:00",
@@ -4829,19 +4829,19 @@
     },
     "f08d7d49a19763a3": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "eb25b82579efc732": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "409fd88c1030de57": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "76d921ae9d043073": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "749e901e508b3276": {
       "first": "2026-10-24T08:05:31+08:00",
@@ -4849,11 +4849,11 @@
     },
     "16c77ac4a41722da": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "79c2635d61cd9bf5": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "a57a074646e37d44": {
       "first": "2026-10-24T08:05:31+08:00",
@@ -4945,11 +4945,11 @@
     },
     "eaed6060bc1cdfac": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "68459dbfc50a5ce4": {
       "first": "2026-10-24T08:05:31+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "8be9682c9f2207e8": {
       "first": "2026-10-24T08:05:31+08:00",
@@ -5105,15 +5105,15 @@
     },
     "381edbdd20ae985b": {
       "first": "2026-10-24T22:00:21+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "3e4bd60787068ad7": {
       "first": "2026-10-24T22:00:21+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "271743f22d42ebfb": {
       "first": "2026-10-24T22:00:21+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "841437629e97606f": {
       "first": "2026-10-24T22:00:21+08:00",
@@ -5241,11 +5241,11 @@
     },
     "29d702c526b56dd3": {
       "first": "2026-10-25T08:05:26+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "77d71b2b0a210747": {
       "first": "2026-10-25T08:05:26+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "78a33c594e851665": {
       "first": "2026-10-25T08:05:26+08:00",
@@ -5377,7 +5377,7 @@
     },
     "fbce3dd5753da0ed": {
       "first": "2026-10-25T22:21:43+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "54bac7614962cb83": {
       "first": "2026-10-25T22:21:43+08:00",
@@ -5505,7 +5505,7 @@
     },
     "9c0ed9d617a0bd96": {
       "first": "2026-10-26T08:05:25+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "ae197ef6473102e1": {
       "first": "2026-10-26T08:05:25+08:00",
@@ -5617,7 +5617,7 @@
     },
     "327ce08b59b0afcb": {
       "first": "2026-10-26T12:43:12+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "f185532b95151eae": {
       "first": "2026-10-26T12:43:12+08:00",
@@ -5645,7 +5645,7 @@
     },
     "8e2dd72dca505ee8": {
       "first": "2026-10-26T12:43:12+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "e792731c5e17a42a": {
       "first": "2026-10-26T12:43:12+08:00",
@@ -5661,7 +5661,7 @@
     },
     "90c32f501eec952a": {
       "first": "2026-10-27T00:47:09+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "05dbd29de9cdc3bc": {
       "first": "2026-10-27T00:47:09+08:00",
@@ -5713,7 +5713,7 @@
     },
     "deaa0ea2d3119982": {
       "first": "2026-10-27T00:47:09+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "c63efa07c55432b0": {
       "first": "2026-10-27T00:47:09+08:00",
@@ -5817,11 +5817,11 @@
     },
     "78c339a643bb956d": {
       "first": "2026-10-27T08:05:26+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "db2c2fd24fcf8c2d": {
       "first": "2026-10-27T08:05:26+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "52f9b2fa4408d565": {
       "first": "2026-10-27T08:05:26+08:00",
@@ -5829,7 +5829,7 @@
     },
     "db372e07bf83f400": {
       "first": "2026-10-27T08:05:26+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "8cd14ed2111c8de0": {
       "first": "2026-10-27T08:05:26+08:00",
@@ -5837,7 +5837,7 @@
     },
     "24b7f2e4d07c9129": {
       "first": "2026-10-27T08:05:26+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "dd025df1344d426d": {
       "first": "2026-10-27T08:05:26+08:00",
@@ -5853,7 +5853,7 @@
     },
     "422585d0f105d339": {
       "first": "2026-10-27T08:05:26+08:00",
-      "last": "2026-10-27T08:05:26+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "30596e2cea3979db": {
       "first": "2026-10-27T08:05:26+08:00",
@@ -5953,15 +5953,15 @@
     },
     "7eeb1591bdd0598c": {
       "first": "2026-10-27T13:00:08+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "2ba2d7938fa7749b": {
       "first": "2026-10-27T13:00:08+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "1a90f0326cfd60b8": {
       "first": "2026-10-27T13:00:08+08:00",
-      "last": "2026-10-27T23:52:23+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "b33ce05944abd251": {
       "first": "2026-10-27T13:00:08+08:00",
@@ -5969,7 +5969,7 @@
     },
     "f06888a9ad47470c": {
       "first": "2026-10-27T13:00:08+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "01798f9560103bcc": {
       "first": "2026-10-27T13:00:08+08:00",
@@ -6017,27 +6017,27 @@
     },
     "b8f534828da81c34": {
       "first": "2026-10-27T23:52:23+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "0f79c70d490b3e23": {
       "first": "2026-10-27T23:52:23+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "faccbcb7810f466f": {
       "first": "2026-10-27T23:52:23+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "897d033dbc7fe0f1": {
       "first": "2026-10-27T23:52:23+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "b6b084816d6f2e26": {
       "first": "2026-10-27T23:52:23+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "e0cda1cf3d21f345": {
       "first": "2026-10-27T23:52:23+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "17c4884c7cb15544": {
       "first": "2026-10-27T23:52:23+08:00",
@@ -6065,7 +6065,7 @@
     },
     "69b1ce66b8b0a6ef": {
       "first": "2026-10-27T23:52:23+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "ddeeb277917737be": {
       "first": "2026-10-27T23:52:23+08:00",
@@ -6145,7 +6145,7 @@
     },
     "1db1ee79c53b7092": {
       "first": "2026-10-28T08:05:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "afb5a8f6d7070236": {
       "first": "2026-10-28T08:05:27+08:00",
@@ -6161,11 +6161,11 @@
     },
     "c7d9bcef7d3c8b96": {
       "first": "2026-10-28T08:05:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "08d7f5bc28686868": {
       "first": "2026-10-28T08:05:27+08:00",
-      "last": "2026-10-28T08:05:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "cd24881aefd0aff7": {
       "first": "2026-10-28T08:05:27+08:00",
@@ -6253,19 +6253,19 @@
     },
     "6eccae02793eb5a9": {
       "first": "2026-10-28T13:38:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "b99e8217934d1914": {
       "first": "2026-10-28T13:38:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "f7a513a7a0f547e7": {
       "first": "2026-10-28T13:38:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "39eeaea5de6c1b21": {
       "first": "2026-10-28T13:38:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "a4a2113327ef0e9f": {
       "first": "2026-10-28T13:38:27+08:00",
@@ -6289,7 +6289,7 @@
     },
     "85ad4e152543b476": {
       "first": "2026-10-28T13:38:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "a0e075d019ae2f79": {
       "first": "2026-10-28T13:38:27+08:00",
@@ -6301,7 +6301,7 @@
     },
     "ab071555953c1998": {
       "first": "2026-10-28T13:38:27+08:00",
-      "last": "2026-10-28T13:38:27+08:00"
+      "last": "2026-10-29T00:36:48+08:00"
     },
     "0ffe4654884b63c0": {
       "first": "2026-10-28T13:38:27+08:00",
@@ -6310,37 +6310,251 @@
     "f72e63bef9647b5f": {
       "first": "2026-10-28T13:38:27+08:00",
       "last": "2026-10-28T13:38:27+08:00"
+    },
+    "45b5519ebf1932d7": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "0d4d0283acc9f322": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "f7e1d7ece0707240": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "e0fcf218f8e3d5d1": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "c319a0927b89b68c": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "56d6328be12322de": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "3989d22f83f3e5f8": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "8a5aea3d7cbcfd15": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "3d97ac063a802e83": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "c75641f2f8200b52": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "e4bfa3a8a646b16a": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "9cfa751899b31aa1": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "873cad897bfb5a47": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "ecb4c66bd63bfb90": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "684fcf671fccc20c": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "0e0d2b38d7da981c": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "3bbb225233cb345d": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "51b75f33382fcdf5": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "0d5500b8a09b644c": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "2fdeb200afaa9e24": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "e4231d54e5312272": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "2091d03aa2da9339": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "908c9e598cc09d2e": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "c83397978509e465": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "ca3eb12e6eeab0bd": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "af27377c8dfc61ff": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "421d5ab45fc9139b": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "da163df19e232e58": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "ffa18f2915075ed4": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "9c01e70c7c747cdf": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "b5fd7ad05ccb7e7c": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "b2cf2e8ecd13f7e9": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "aef3da27adf528f5": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "362cd3d2aba79b4e": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "59bdb36e565a95e2": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "1d8429f6ab4740c3": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "5cfdfee9b51219c3": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "6e31bc1788dd0d34": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "42f59aa31447ba51": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "394e13e495ac26f8": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "081b7f96e76ccf4e": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "6f1231a7def4a3d2": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
+    },
+    "45a524e7a747e53a": {
+      "first": "2026-10-29T00:36:48+08:00",
+      "last": "2026-10-29T00:36:48+08:00"
     }
   },
   "deals": [],
   "conditional": [],
   "pending": [
     {
-      "id": "50f6a05c8a09f157",
+      "id": "c75641f2f8200b52",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "Steam 新品節落幕 湧入約 7,100 款試玩 熱門 Demo 仍開放免費下載 - Ludens Media",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96Tl83bUU0NFdwUXJZY2VBRGd1elB3VkJac2o1UDlVeUFUOTdzSW90S0dSMFpyMnE3QUw0blR6V1pKNXNldzBSRmJocHZGRVBDbGlsTUlwRGJqanAwTXlQeUZDSmk2SGpKMVYxeUJR?oc=5",
+      "title": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 - 鏡新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vQnhXZE84UU56Mlh0STM2WWk1ano5RXFlSmNFenROZ2tCU0ZrZ1JEZ2V0WGhCNnpKNno0WW1odDJIS1RzWWdaQWdDUWlncFdfSlE?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "Steam 新品節落幕 湧入約 7,100 款試玩 熱門 Demo 仍開放免費下載 Ludens Media",
-      "benefit": "Steam 新品節落幕 湧入約 7,100 款試玩 熱門 Demo 仍開放免費下載 Ludens Media",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "Steam 新品節落幕 湧入約 7,100 款試玩 熱門 Demo 仍開放免費下載 Ludens Media",
+      "summary": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 鏡新聞",
+      "benefit": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 鏡新聞",
+      "eligibility": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 鏡新聞",
+      "steps": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 鏡新聞",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "Steam 新品節落幕 湧入約 7,100 款試玩 熱門 Demo 仍開放免費下載 Ludens Media",
-      "evidence_excerpt": "Steam 新品節落幕 湧入約 7,100 款試玩 熱門 Demo 仍開放免費下載 Ludens Media",
+      "evidence": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 鏡新聞",
+      "evidence_excerpt": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 鏡新聞",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-28T12:53:00+08:00",
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
+      "published_at": "2026-10-28T21:14:00+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
-        "遊戲娛樂",
+        "餐飲食品",
         "免費"
       ],
-      "category": "遊戲娛樂",
+      "category": "餐飲食品",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "free",
+        "percent": 100,
+        "label": "文中標示免費取得",
+        "strong": true
+      },
+      "discount_label": "文中標示免費取得",
+      "ease_label": "待確認",
+      "score": 35,
+      "deal_strength": "strong"
+    },
+    {
+      "id": "51b75f33382fcdf5",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "《英雄聯盟》致敬已故 S1 世界冠軍 Cyanide！玩家只要使用嘉文四世打 3 場，就能免費領取 Fnatic 冠軍造型 - COOL-STYLE 潮流生活網",
+      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxOVmVsQm1Cakw3ZDBsa3ZYMkhfc3JhM0Y4SFVYRmE4TnJ4cHBIRjF5NkZJTXZjUjdSZE9TYnhJMUpTdmltVGx1a3B1X1J6TkhfTjNiUHhyNTJwSjVBWkxMbVhFMENRLUxpX3FFMXNoZ3czR0tqdmZzOFBuWHFjNThKOWRMWjhoZVhnMF9QT3pEZjRLS3VOdk5XNWdXaEZaWDBwTUNwY3NidlB3TVFtMlBNbHlNaTRmdjRocTFmT3RIZHhreGhLTllMRDNzSkVsM1RCUjlXTnRhbHhRbXhqNks5bUo5c3JsMWVoQmhNWDJYWjNjcm56UTVmWmQ0cld1TGlxTWhBbHdnNlZLd2RHenpwdkh5eWFBeTFsQk5rSWhYTW5XdVJFdl9ZLTBpMEREbF83ZDVtbzlLbl9tTUlzNklBcWpRNHNjcF9NRTV4TVZrUUh6TXlpUWdSSGJnV0s0Umh4MVB5MmljN25YZ1pXX1ZlU9IB8AJBVV95cUxOVmVsQm1Cakw3ZDBsa3ZYMkhfc3JhM0Y4SFVYRmE4TnJ4cHBIRjF5NkZJTXZjUjdSZE9TYnhJMUpTdmltVGx1a3B1X1J6TkhfTjNiUHhyNTJwSjVBWkxMbVhFMENRLUxpX3FFMXNoZ3czR0tqdmZzOFBuWHFjNThKOWRMWjhoZVhnMF9QT3pEZjRLS3VOdk5XNWdXaEZaWDBwTUNwY3NidlB3TVFtMlBNbHlNaTRmdjRocTFmT3RIZHhreGhLTllMRDNzSkVsM1RCUjlXTnRhbHhRbXhqNks5bUo5c3JsMWVoQmhNWDJYWjNjcm56UTVmWmQ0cld1TGlxTWhBbHdnNlZLd2RHenpwdkh5eWFBeTFsQk5rSWhYTW5XdVJFdl9ZLTBpMEREbF83ZDVtbzlLbl9tTUlzNklBcWpRNHNjcF9NRTV4TVZrUUh6TXlpUWdSSGJnV0s0Umh4MVB5MmljN25YZ1pXX1ZlUw?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "《英雄聯盟》致敬已故 S1 世界冠軍 Cyanide！玩家只要使用嘉文四世打 3 場，就能免費領取 Fnatic 冠軍造型 COOL-STYLE 潮流生活網",
+      "benefit": "《英雄聯盟》致敬已故 S1 世界冠軍 Cyanide！玩家只要使用嘉文四世打 3 場，就能免費領取 Fnatic 冠軍造型 COOL-STYLE 潮流生活網",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "《英雄聯盟》致敬已故 S1 世界冠軍 Cyanide！玩家只要使用嘉文四世打 3 場，就能免費領取 Fnatic 冠軍造型 COOL-STYLE 潮流生活網",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "《英雄聯盟》致敬已故 S1 世界冠軍 Cyanide！玩家只要使用嘉文四世打 3 場，就能免費領取 Fnatic 冠軍造型 COOL-STYLE 潮流生活網",
+      "evidence_excerpt": "《英雄聯盟》致敬已故 S1 世界冠軍 Cyanide！玩家只要使用嘉文四世打 3 場，就能免費領取 Fnatic 冠軍造型 COOL-STYLE 潮流生活網",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T13:12:37+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "免費"
+      ],
+      "category": "免費",
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文"
@@ -6446,110 +6660,25 @@
       "deal_strength": "strong"
     },
     {
-      "id": "d24887fba907cb9a",
+      "id": "c319a0927b89b68c",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "1900隻烤雞免費送！19縣市發放時間地點曝光：不限資格、 人人都可免費領 - 風傳媒",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9qVUdfSEpncHk3T29tNjJ1SG1SQm5Fa1gzN2tZREtmb21nUE9SSlhuWW9NWnViLVJ3bmlYUENGaTJ0S2Rtcmw3bHFOTGtCNWFa?oc=5",
+      "title": "PlayStation雙11狂歡購登場！多款熱門商品推出極佳優惠，最低折扣2.8折起 - LPComment 科技生活雜談",
+      "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQTXc3YmN6VnFaeGNhYjM2SFlEeFZ0SE0tcmlpOVBCOVExdTVha1NTSGVFdC1kRkIwZzVnTlc3UUxOVF9DZm5lNll3M0xCM0dfaEZyeHN5Z21PM1lqNERYdjhBcFhJRkl4LUpDcnV5WlpzUTc3dDJLdUF1MU8wdnRvNFowUmUzT21qd19JcWRtUk1IbkFqdHU1ZGwtUGVRbk1melZ1amNvb2NsSEdnNVF4RFB4akVNZjJNSXpmcERZZ19PUkloSTJDWWRKTFV5SlZER0lDOWRjWmZEN2s3UnQ1V1lOazVZMFQzVkM5cmoyekhTTzBIVWRxV29JYm0yWWdlMVEzQkw5NUs3a1F0WmdFSTFQMWxEWWx0ODdjZXFVb1UybTRjVjYtZVFQR2hjMnNndWs4d1FIU2J0M2t3NlllVV9SNGllNGdyTWg4?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "1900隻烤雞免費送！19縣市發放時間地點曝光：不限資格、 人人都可免費領 風傳媒",
-      "benefit": "1900隻烤雞免費送！19縣市發放時間地點曝光：不限資格、 人人都可免費領 風傳媒",
+      "summary": "PlayStation雙11狂歡購登場！多款熱門商品推出極佳優惠，最低折扣2.8折起 LPComment 科技生活雜談",
+      "benefit": "PlayStation雙11狂歡購登場！多款熱門商品推出極佳優惠，最低折扣2.8折起 LPComment 科技生活雜談",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "1900隻烤雞免費送！19縣市發放時間地點曝光：不限資格、 人人都可免費領 風傳媒",
-      "evidence_excerpt": "1900隻烤雞免費送！19縣市發放時間地點曝光：不限資格、 人人都可免費領 風傳媒",
+      "evidence": "PlayStation雙11狂歡購登場！多款熱門商品推出極佳優惠，最低折扣2.8折起 LPComment 科技生活雜談",
+      "evidence_excerpt": "PlayStation雙11狂歡購登場！多款熱門商品推出極佳優惠，最低折扣2.8折起 LPComment 科技生活雜談",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-27T15:10:00+08:00",
-      "first_seen_at": "2026-10-27T23:52:23+08:00",
-      "checked_at": null,
-      "tags": [
-        "免費"
-      ],
-      "category": "免費",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": {
-        "kind": "free",
-        "percent": 100,
-        "label": "文中標示免費取得",
-        "strong": true
-      },
-      "discount_label": "文中標示免費取得",
-      "ease_label": "待確認",
-      "score": 35,
-      "deal_strength": "strong"
-    },
-    {
-      "id": "999468bbe28fe32b",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "感謝象迷應援！中信證券10/28發1千份雞排珍奶 免費領取方式出爐 - NOWnews今日新聞",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9UTEltcENpVmowNWMwdW5TRzJzUGhTaEwtY05TSDRIWUsxTnpzZ2N5Y08wQndaNVo2STVqZ3RheVNIdkoxUXlwdE4wSUlFQ2o5UlHSAVJBVV95cUxPVExJbXBDaVZqMDVjMHVuU0cyc1BoU2hMLWNOU0g0SFlLMU56c2djeWNPMEJ3WjVaNkk1amd0YXlTSHZKMVF5cHROMElJRUNqOVJR?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "感謝象迷應援！中信證券10/28發1千份雞排珍奶 免費領取方式出爐 NOWnews今日新聞",
-      "benefit": "感謝象迷應援！中信證券10/28發1千份雞排珍奶 免費領取方式出爐 NOWnews今日新聞",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "感謝象迷應援！中信證券10/28發1千份雞排珍奶 免費領取方式出爐 NOWnews今日新聞",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "感謝象迷應援！中信證券10/28發1千份雞排珍奶　免費領取方式出爐 NOWnews今日新聞",
-      "evidence_excerpt": "感謝象迷應援！中信證券10/28發1千份雞排珍奶 免費領取方式出爐 NOWnews今日新聞",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-26T18:14:06+08:00",
-      "first_seen_at": "2026-10-27T00:47:09+08:00",
-      "checked_at": null,
-      "tags": [
-        "免費"
-      ],
-      "category": "免費",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": {
-        "kind": "free",
-        "percent": 100,
-        "label": "文中標示免費取得",
-        "strong": true
-      },
-      "discount_label": "文中標示免費取得",
-      "ease_label": "待確認",
-      "score": 35,
-      "deal_strength": "strong"
-    },
-    {
-      "id": "ed85c742cc0ffd9b",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "卡普空推Steam《洛克人》大禮包 全系列36款作品打2折 - 4Gamers",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1pNWdNQXY1SVpZZGhMM244RTRtUTNzVjRtU19KY243WVJ5MHAyNU5wRG9WdmU2dTNYZjNVZkNhYjZ1eG93TGVEdFp4dmZfbDY5OGFFQndnSjhhYm93bURjTlFlakZ5elo1WkNCRzUxSWpNWXFJc2dwS3laTlU?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "卡普空推Steam《洛克人》大禮包 全系列36款作品打2折 4Gamers",
-      "benefit": "卡普空推Steam《洛克人》大禮包 全系列36款作品打2折 4Gamers",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "卡普空推Steam《洛克人》大禮包 全系列36款作品打2折 4Gamers",
-      "evidence_excerpt": "卡普空推Steam《洛克人》大禮包 全系列36款作品打2折 4Gamers",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-28T12:31:57+08:00",
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
+      "published_at": "2026-10-28T21:47:24+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
         "遊戲娛樂"
@@ -6557,6 +6686,7 @@
       "category": "遊戲娛樂",
       "status": "candidate",
       "reasons": [
+        "最高／最低值，適用品項或組合尚須核對",
         "只取得標題或摘要，未讀到活動內文",
         "領取／購買方式未確認"
       ],
@@ -6564,26 +6694,72 @@
       "end_date": null,
       "discount": {
         "kind": "rate",
-        "percent": 80.0,
-        "label": "2 折",
+        "percent": 72.0,
+        "label": "2.8 折起／限部分品項",
         "strong": true,
-        "range_claim": false
+        "range_claim": true
       },
-      "discount_label": "2 折",
+      "discount_label": "2.8 折起／限部分品項",
       "ease_label": "待確認",
-      "score": 28,
+      "score": 25,
       "deal_strength": "strong"
     },
     {
-      "id": "93f7d00377be1210",
+      "id": "0d5500b8a09b644c",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "「2026 ITF旅展」１招免費入場！優惠搶先看：吃到飽餐券５折、住宿券3.7折起 - 食尚玩家",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPSUFkcTB1aWJiMVYzaS02ZTVrR0pPUUZMX1ludVc4SXBJLS1fNDZqUUVyRHFkTlV5M1kyYkE2THZGQnVaVklrZUZIb2MxeXFkcGdlNjMtbWtoaTZL0gFcQVVfeXFMUE9JQWRxMHVpYmIxVjNpLTZlNWtHSk9RRkxfWW51VzhJcEktLV80NmpRRXJEcWROVXkzWTJiQTZMdkZCdVpWSWtlRkhvYzF5cWRwZ2U2My1ta2hpNks?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "「2026 ITF旅展」１招免費入場！優惠搶先看：吃到飽餐券５折、住宿券3.7折起 食尚玩家",
+      "benefit": "「2026 ITF旅展」１招免費入場！優惠搶先看：吃到飽餐券５折、住宿券3.7折起 食尚玩家",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "「2026 ITF旅展」１招免費入場！優惠搶先看：吃到飽餐券５折、住宿券3.7折起 食尚玩家",
+      "evidence_excerpt": "「2026 ITF旅展」１招免費入場！優惠搶先看：吃到飽餐券５折、住宿券3.7折起 食尚玩家",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T18:35:00+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "最高／最低值，適用品項或組合尚須核對",
+        "只取得標題或摘要，未讀到活動內文",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 63.0,
+        "label": "3.7 折起／限部分品項",
+        "strong": true,
+        "range_claim": true
+      },
+      "discount_label": "3.7 折起／限部分品項",
+      "ease_label": "待確認",
+      "score": 22,
+      "deal_strength": "strong"
+    },
+    {
+      "id": "b2cf2e8ecd13f7e9",
       "source_key": "yahoo",
       "source_name": "Yahoo 購物中心",
       "source_type": "official",
-      "title": "DB夢寢 買一送一★韓國質感雙面奶蓋水洗被(加厚180x210公分) $ 1,311 $2,280 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12298935",
+      "title": "葡萄王夜間特惠78折 滿1件享78折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802685",
       "brand": "Yahoo 購物中心",
-      "summary": "DB夢寢 買一送一★韓國質感雙面奶蓋水洗被(加厚180x210公分) $ 1,311 $2,280 即將售完",
-      "benefit": "DB夢寢 買一送一★韓國質感雙面奶蓋水洗被(加厚180x210公分) $ 1,311 $2,280 即將售完",
+      "summary": "葡萄王夜間特惠78折 滿1件享78折",
+      "benefit": "葡萄王夜間特惠78折 滿1件享78折",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
@@ -6593,7 +6769,53 @@
       "body_read": false,
       "body_note": "無法辨識活動內文（可能為動態頁）",
       "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 22.0,
+        "label": "7.8 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "7.8 折",
+      "ease_label": "待確認",
+      "score": 18,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "56d6328be12322de",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "台灣「3500坪新百貨」明開幕 豪推買一送一、免費好禮 - 三立新聞網SETN.com",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE95MDEzam9rUWNuY0Y5UHh2MnBiMG5aNW5IV1lidDVoNGE1Q2RYU2owV2RrRjREV3J0QmtPaEhxMWh0cnJneUVCc9IBTEFVX3lxTE5hemNsSzJIUUxNSkVHS0lCYUgzY2hoU3VkZ2JIX1F0THpoMXFvSXhVRC04ek8wR2dTQmtsU3J4ZHhqWGF3V2JzZU9UeEo?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "台灣「3500坪新百貨」明開幕 豪推買一送一、免費好禮 三立新聞網SETN.com",
+      "benefit": "台灣「3500坪新百貨」明開幕 豪推買一送一、免費好禮 三立新聞網SETN.com",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "台灣「3500坪新百貨」明開幕　豪推買一送一、免費好禮 三立新聞網SETN.com",
+      "evidence_excerpt": "台灣「3500坪新百貨」明開幕 豪推買一送一、免費好禮 三立新聞網SETN.com",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T16:56:00+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
         "其他"
@@ -6615,7 +6837,7 @@
       },
       "discount_label": "買一送一 · 同價商品約 5 折",
       "ease_label": "待確認",
-      "score": 28,
+      "score": 18,
       "deal_strength": "strong"
     },
     {
@@ -6644,93 +6866,6 @@
         "家電日用"
       ],
       "category": "餐飲食品",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": {
-        "kind": "bogo",
-        "percent": 50,
-        "label": "買一送一 · 同價商品約 5 折",
-        "strong": true
-      },
-      "discount_label": "買一送一 · 同價商品約 5 折",
-      "ease_label": "待確認",
-      "score": 18,
-      "deal_strength": "strong"
-    },
-    {
-      "id": "a4a2113327ef0e9f",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "全家拿鐵25元「只有5天」！可寄杯買一送一 7-11美式拿鐵買2送2 - NOWnews今日新聞",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12bXFUSENGNVN4Y3pjZE1WN3VFUEFEbjJUZ0tJYWJkQnplMTByOE9zRFA4WGJHdlE5dXFvZmlnU3JQUjJWakNxMGZaYk9GNGJHQWfSAVJBVV95cUxNdm1xVEhDRjVTeGN6Y2RNVjd1RVBBRG4yVGdLSWFiZEJ6ZTEwcjhPc0RQOFhiR3ZROXVxb2ZpZ1NyUFIyVmpDcTBmWmJPRjRiR0Fn?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "全家拿鐵25元「只有5天」！可寄杯買一送一 7-11美式拿鐵買2送2 NOWnews今日新聞",
-      "benefit": "全家拿鐵25元「只有5天」！可寄杯買一送一 7-11美式拿鐵買2送2 NOWnews今日新聞",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "全家拿鐵25元「只有5天」！可寄杯買一送一　7-11美式拿鐵買2送2 NOWnews今日新聞",
-      "evidence_excerpt": "全家拿鐵25元「只有5天」！可寄杯買一送一 7-11美式拿鐵買2送2 NOWnews今日新聞",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-28T10:00:51+08:00",
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "餐飲食品"
-      ],
-      "category": "餐飲食品",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": {
-        "kind": "bogo",
-        "percent": 50,
-        "label": "買一送一 · 同價商品約 5 折",
-        "strong": true
-      },
-      "discount_label": "買一送一 · 同價商品約 5 折",
-      "ease_label": "待確認",
-      "score": 18,
-      "deal_strength": "strong"
-    },
-    {
-      "id": "c0c30bf0b41828e5",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "中職／味全龍封王優惠30品牌一次看！全聯滿399折50、全家買一送一、手機最高折1萬！ - JUKSY 街星",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBMRUZNOUdUT0x0ZEhONFRDSTVhQjZhaU5YYUI5blRCekoxd2t4Q2Ntc0VWRUhJNGo0bm93eFVpWUdCVkw0N1J1QWVRaVY?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "中職／味全龍封王優惠30品牌一次看！全聯滿399折50、全家買一送一、手機最高折1萬！ JUKSY 街星",
-      "benefit": "中職／味全龍封王優惠30品牌一次看！全聯滿399折50、全家買一送一、手機最高折1萬！ JUKSY 街星",
-      "eligibility": "中職／味全龍封王優惠30品牌一次看！全聯滿399折50、全家買一送一、手機最高折1萬！ JUKSY 街星",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "中職／味全龍封王優惠30品牌一次看！全聯滿399折50、全家買一送一、手機最高折1萬！ JUKSY 街星",
-      "evidence_excerpt": "中職／味全龍封王優惠30品牌一次看！全聯滿399折50、全家買一送一、手機最高折1萬！ JUKSY 街星",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-28T01:04:21+08:00",
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "3C",
-        "餐飲食品"
-      ],
-      "category": "3C",
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
@@ -6838,49 +6973,6 @@
       "deal_strength": "strong"
     },
     {
-      "id": "31c339b6abe576bf",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "麥當勞優惠2026》10月優惠券下載、優惠代碼、買一送一、歡樂送懶人包 - TVBS新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5NZU1pOUxXeHg1ZEEzRVFlU1hKRVZoSFhzYWlnU1hVLXRaMUtzZGRsUEZxUmpvbS0wd3J2bDB1a2h4VDZ1cWMtUTBFM0RjQQ?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "麥當勞優惠2026》10月優惠券下載、優惠代碼、買一送一、歡樂送懶人包 TVBS新聞網",
-      "benefit": "麥當勞優惠2026》10月優惠券下載、優惠代碼、買一送一、歡樂送懶人包 TVBS新聞網",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "麥當勞優惠2026》10月優惠券下載、優惠代碼、買一送一、歡樂送懶人包 TVBS新聞網",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "麥當勞優惠2026》10月優惠券下載、優惠代碼、買一送一、歡樂送懶人包 TVBS新聞網",
-      "evidence_excerpt": "麥當勞優惠2026》10月優惠券下載、優惠代碼、買一送一、歡樂送懶人包 TVBS新聞網",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-27T13:04:00+08:00",
-      "first_seen_at": "2026-10-20T11:23:42+08:00",
-      "checked_at": null,
-      "tags": [
-        "餐飲食品"
-      ],
-      "category": "餐飲食品",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "超過 72 小時未重新讀取，需重查"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": {
-        "kind": "bogo",
-        "percent": 50,
-        "label": "買一送一 · 同價商品約 5 折",
-        "strong": true
-      },
-      "discount_label": "買一送一 · 同價商品約 5 折",
-      "ease_label": "待確認",
-      "score": 18,
-      "deal_strength": "strong"
-    },
-    {
       "id": "69b1ce66b8b0a6ef",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
@@ -6919,6 +7011,94 @@
         "strong": true
       },
       "discount_label": "買一送一 · 同價商品約 5 折",
+      "ease_label": "待確認",
+      "score": 18,
+      "deal_strength": "strong"
+    },
+    {
+      "id": "3d97ac063a802e83",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "達美樂買一送一！麥塊地下城2聯名盲卡包 披薩披風、史萊姆虛寶 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5TWFRpWkFvbWhmODFfcEV6blBhRUs5d0IydnBnUzFOeGlhVnpHaUwzM2F3S0wzSGZiMXpXVG9TaElEcUhHRGZZbTl0djMxTzRiZFHSAVJBVV95cUxOU1hUaVpBb21oZjgxX3BFem5QYUVLOXdCMnZwZ1MxTnhpYVZ6R2lMMzNhd0tMM0hmYjF6V1RvU2hJRHFIR0RmWW05dHYzMU80YmRR?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "達美樂買一送一！麥塊地下城2聯名盲卡包 披薩披風、史萊姆虛寶 NOWnews今日新聞",
+      "benefit": "達美樂買一送一！麥塊地下城2聯名盲卡包 披薩披風、史萊姆虛寶 NOWnews今日新聞",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "達美樂買一送一！麥塊地下城2聯名盲卡包　披薩披風、史萊姆虛寶 NOWnews今日新聞",
+      "evidence_excerpt": "達美樂買一送一！麥塊地下城2聯名盲卡包 披薩披風、史萊姆虛寶 NOWnews今日新聞",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-27T11:29:59+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "餐飲食品"
+      ],
+      "category": "餐飲食品",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "bogo",
+        "percent": 50,
+        "label": "買一送一 · 同價商品約 5 折",
+        "strong": true
+      },
+      "discount_label": "買一送一 · 同價商品約 5 折",
+      "ease_label": "待確認",
+      "score": 18,
+      "deal_strength": "strong"
+    },
+    {
+      "id": "873cad897bfb5a47",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "ITF 台灣國際旅展11月6日登場 飯店餐券下殺5折、旅遊行程一次看 - UDN",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5DbDBTOWRGbmtQYzQyazVGeGMxSzl3RTZ2djJMQzlvRVVkb2hqR2pYSzZhSHVHTG9od3FMMi13VGIzT3ROaFhGLWhaMXpxT0tE0gFWQVVfeXFMTThqdHBQd01BTm54Wkt5ZU15R0FXbk5iUEU0cjg2b0RLTXNkWjlOcFlHa1VNSlZMOFRwaWplVW1adWpGclJ2eDNiUHRuNy1uUFd4S3BqZ0E?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "ITF 台灣國際旅展11月6日登場 飯店餐券下殺5折、旅遊行程一次看 UDN",
+      "benefit": "ITF 台灣國際旅展11月6日登場 飯店餐券下殺5折、旅遊行程一次看 UDN",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "ITF 台灣國際旅展11月6日登場 飯店餐券下殺5折、旅遊行程一次看 UDN",
+      "evidence_excerpt": "ITF 台灣國際旅展11月6日登場 飯店餐券下殺5折、旅遊行程一次看 UDN",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-27T11:13:16+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 50.0,
+        "label": "5 折",
+        "strong": true,
+        "range_claim": false
+      },
+      "discount_label": "5 折",
       "ease_label": "待確認",
       "score": 18,
       "deal_strength": "strong"
@@ -7011,6 +7191,50 @@
       "deal_strength": "strong"
     },
     {
+      "id": "3bbb225233cb345d",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "一沐日聯名台灣虎航！新品「虎趣桃」登場、憑登機證享買一送一 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOS3BRaTMzMWhUVWhnZlR6Y0J1b3lJSXFSUi1qY2dxS29VR2NVTUpMZTlHVWpsUmdHM3VsTVhPUmRtcWJaX2Rmel9nUDFOWjR5MlBNeWF1cExjaXJuOTJheVJnZjkwTjhSdXZvTnA5dUV2T2NuZlNQTVNHMUpMcHJndFZxRmJTbzhTXzJXcHBRb2VEbkZWX01OdEdzbU1aUW9zUWlicUxQMHZBNmE5NjcxVjBrSGhOdUhSS1NfOFNBOWJIX25GU0d5TllRLVktZzhwX21HdjJnall1M0tQUXdhN3hYVEUzNWdwR1FzcFZVbHdGcWJYWWJnS1A0ZWZ5R3ZrZDhoSHlzSUl5ZU5SOFdHTW5FcjIzUFI1M3FBVWxZaDhHeHRTNW96ckd2Sm9xSHFYaHVCa1Rhci1Sa2UzaUl3RU9VR0VhYmRKQVFaQWZBb2Q4bVkw?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "一沐日聯名台灣虎航！新品「虎趣桃」登場、憑登機證享買一送一 Yahoo新聞",
+      "benefit": "一沐日聯名台灣虎航！新品「虎趣桃」登場、憑登機證享買一送一 Yahoo新聞",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "一沐日聯名台灣虎航！新品「虎趣桃」登場、憑登機證享買一送一 Yahoo新聞",
+      "evidence_excerpt": "一沐日聯名台灣虎航！新品「虎趣桃」登場、憑登機證享買一送一 Yahoo新聞",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-27T00:00:00+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "bogo",
+        "percent": 50,
+        "label": "買一送一 · 同價商品約 5 折",
+        "strong": true
+      },
+      "discount_label": "買一送一 · 同價商品約 5 折",
+      "ease_label": "待確認",
+      "score": 18,
+      "deal_strength": "strong"
+    },
+    {
       "id": "90c32f501eec952a",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
@@ -7055,28 +7279,29 @@
       "deal_strength": "strong"
     },
     {
-      "id": "7f6ce5fcb86ace8e",
+      "id": "1a90f0326cfd60b8",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "快訊／味全封王優惠30品牌一次看！全聯滿399折50、全家買一送一 - ETtoday運動雲",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1VS29QcVZQTmhEa1huRUtlemprd1FCNGR5bUxBNEIwdGYyT1ZLX0xIMU1uRmR3Q1VOdHRfTDZzaTBFZmR3c19tSG5rMmZEdHNm0gFPQVVfeXFMUHNhOVVnWDhwVW1GdlRuRGRXbEg3Z3RUMjlLNEotVUducFpBLVBVN1BGV3ZTT05xYVVacGlZT2FDT0FLZVVEeFBiV0w4R1R0UQ?oc=5",
+      "title": "台灣大賽》味全龍封王優惠懶人包！逾30家品牌同慶 超商買一送一、家電下殺5折 - Yahoo運動",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxQemZfRGFqRUpXNTNGcFNCYk5scm5mdnR3b0tuWjV6ak9vRDBtV2tJOUNCWGFMMGJLb1Awb2dQbjJva2wzMzVHUDJCbW9Xb0ZqSm55OWExUDZLZE1najliZWdqLURaNVFFbk0xZnNXTzdlaExkdVR0STIwUU8yOFUxeGNhcWxRcXR1ZFVXelFjbUhTTGhvUk9TRVVqNjIyTFFYenp5Y3hEeUxYbzBSb2wzWlA1U1EtV0JMaHlsOC1acXA3UDhtYlk5dmhCUUdTUklwOGFRV25BaHhLeExtR1VnazB5cW4zM0dWMzdlcXdOSnZMSDMyaXlLeGZ4bEVFTUpWU3Zaa194UmdnOTlhRmJjUXhyQjlweHl2OE1lQlZzaENHR0NFcS00VU42Q0JJTHcxbE81dWJwa2t3N3c1OXByZXc3RWJNSmZtVWlvN1NmWnlKM2V5UEdKU1FlcHFNY0NXNERRYzNXc1YyLXhXckdfZXNrTFBHTm9RZjkwOVBJLXFvcnBW?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "快訊／味全封王優惠30品牌一次看！全聯滿399折50、全家買一送一 ETtoday運動雲",
-      "benefit": "快訊／味全封王優惠30品牌一次看！全聯滿399折50、全家買一送一 ETtoday運動雲",
-      "eligibility": "快訊／味全封王優惠30品牌一次看！全聯滿399折50、全家買一送一 ETtoday運動雲",
+      "summary": "台灣大賽》味全龍封王優惠懶人包！逾30家品牌同慶 超商買一送一、家電下殺5折 Yahoo運動",
+      "benefit": "台灣大賽》味全龍封王優惠懶人包！逾30家品牌同慶 超商買一送一、家電下殺5折 Yahoo運動",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "快訊／味全封王優惠30品牌一次看！全聯滿399折50、全家買一送一 ETtoday運動雲",
-      "evidence_excerpt": "快訊／味全封王優惠30品牌一次看！全聯滿399折50、全家買一送一 ETtoday運動雲",
+      "evidence": "台灣大賽》味全龍封王優惠懶人包！逾30家品牌同慶 超商買一送一、家電下殺5折 Yahoo運動",
+      "evidence_excerpt": "台灣大賽》味全龍封王優惠懶人包！逾30家品牌同慶 超商買一送一、家電下殺5折 Yahoo運動",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-26T20:26:00+08:00",
-      "first_seen_at": "2026-10-27T00:47:09+08:00",
+      "published_at": "2026-10-26T20:38:34+08:00",
+      "first_seen_at": "2026-10-27T13:00:08+08:00",
       "checked_at": null,
       "tags": [
         "餐飲食品",
+        "家電日用",
         "男性運動"
       ],
       "category": "餐飲食品",
@@ -7142,15 +7367,15 @@
       "deal_strength": "strong"
     },
     {
-      "id": "a0e075d019ae2f79",
+      "id": "c83397978509e465",
       "source_key": "yahoo",
       "source_name": "Yahoo 購物中心",
       "source_type": "official",
-      "title": "$ 1,911",
-      "url": "https://tw.buy.yahoo.com/gdsale/The-North-Face-輕便旅遊男女款DWR-12070271.html",
+      "title": "SEIKO精工表結帳8折 滿1件享8折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802135",
       "brand": "Yahoo 購物中心",
-      "summary": "$ 1,911",
-      "benefit": "$ 1,911",
+      "summary": "SEIKO精工表結帳8折 滿1件享8折",
+      "benefit": "SEIKO精工表結帳8折 滿1件享8折",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
@@ -7160,7 +7385,647 @@
       "body_read": false,
       "body_note": "無法辨識活動內文（可能為動態頁）",
       "published_at": null,
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 20.0,
+        "label": "8 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8 折",
+      "ease_label": "待確認",
+      "score": 17,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "b5fd7ad05ccb7e7c",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "淨水設備85折 滿1件享85折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802675",
+      "brand": "Yahoo 購物中心",
+      "summary": "淨水設備85折 滿1件享85折",
+      "benefit": "淨水設備85折 滿1件享85折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 15.0,
+        "label": "8.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.5 折",
+      "ease_label": "待確認",
+      "score": 15,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "362cd3d2aba79b4e",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "家電限時促銷夜間下殺87折 滿1件享87折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802439",
+      "brand": "Yahoo 購物中心",
+      "summary": "家電限時促銷夜間下殺87折 滿1件享87折",
+      "benefit": "家電限時促銷夜間下殺87折 滿1件享87折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "家電日用"
+      ],
+      "category": "家電日用",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 13.0,
+        "label": "8.7 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.7 折",
+      "ease_label": "待確認",
+      "score": 15,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "ca3eb12e6eeab0bd",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【海盜船CORSAIR】★DIY組件享9折 滿1件享9折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=796224",
+      "brand": "Yahoo 購物中心",
+      "summary": "【海盜船CORSAIR】★DIY組件享9折 滿1件享9折",
+      "benefit": "【海盜船CORSAIR】★DIY組件享9折 滿1件享9折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 10.0,
+        "label": "9 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9 折",
+      "ease_label": "待確認",
+      "score": 14,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "9c01e70c7c747cdf",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "音響劇院瘋搶價限時9折 滿1件享9折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802621",
+      "brand": "Yahoo 購物中心",
+      "summary": "音響劇院瘋搶價限時9折 滿1件享9折",
+      "benefit": "音響劇院瘋搶價限時9折 滿1件享9折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "3C"
+      ],
+      "category": "3C",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 10.0,
+        "label": "9 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9 折",
+      "ease_label": "待確認",
+      "score": 14,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "42f59aa31447ba51",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=796169",
+      "brand": "Yahoo 購物中心",
+      "summary": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "benefit": "【網路設備】精選品牌★快閃88折 滿1件享88折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 12.0,
+        "label": "8.8 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.8 折",
+      "ease_label": "待確認",
+      "score": 14,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "394e13e495ac26f8",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "防毒軟體夜間下殺 滿1件享9折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802250",
+      "brand": "Yahoo 購物中心",
+      "summary": "防毒軟體夜間下殺 滿1件享9折",
+      "benefit": "防毒軟體夜間下殺 滿1件享9折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 10.0,
+        "label": "9 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9 折",
+      "ease_label": "待確認",
+      "score": 14,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "6f1231a7def4a3d2",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "特福結帳享88折 滿1件享88折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802652",
+      "brand": "Yahoo 購物中心",
+      "summary": "特福結帳享88折 滿1件享88折",
+      "benefit": "特福結帳享88折 滿1件享88折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 12.0,
+        "label": "8.8 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "8.8 折",
+      "ease_label": "待確認",
+      "score": 14,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "421d5ab45fc9139b",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "HUAWEI耳機▼限時特殺95折 滿1件享95折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802771",
+      "brand": "Yahoo 購物中心",
+      "summary": "HUAWEI耳機▼限時特殺95折 滿1件享95折",
+      "benefit": "HUAWEI耳機▼限時特殺95折 滿1件享95折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "3C"
+      ],
+      "category": "3C",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 5.0,
+        "label": "9.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.5 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "5cfdfee9b51219c3",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "夜間快閃價 滿1件享95折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802625",
+      "brand": "Yahoo 購物中心",
+      "summary": "夜間快閃價 滿1件享95折",
+      "benefit": "夜間快閃價 滿1件享95折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 5.0,
+        "label": "9.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.5 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "6e31bc1788dd0d34",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【網路設備】精選品牌★快閃95折 滿1件享95折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795995",
+      "brand": "Yahoo 購物中心",
+      "summary": "【網路設備】精選品牌★快閃95折 滿1件享95折",
+      "benefit": "【網路設備】精選品牌★快閃95折 滿1件享95折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 5.0,
+        "label": "9.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.5 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "081b7f96e76ccf4e",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "星光下殺★頂級家電93折 滿1件享93折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802789",
+      "brand": "Yahoo 購物中心",
+      "summary": "星光下殺★頂級家電93折 滿1件享93折",
+      "benefit": "星光下殺★頂級家電93折 滿1件享93折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "家電日用"
+      ],
+      "category": "家電日用",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 7.0,
+        "label": "9.3 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.3 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "45a524e7a747e53a",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "夜間限定 櫻花廚房三機結帳95折 滿1件享95折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802550",
+      "brand": "Yahoo 購物中心",
+      "summary": "夜間限定 櫻花廚房三機結帳95折 滿1件享95折",
+      "benefit": "夜間限定 櫻花廚房三機結帳95折 滿1件享95折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 5.0,
+        "label": "9.5 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.5 折",
+      "ease_label": "待確認",
+      "score": 12,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "59bdb36e565a95e2",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【網路設備】雙品牌優惠★快閃97折 滿1件享97折",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=795948",
+      "brand": "Yahoo 購物中心",
+      "summary": "【網路設備】雙品牌優惠★快閃97折 滿1件享97折",
+      "benefit": "【網路設備】雙品牌優惠★快閃97折 滿1件享97折",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "未達大折扣門檻",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": {
+        "kind": "rate",
+        "percent": 3.0,
+        "label": "9.7 折",
+        "strong": false,
+        "range_claim": false
+      },
+      "discount_label": "9.7 折",
+      "ease_label": "待確認",
+      "score": 11,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "e4231d54e5312272",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "$ 13,999",
+      "url": "https://tw.buy.yahoo.com/gdsale/LONGCHAMP-Le-Pliage-Xtra-水餃包-斜背包-手提-兩用包-11906889.html",
+      "brand": "Yahoo 購物中心",
+      "summary": "$ 13,999",
+      "benefit": "$ 13,999",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
         "其他"
@@ -7182,15 +8047,15 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "93918b280df27e05",
+      "id": "2091d03aa2da9339",
       "source_key": "yahoo",
       "source_name": "Yahoo 購物中心",
       "source_type": "official",
-      "title": "$ 1,891",
-      "url": "https://tw.buy.yahoo.com/gdsale/adidas-愛迪達-TERREX-TRACEFI-12235008.html",
+      "title": "$ 1,131",
+      "url": "https://tw.buy.yahoo.com/gdsale/adidas-愛迪達-DAILY-40-運動休閒鞋-12074108.html",
       "brand": "Yahoo 購物中心",
-      "summary": "$ 1,891",
-      "benefit": "$ 1,891",
+      "summary": "$ 1,131",
+      "benefit": "$ 1,131",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
@@ -7200,7 +8065,247 @@
       "body_read": false,
       "body_note": "無法辨識活動內文（可能為動態頁）",
       "published_at": null,
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "908c9e598cc09d2e",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "$ 1,521",
+      "url": "https://tw.buy.yahoo.com/gdsale/a-la-sha-大小圓點拼接牛仔寬褲裙-12306261.html",
+      "brand": "Yahoo 購物中心",
+      "summary": "$ 1,521",
+      "benefit": "$ 1,521",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "af27377c8dfc61ff",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "SONY WH-1000XM6 $10990 任選1件$10990",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802779",
+      "brand": "Yahoo 購物中心",
+      "summary": "SONY WH-1000XM6 $10990 任選1件$10990",
+      "benefit": "SONY WH-1000XM6 $10990 任選1件$10990",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "da163df19e232e58",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "SONY限時價 47336 任選1件$47336",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802711",
+      "brand": "Yahoo 購物中心",
+      "summary": "SONY限時價 47336 任選1件$47336",
+      "benefit": "SONY限時價 47336 任選1件$47336",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "ffa18f2915075ed4",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "SONY WF-1000XM5▼特殺$5688 任選1件$5688",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802768",
+      "brand": "Yahoo 購物中心",
+      "summary": "SONY WF-1000XM5▼特殺$5688 任選1件$5688",
+      "benefit": "SONY WF-1000XM5▼特殺$5688 任選1件$5688",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "aef3da27adf528f5",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "SONY WH-CH730N▼特殺$4190 任選1件$4190",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=802780",
+      "brand": "Yahoo 購物中心",
+      "summary": "SONY WH-CH730N▼特殺$4190 任選1件$4190",
+      "benefit": "SONY WH-CH730N▼特殺$4190 任選1件$4190",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 10,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "1d8429f6ab4740c3",
+      "source_key": "yahoo",
+      "source_name": "Yahoo 購物中心",
+      "source_type": "official",
+      "title": "【Seagate】★夜間限定下殺 任選1件$6088",
+      "url": "https://tw.buy.yahoo.com/activity/onsale?actid=796623",
+      "brand": "Yahoo 購物中心",
+      "summary": "【Seagate】★夜間限定下殺 任選1件$6088",
+      "benefit": "【Seagate】★夜間限定下殺 任選1件$6088",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "",
+      "evidence_excerpt": "",
+      "body_read": false,
+      "body_note": "無法辨識活動內文（可能為動態頁）",
+      "published_at": null,
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
         "其他"
@@ -7261,781 +8366,258 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "0ffe4654884b63c0",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "AROMASE艾瑪絲 (雙11限定)經典淨化洗沐3件組(頭皮淨化液+草本洗髮精+沐浴露） $ 1,111 $1,250 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12319659",
-      "brand": "Yahoo 購物中心",
-      "summary": "AROMASE艾瑪絲 (雙11限定)經典淨化洗沐3件組(頭皮淨化液+草本洗髮精+沐浴露） $ 1,111 $1,250 即將售完",
-      "benefit": "AROMASE艾瑪絲 (雙11限定)經典淨化洗沐3件組(頭皮淨化液+草本洗髮精+沐浴露） $ 1,111 $1,250 即將售完",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "f72e63bef9647b5f",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【Move Free 益節】UC-II加強型迷你錠2瓶(共60錠) $ 1,708 $2,398 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12000001",
-      "brand": "Yahoo 購物中心",
-      "summary": "【Move Free 益節】UC-II加強型迷你錠2瓶(共60錠) $ 1,708 $2,398 商品熱銷中",
-      "benefit": "【Move Free 益節】UC-II加強型迷你錠2瓶(共60錠) $ 1,708 $2,398 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "f17367f86e906265",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "MSI Claw 8 AI+ A2VM Edition-242TW電競掌機(冰河藍/沙岩色)任選 $ 35,499 $35,999 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12322216",
-      "brand": "Yahoo 購物中心",
-      "summary": "MSI Claw 8 AI+ A2VM Edition-242TW電競掌機(冰河藍/沙岩色)任選 $ 35,499 $35,999 即將售完",
-      "benefit": "MSI Claw 8 AI+ A2VM Edition-242TW電競掌機(冰河藍/沙岩色)任選 $ 35,499 $35,999 即將售完",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "3C"
-      ],
-      "category": "3C",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "038599469b379d23",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "GARMIN INSTINCT 2X Solar 本我系列 太陽能GPS腕錶 $ 7,111 $15,990 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=10556748",
-      "brand": "Yahoo 購物中心",
-      "summary": "GARMIN INSTINCT 2X Solar 本我系列 太陽能GPS腕錶 $ 7,111 $15,990 商品熱銷中",
-      "benefit": "GARMIN INSTINCT 2X Solar 本我系列 太陽能GPS腕錶 $ 7,111 $15,990 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "0893a3ce4fcee0c3",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【義美生醫】W PROTEIN 乳清蛋白飲任選1盒(35g*10包/盒)-可可/抹茶/奶茶/草莓/咖啡 $ 600 $750 已搶 57 ％",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12002997",
-      "brand": "Yahoo 購物中心",
-      "summary": "【義美生醫】W PROTEIN 乳清蛋白飲任選1盒(35g*10包/盒)-可可/抹茶/奶茶/草莓/咖啡 $ 600 $750 已搶 57 ％",
-      "benefit": "【義美生醫】W PROTEIN 乳清蛋白飲任選1盒(35g*10包/盒)-可可/抹茶/奶茶/草莓/咖啡 $ 600 $750 已搶 57 ％",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "餐飲食品"
-      ],
-      "category": "餐飲食品",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "17d950be8c2825da",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "DR.WU 角鯊潤澤修復精華油30ML(共2入) $ 2,000 $4,000 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=11042107",
-      "brand": "Yahoo 購物中心",
-      "summary": "DR.WU 角鯊潤澤修復精華油30ML(共2入) $ 2,000 $4,000 商品熱銷中",
-      "benefit": "DR.WU 角鯊潤澤修復精華油30ML(共2入) $ 2,000 $4,000 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "be7c743574f179c5",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【Timo】MagSafe 透明磁吸支架卡夾 $ 199 $390 已搶 70 ％",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12045738",
-      "brand": "Yahoo 購物中心",
-      "summary": "【Timo】MagSafe 透明磁吸支架卡夾 $ 199 $390 已搶 70 ％",
-      "benefit": "【Timo】MagSafe 透明磁吸支架卡夾 $ 199 $390 已搶 70 ％",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "991588a30ff0bfd9",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【義美生醫】常順軍益生菌-日常保健S x3盒(2.5g*30包/盒) $ 1,785 $2,550 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=11748176",
-      "brand": "Yahoo 購物中心",
-      "summary": "【義美生醫】常順軍益生菌-日常保健S x3盒(2.5g*30包/盒) $ 1,785 $2,550 即將售完",
-      "benefit": "【義美生醫】常順軍益生菌-日常保健S x3盒(2.5g*30包/盒) $ 1,785 $2,550 即將售完",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "bf8ecc17436613ca",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【童樂繪金飾】2錢黃金金塊金條 天降財運聚寶盆 (貳台錢7.50g) $ 35,111 $65,750 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=10227559",
-      "brand": "Yahoo 購物中心",
-      "summary": "【童樂繪金飾】2錢黃金金塊金條 天降財運聚寶盆 (貳台錢7.50g) $ 35,111 $65,750 即將售完",
-      "benefit": "【童樂繪金飾】2錢黃金金塊金條 天降財運聚寶盆 (貳台錢7.50g) $ 35,111 $65,750 即將售完",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "f42a082aa85c04e1",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "KeyWear 奇威名品西裝外套/夾克外套(精選多款) $ 1,111 $9,980 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12315466",
-      "brand": "Yahoo 購物中心",
-      "summary": "KeyWear 奇威名品西裝外套/夾克外套(精選多款) $ 1,111 $9,980 即將售完",
-      "benefit": "KeyWear 奇威名品西裝外套/夾克外套(精選多款) $ 1,111 $9,980 即將售完",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "a2ef1934dbdd2713",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【舒潔】棉柔厚韌三層抽取衛生紙 110抽x30包/箱 $ 599 $1,299 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12095949",
-      "brand": "Yahoo 購物中心",
-      "summary": "【舒潔】棉柔厚韌三層抽取衛生紙 110抽x30包/箱 $ 599 $1,299 商品熱銷中",
-      "benefit": "【舒潔】棉柔厚韌三層抽取衛生紙 110抽x30包/箱 $ 599 $1,299 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "家電日用"
-      ],
-      "category": "家電日用",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "f4593b75a6b3a4ca",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "曼黛瑪璉&瑪登瑪朵 最強熱銷單品、單品褲 3件711 $ 999 $1,680 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12306447",
-      "brand": "Yahoo 購物中心",
-      "summary": "曼黛瑪璉&瑪登瑪朵 最強熱銷單品、單品褲 3件711 $ 999 $1,680 商品熱銷中",
-      "benefit": "曼黛瑪璉&瑪登瑪朵 最強熱銷單品、單品褲 3件711 $ 999 $1,680 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "56777a963acf9b71",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【康寧x哈利波特】316不鏽鋼保溫保冰雙飲杯950ml (SNAPWARE Harry Potter哈利波特 ) $ 1,111 $1,780 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12306776",
-      "brand": "Yahoo 購物中心",
-      "summary": "【康寧x哈利波特】316不鏽鋼保溫保冰雙飲杯950ml (SNAPWARE Harry Potter哈利波特 ) $ 1,111 $1,780 商品熱銷中",
-      "benefit": "【康寧x哈利波特】316不鏽鋼保溫保冰雙飲杯950ml (SNAPWARE Harry Potter哈利波特 ) $ 1,111 $1,780 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "444419d8c0feb30d",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "★好傘王 電光黑膠降溫反向自動傘(反向傘/抗UV/防曬/遮陽傘/自動雨傘/摺疊傘降溫)(買1送1) $ 611 $2,380 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=10519695",
-      "brand": "Yahoo 購物中心",
-      "summary": "★好傘王 電光黑膠降溫反向自動傘(反向傘/抗UV/防曬/遮陽傘/自動雨傘/摺疊傘降溫)(買1送1) $ 611 $2,380 即將售完",
-      "benefit": "★好傘王 電光黑膠降溫反向自動傘(反向傘/抗UV/防曬/遮陽傘/自動雨傘/摺疊傘降溫)(買1送1) $ 611 $2,380 即將售完",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "85c22f6f331b9a87",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "COACH CHELSEA 30 翻蓋插釦肩背包 兩色供選 $ 13,200 $16,800 已搶 40 ％",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12197107",
-      "brand": "Yahoo 購物中心",
-      "summary": "COACH CHELSEA 30 翻蓋插釦肩背包 兩色供選 $ 13,200 $16,800 已搶 40 ％",
-      "benefit": "COACH CHELSEA 30 翻蓋插釦肩背包 兩色供選 $ 13,200 $16,800 已搶 40 ％",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "a1a09f2911d92b0d",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【MIZUNO 美津濃】SPORTSTYLE WAVE PROPHECY 休閒慢跑鞋 D1GAXXXXXX(任選一色) $ 3,999 $6,880 即將售完",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12218256",
-      "brand": "Yahoo 購物中心",
-      "summary": "【MIZUNO 美津濃】SPORTSTYLE WAVE PROPHECY 休閒慢跑鞋 D1GAXXXXXX(任選一色) $ 3,999 $6,880 即將售完",
-      "benefit": "【MIZUNO 美津濃】SPORTSTYLE WAVE PROPHECY 休閒慢跑鞋 D1GAXXXXXX(任選一色) $ 3,999 $6,880 即將售完",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "男性運動"
-      ],
-      "category": "男性運動",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "1c47e9971dea0661",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "趨勢PC-cillin 防毒版 三年一台防護 盒裝 $ 499 $990 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12297555",
-      "brand": "Yahoo 購物中心",
-      "summary": "趨勢PC-cillin 防毒版 三年一台防護 盒裝 $ 499 $990 商品熱銷中",
-      "benefit": "趨勢PC-cillin 防毒版 三年一台防護 盒裝 $ 499 $990 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "6eb1d861b47b599e",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【鮮果多】美國冷凍藍莓*2包(1kg/包)_含運、早餐水果、烘焙水果、甜點食材 $ 799 $999 商品熱銷中",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=12282999",
-      "brand": "Yahoo 購物中心",
-      "summary": "【鮮果多】美國冷凍藍莓*2包(1kg/包)_含運、早餐水果、烘焙水果、甜點食材 $ 799 $999 商品熱銷中",
-      "benefit": "【鮮果多】美國冷凍藍莓*2包(1kg/包)_含運、早餐水果、烘焙水果、甜點食材 $ 799 $999 商品熱銷中",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-27T08:05:26+08:00",
-      "checked_at": null,
-      "tags": [
-        "餐飲食品"
-      ],
-      "category": "餐飲食品",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "1ae1895aabe19945",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "【New Balance】獨家款_327/373/411/413/480/530/574復古鞋_多款任選 $ 1,111 $3,880 已搶 78 ％",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=11829329",
-      "brand": "Yahoo 購物中心",
-      "summary": "【New Balance】獨家款_327/373/411/413/480/530/574復古鞋_多款任選 $ 1,111 $3,880 已搶 78 ％",
-      "benefit": "【New Balance】獨家款_327/373/411/413/480/530/574復古鞋_多款任選 $ 1,111 $3,880 已搶 78 ％",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-22T08:05:29+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "超過 72 小時未重新讀取，需重查",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "4ce6e141e8c6cd75",
+      "id": "8a5aea3d7cbcfd15",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "迎戰《俠盜獵車手6》！三星57吋 Neo G9 電競螢幕亞馬遜狂砍近7折 - 樂聯網",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82ckxnQWpINE10NTRkZzdtVFJxQmlJdXV2cjA3d0haWktBcUQ1bi1FRmJ2cGx4Vjd1bTBjVVZ4YjVyTFdaRGpaelRHcw?oc=5",
+      "title": "每人只能玩1分鐘！Steam超奇葩免費遊戲爆紅 全球玩家排隊挑戰「100萬個關卡」 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi1ANBVV95cUxQVXJuVVpIU0EtaHJkRUh6ajlfZDBzT1UzSmZ1UmRpRl9CVnhmZXdpWTBpYjZxNWVnY2c3bC1DTWZsU2VKWlVzczBGZXlsMUN1WnlPZFZFUHNFVWQxUGI2RktWTVVpeDZVNngwQk9yUDJ3TkVIb2lncHRmWk94SnU1aTlJdWZmZGhGVjBTdmdXSE1teC1VMTVnYjNXWWpJcktHMW4zaWJhaXAxZ2Zsb3lKak5QclhqdUluS3lFcWNfX0EtSXVwUUs3UjNSdEp6TWZTODE2Tjh4SmZuNmxZZHh1WldVRlRRcGVTN2VTZ1lpaTZRZ3ZGRGs1N2xqNVZFVmFKemEzUUhhOTNzQ2xBb1dNQUQwUWVNbXRCLXREMEtrb1pRbEY4SzFvekwwa2hfdFFDWEVZREVOM292bGEwb0I3V0VUMFJoQ2tYZkV6N2ZnMzlwSWhsd2pCVFhFd2lpVEM0cGpiVlJFNGtOWEFnbVhiMG5FX095RG5yY2V4TGZKazFJWnVCVFAxWkJ3REVNdExvWGdveFRxXzVpeThDMWJQUkJueFV4bXNNcmNJc0wwT295RG02MXp3dzU1VU1XR3VLSHhsd0JkUGo5SVFLcW0wSE50Njg?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "迎戰《俠盜獵車手6》！三星57吋 Neo G9 電競螢幕亞馬遜狂砍近7折 樂聯網",
-      "benefit": "迎戰《俠盜獵車手6》！三星57吋 Neo G9 電競螢幕亞馬遜狂砍近7折 樂聯網",
+      "summary": "每人只能玩1分鐘！Steam超奇葩免費遊戲爆紅 全球玩家排隊挑戰「100萬個關卡」 Yahoo新聞",
+      "benefit": "每人只能玩1分鐘！Steam超奇葩免費遊戲爆紅 全球玩家排隊挑戰「100萬個關卡」 Yahoo新聞",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "每人只能玩1分鐘！Steam超奇葩免費遊戲爆紅 全球玩家排隊挑戰「100萬個關卡」 Yahoo新聞",
+      "coupon_code": "",
+      "evidence": "每人只能玩1分鐘！Steam超奇葩免費遊戲爆紅 全球玩家排隊挑戰「100萬個關卡」 Yahoo新聞",
+      "evidence_excerpt": "每人只能玩1分鐘！Steam超奇葩免費遊戲爆紅 全球玩家排隊挑戰「100萬個關卡」 Yahoo新聞",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T22:01:37+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "遊戲娛樂"
+      ],
+      "category": "遊戲娛樂",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "45b5519ebf1932d7",
+      "source_key": "ptt",
+      "source_name": "PTT 省錢板",
+      "source_type": "community",
+      "title": "全新玉山證券APP 社群分享 最高可拿250",
+      "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793193993.A.BC7.html",
+      "brand": "PTT 省錢板",
+      "summary": "全新玉山證券APP 社群分享 最高可拿250元 7-11 購物金 PTT不知道可以分享哪裡 就分享在這了 https://i.verb.tw/5uJkLY8b.jpg https://i.verb.tw/7c3DVVOG.jpg ---- Sent from BePTT on m",
+      "benefit": "全新玉山證券APP 社群分享 最高可拿250",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "迎戰《俠盜獵車手6》！三星57吋 Neo G9 電競螢幕亞馬遜狂砍近7折 樂聯網",
-      "evidence_excerpt": "迎戰《俠盜獵車手6》！三星57吋 Neo G9 電競螢幕亞馬遜狂砍近7折 樂聯網",
+      "evidence": "全新玉山證券APP 社群分享 最高可拿250元 7-11 購物金\nPTT不知道可以分享哪裡 就分享在這了\nhttps://i.verb.tw/5uJkLY8b.jpg\nhttps://i.verb.tw/7c3DVVOG.jpg\n----\nSent from\nBePTT\non my Samsung SM-S9280\n",
+      "evidence_excerpt": "全新玉山證券APP 社群分享 最高可拿250元 7-11 購物金 PTT不知道可以分享哪裡 就分享在這了 https://i.verb.tw/5uJkLY8b.jpg https://i.verb.tw/7c3DVVOG.jpg ---- Sent from BePTT on my Samsung SM-S9280",
+      "body_read": true,
+      "body_note": "",
+      "published_at": "2026-10-28T21:26:33+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
+      "tags": [
+        "餐飲食品"
+      ],
+      "category": "餐飲食品",
+      "status": "candidate",
+      "reasons": [
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "f7e1d7ece0707240",
+      "source_key": "ptt_steam",
+      "source_name": "PTT Steam 遊戲情報",
+      "source_type": "community",
+      "title": "影之刃零24hr挑戰預告｜100死懲罰＋送遊戲",
+      "url": "https://www.ptt.cc/bbs/Steam/M.1793193131.A.348.html",
+      "brand": "PTT Steam 遊戲情報",
+      "summary": "遊戲名稱：影之刃零 實況網址： https://twitch.tv/shuteye_orange 10/29早上10點《影之刃零》首發， 這次直接挑戰24HR長時間直播＋不破關不關台。 但單純破關感覺還不夠， 所以再加一條： 死亡累積100次，就接受一次觀眾懲罰。 目前三個選項：",
+      "benefit": "影之刃零24hr挑戰預告｜100死懲罰＋送遊戲",
+      "eligibility": "還是會先死滿100次",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "遊戲名稱：影之刃零\n\n實況網址：\nhttps://twitch.tv/shuteye_orange\n10/29早上10點《影之刃零》首發，\n這次直接挑戰24HR長時間直播＋不破關不關台。\n\n但單純破關感覺還不夠，\n所以再加一條：\n死亡累積100次，就接受一次觀眾懲罰。\n\n目前三個選項：\n1.晚上去靈異景點直播\n2.全身除毛\n3.去吉原洗澡\n\n如果真的100死，\n你們覺得哪個最狠？\n\n我自己目前最不想2 XD\n\n另外直播期間也會抽出《影之刃零》遊戲送給觀眾。\n\n10/29早上10點正式開打，\n看看24HR內到底能不能破關，\n還是會先死滿100次。\n",
+      "evidence_excerpt": "遊戲名稱：影之刃零 實況網址： https://twitch.tv/shuteye_orange 10/29早上10點《影之刃零》首發， 這次直接挑戰24HR長時間直播＋不破關不關台。 但單純破關感覺還不夠， 所以再加一條： 死亡累積100次，就接受一次觀眾懲罰。 目前三個選項： 1.晚上去靈異景點直播 2.全身除毛 3.去吉原洗澡 如果真的100死， 你們覺得哪個最狠？ 我自己目前最不想2 XD 另外直播期間也會抽出《影之刃零》遊戲送給觀眾。 10/29早上10點正式開打， 看看24HR內到底能不能破關， 還是會先死滿100次。",
+      "body_read": true,
+      "body_note": "",
+      "published_at": "2026-10-28T21:12:11+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
+      "tags": [
+        "遊戲娛樂"
+      ],
+      "category": "遊戲娛樂",
+      "status": "candidate",
+      "reasons": [
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [
+        "抽獎，不保證取得"
+      ],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "684fcf671fccc20c",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "PlayStation雙11優惠登場 《漫威金鋼狼》、《沙羅週期》等遊戲下殺 - 樂聯網",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE56S1puRGVYUlZOUHRoNDYyWUNldWJOT0IwSDktMXhzYjdJWHJMcFBLeWpfU3B5cUI5cG11ZHZ4TlBVOWtoWTd3UUREOA?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "PlayStation雙11優惠登場 《漫威金鋼狼》、《沙羅週期》等遊戲下殺 樂聯網",
+      "benefit": "PlayStation雙11優惠登場 《漫威金鋼狼》、《沙羅週期》等遊戲下殺 - 樂聯網",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "PlayStation雙11優惠登場 《漫威金鋼狼》、《沙羅週期》等遊戲下殺 樂聯網",
+      "evidence_excerpt": "PlayStation雙11優惠登場 《漫威金鋼狼》、《沙羅週期》等遊戲下殺 樂聯網",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-22T07:59:12+08:00",
-      "first_seen_at": "2026-10-22T23:15:34+08:00",
+      "published_at": "2026-10-28T19:46:14+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "遊戲娛樂"
+      ],
+      "category": "遊戲娛樂",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "0d4d0283acc9f322",
+      "source_key": "ptt",
+      "source_name": "PTT 省錢板",
+      "source_type": "community",
+      "title": "柯南展、奇美博埃及展折31元",
+      "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793182709.A.DC3.html",
+      "brand": "PTT 省錢板",
+      "summary": "ibon 萬聖活動 結帳輸入【TRICK31】可折31元 適用有： 奇美博物館 埃及展 恐怖心展 柯南TV動畫展 高雄場 北投文物館 妖怪展 六福村 北投竹子湖線台灣好行 https://bit.ly/4zgpPjS",
+      "benefit": "結帳輸入【TRICK31】可折31元",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "結帳輸入【TRICK31】可折31元",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "ibon 萬聖活動\n\n結帳輸入【TRICK31】可折31元\n\n適用有：\n\n奇美博物館　埃及展\n\n恐怖心展\n\n柯南TV動畫展 高雄場\n\n北投文物館 妖怪展\n\n六福村\n\n北投竹子湖線台灣好行\nhttps://bit.ly/4zgpPjS",
+      "evidence_excerpt": "ibon 萬聖活動 結帳輸入【TRICK31】可折31元 適用有： 奇美博物館 埃及展 恐怖心展 柯南TV動畫展 高雄場 北投文物館 妖怪展 六福村 北投竹子湖線台灣好行 https://bit.ly/4zgpPjS",
+      "body_read": true,
+      "body_note": "",
+      "published_at": "2026-10-28T18:18:29+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
+      "tags": [
+        "其他"
+      ],
+      "category": "其他",
+      "status": "candidate",
+      "reasons": [
+        "折扣幅度或免費條件未獲數字佐證",
+        "品類尚未確認，暫不因陌生品牌直接排除"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "0e0d2b38d7da981c",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "走格子地牢 RPG《Crawler 3D》Steam 上市 支援繁體中文並同步開放免費試玩 - Ludens Media",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4ZzQzbVNoOTJhVU9oRFMtQVZpcThTMmRieV9lQk1mTW1BRUNlZVp2MHJ3UkMtVXBUVUY4a1d6ajZQa19Iai1GVm1veXhmdjVUUFZyMUZrMXRPOUd2WHphbA?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "走格子地牢 RPG《Crawler 3D》Steam 上市 支援繁體中文並同步開放免費試玩 Ludens Media",
+      "benefit": "走格子地牢 RPG《Crawler 3D》Steam 上市 支援繁體中文並同步開放免費試玩 Ludens Media",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "走格子地牢 RPG《Crawler 3D》Steam 上市 支援繁體中文並同步開放免費試玩 Ludens Media",
+      "evidence_excerpt": "走格子地牢 RPG《Crawler 3D》Steam 上市 支援繁體中文並同步開放免費試玩 Ludens Media",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T18:18:00+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "遊戲娛樂"
+      ],
+      "category": "遊戲娛樂",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "ecb4c66bd63bfb90",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "首批iPhone Duo傳「螢幕裂痕、鉸鏈凸起」災情 業者揭免費換新、維修標準 - TVBS",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1zN29vaV93bElBeGJvSnNJOXJ0NVFmRVpHLW85bkhuUlpVZktfbkFyRV9rMmZCUVdLLW1RVjlKaEt1a19uLS1xWVZxTUYwUQ?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "首批iPhone Duo傳「螢幕裂痕、鉸鏈凸起」災情 業者揭免費換新、維修標準 TVBS",
+      "benefit": "首批iPhone Duo傳「螢幕裂痕、鉸鏈凸起」災情 業者揭免費換新、維修標準 TVBS",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "首批iPhone Duo傳「螢幕裂痕、鉸鏈凸起」災情 業者揭免費換新、維修標準 TVBS",
+      "evidence_excerpt": "首批iPhone Duo傳「螢幕裂痕、鉸鏈凸起」災情 業者揭免費換新、維修標準 TVBS",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T18:13:00+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
         "3C"
@@ -8044,62 +8626,95 @@
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
-        "領取／購買方式未確認",
-        "超過 72 小時未重新讀取，需重查"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": {
-        "kind": "rate",
-        "percent": 30.0,
-        "label": "7 折",
-        "strong": true,
-        "range_claim": false
-      },
-      "discount_label": "7 折",
-      "ease_label": "待確認",
-      "score": 10,
-      "deal_strength": "strong"
-    },
-    {
-      "id": "49bc18e7c7ccc2da",
-      "source_key": "yahoo",
-      "source_name": "Yahoo 購物中心",
-      "source_type": "official",
-      "title": "理膚寶水 MELA B3淡斑淨亮精華 50ml 期間限定特談組 $ 2,410 $5,122 已搶 75 ％",
-      "url": "https://tw.buy.yahoo.com/rushbuy?id=11986259",
-      "brand": "Yahoo 購物中心",
-      "summary": "理膚寶水 MELA B3淡斑淨亮精華 50ml 期間限定特談組 $ 2,410 $5,122 已搶 75 ％",
-      "benefit": "理膚寶水 MELA B3淡斑淨亮精華 50ml 期間限定特談組 $ 2,410 $5,122 已搶 75 ％",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "",
-      "evidence_excerpt": "",
-      "body_read": false,
-      "body_note": "無法辨識活動內文（可能為動態頁）",
-      "published_at": null,
-      "first_seen_at": "2026-10-21T23:13:25+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "超過 72 小時未重新讀取，需重查",
-        "品類尚未確認，暫不因陌生品牌直接排除"
+        "領取／購買方式未確認"
       ],
       "hurdles": [],
       "end_date": null,
       "discount": null,
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
-      "score": 10,
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "9cfa751899b31aa1",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "PlayStation雙11優惠最高省1500元！PS5手把、耳機、遊戲折扣一次看 - udn科技玩家",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0eTg3V2VFbzJpQVlsUUNtTHprMi1JMk5qRW5yT1FScDN6cy1TYzRyTXVVMWREaWhLN29QZ1BFTUJrZXl1dEJzRm8yVnpTLTdHUEw2Z1U4QURweHB5Xy1J0gFfQVVfeXFMUDR5ODdXZUVvMmlBWWxRQ21MemsyLUkyTmpFbnJPUVJwM3pzLVNjNHJNdVUxZERpaEs3b1BnUEVNQmtleXV0QnNGbzJWelMtN0dQTDZnVThBRHB4cHlfLUk?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "PlayStation雙11優惠最高省1500元！PS5手把、耳機、遊戲折扣一次看 udn科技玩家",
+      "benefit": "PlayStation雙11優惠最高省1500元！PS5手把、耳機、遊戲折扣一次看 udn科技玩家",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "PlayStation雙11優惠最高省1500元！PS5手把、耳機、遊戲折扣一次看 udn科技玩家",
+      "evidence_excerpt": "PlayStation雙11優惠最高省1500元！PS5手把、耳機、遊戲折扣一次看 udn科技玩家",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T14:31:01+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "3C",
+        "遊戲娛樂"
+      ],
+      "category": "3C",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
+      "deal_strength": "unknown"
+    },
+    {
+      "id": "3989d22f83f3e5f8",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "PlayStation 雙 11 狂歡購 10/30 開跑！DualSense 控制器現折 300 元 PS5 遊戲同步推出限時優惠 - 3C 達人廖阿輝",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB2TmdScWxxSDlpZ290dFlDbURlN1ZvbUEwalpBejV0dF9BUDhxaFNXd3c0aUZMY1JlazVtM3RJX2MyaVhacUZPMXRsUEdvNVFaN2thUjQzSHd6X2Jr0gFcQVVfeXFMUHZOZ1JxbHFIOWlnb3R0WUNtRGU3Vm9tQTBqWkF6NXR0X0FQOHFoU1d3dzRpRkxjUmVrNW0zdElfYzJpWFpxRk8xdGxQR281UVo3a2FSNDNId3pfYms?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "PlayStation 雙 11 狂歡購 10/30 開跑！DualSense 控制器現折 300 元 PS5 遊戲同步推出限時優惠 3C 達人廖阿輝",
+      "benefit": "PlayStation 雙 11 狂歡購 10/30 開跑！DualSense 控制器現折 300 元 PS5 遊戲同步推出限時優惠 3C 達人廖阿輝",
+      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "steps": "內文未確認操作方式",
+      "limits": "庫存、名額與完整限制未確認",
+      "coupon_code": "",
+      "evidence": "PlayStation 雙 11 狂歡購 10/30 開跑！DualSense 控制器現折 300 元　PS5 遊戲同步推出限時優惠 3C 達人廖阿輝",
+      "evidence_excerpt": "PlayStation 雙 11 狂歡購 10/30 開跑！DualSense 控制器現折 300 元 PS5 遊戲同步推出限時優惠 3C 達人廖阿輝",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-28T14:23:47+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
+      "checked_at": null,
+      "tags": [
+        "3C",
+        "遊戲娛樂"
+      ],
+      "category": "3C",
+      "status": "candidate",
+      "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
+        "折扣幅度或免費條件未獲數字佐證",
+        "領取／購買方式未確認"
+      ],
+      "hurdles": [],
+      "end_date": null,
+      "discount": null,
+      "discount_label": "折扣尚未確認",
+      "ease_label": "待確認",
+      "score": 0,
       "deal_strength": "unknown"
     },
     {
@@ -8122,7 +8737,7 @@
       "body_note": "",
       "published_at": "2026-10-28T13:15:46+08:00",
       "first_seen_at": "2026-10-28T13:38:27+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "3C",
         "餐飲食品"
@@ -8144,12 +8759,12 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "f97c615f1e47946d",
+      "id": "e4bfa3a8a646b16a",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
       "title": "PlayStation雙11優惠！PS5手把、金剛狼19款遊戲特價 10/30開跑 - NOWnews今日新聞",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5XeDY0WDlKM3JZcGZKUVF5WXdMcUNuWmZhYVRrZHVzRlFKQmQ1ZzVDaWxCZ05pbVR5Nm5RWFd3V0dKb1djWFRDZUhnTG_SAVJBVV95cUxPYmpPWGhqcW55WWdmdXJTWmlmRWhxVXg1Zm0yN0JVMXRDNm5ldDVaclN0cHdDWnByQVRmMGtobGR5Z0FEVlhwQkVlc1VmMWU3YzF3?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9iak9YaGpxbnlZZ2Z1clNaaWZFaHFVeDVmbTI3QlUxdEM2bmV0NVpyU3Rwd0NacHJBVGYwa2hsZHlnQURWWHBCRWVzVWYxZTdjMXfSAVJBVV95cUxPYmpPWGhqcW55WWdmdXJTWmlmRWhxVXg1Zm0yN0JVMXRDNm5ldDVaclN0cHdDWnByQVRmMGtobGR5Z0FEVlhwQkVlc1VmMWU3YzF3?oc=5",
       "brand": "即時優惠雷達",
       "summary": "PlayStation雙11優惠！PS5手把、金剛狼19款遊戲特價 10/30開跑 NOWnews今日新聞",
       "benefit": "PlayStation雙11優惠！PS5手把、金剛狼19款遊戲特價 10/30開跑 NOWnews今日新聞",
@@ -8162,7 +8777,7 @@
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
       "published_at": "2026-10-28T13:02:59+08:00",
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
         "遊戲娛樂"
@@ -8183,28 +8798,29 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "f7a513a7a0f547e7",
+      "id": "e0fcf218f8e3d5d1",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) - Cool3c",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lNUtWVU1CWEpDc3BNSU5icHdfYTZoTW82YnpoT0t5MnR6RU1XbkhBcXhoa3p4YTR0c1pxZTJza0VNUkVqRWdUeFBaOTBUdw?oc=5",
+      "title": "誠品線上「1111狂購盛典」盛大開跑！萬件秋季單品限時折扣，3C消費滿額再抽Switch - 迷誠品",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1acVBXR2dhNUloSjY0cXJxTDhZRGlUUFJnU2Q3RXRnVWkzQ3dDRGxtUWdLQW9XNFFMd3gzRGViMUNyX1ZFRFYtbG1abUtHNFVzbnVOX2g0cjZNa1k?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
-      "benefit": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
+      "summary": "誠品線上「1111狂購盛典」盛大開跑！萬件秋季單品限時折扣，3C消費滿額再抽Switch 迷誠品",
+      "benefit": "誠品線上「1111狂購盛典」盛大開跑！萬件秋季單品限時折扣，3C消費滿額再抽Switch 迷誠品",
+      "eligibility": "誠品線上「1111狂購盛典」盛大開跑！萬件秋季單品限時折扣，3C消費滿額再抽Switch 迷誠品",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
-      "evidence_excerpt": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
+      "evidence": "誠品線上「1111狂購盛典」盛大開跑！萬件秋季單品限時折扣，3C消費滿額再抽Switch 迷誠品",
+      "evidence_excerpt": "誠品線上「1111狂購盛典」盛大開跑！萬件秋季單品限時折扣，3C消費滿額再抽Switch 迷誠品",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-28T12:46:40+08:00",
-      "first_seen_at": "2026-10-28T13:38:27+08:00",
+      "published_at": "2026-10-28T12:38:17+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
-        "3C"
+        "3C",
+        "遊戲娛樂"
       ],
       "category": "3C",
       "status": "candidate",
@@ -8241,7 +8857,7 @@
       "body_note": "",
       "published_at": "2026-10-28T12:18:46+08:00",
       "first_seen_at": "2026-10-28T13:38:27+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "其他"
       ],
@@ -8260,30 +8876,30 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "ebe227f1288a5ea0",
+      "id": "f7a513a7a0f547e7",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "PlayStation 雙 11 優惠 10 月 30 日開跑！《漫威金鋼狼》、《羊蹄山戰鬼》下殺 1,509 元 《劍星》等多款大作只要 890 元 - Paradaily",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5pekJvSlFuNTEyUVcydjl4ZExqc2x6ZFNOZS1DZzBqWEZJT0R1UHJ1UmtHYng1TmIzc0xWdUJWb1pMQl9ET2NZNFE2WjRiVUdqYWpDM2UzY3ZiX0lCZVdZMmVrWjl1UFAwN21JZVZNbDlqeEZu?oc=5",
+      "title": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) - Cool3c",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lNUtWVU1CWEpDc3BNSU5icHdfYTZoTW82YnpoT0t5MnR6RU1XbkhBcXhoa3p4YTR0c1pxZTJza0VNUkVqRWdUeFBaOTBUdw?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "PlayStation 雙 11 優惠 10 月 30 日開跑！《漫威金鋼狼》、《羊蹄山戰鬼》下殺 1,509 元 《劍星》等多款大作只要 890 元 Paradaily",
-      "benefit": "PlayStation 雙 11 優惠 10 月 30 日開跑！《漫威金鋼狼》、《羊蹄山戰鬼》下殺 1,509 元 《劍星》等多款大作只要 890 元 - Paradaily",
+      "summary": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
+      "benefit": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "PlayStation 雙 11 優惠 10 月 30 日開跑！《漫威金鋼狼》、《羊蹄山戰鬼》下殺 1,509 元 《劍星》等多款大作只要 890 元 Paradaily",
-      "evidence_excerpt": "PlayStation 雙 11 優惠 10 月 30 日開跑！《漫威金鋼狼》、《羊蹄山戰鬼》下殺 1,509 元 《劍星》等多款大作只要 890 元 Paradaily",
+      "evidence": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
+      "evidence_excerpt": "34吋曲面螢幕跳水價4599元飛利浦34M2C3500L電競螢幕支援180Hz、0.5ms規格 #螢幕特價(253484) Cool3c",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-28T10:54:17+08:00",
+      "published_at": "2026-10-28T10:55:00+08:00",
       "first_seen_at": "2026-10-28T13:38:27+08:00",
       "checked_at": null,
       "tags": [
-        "遊戲娛樂"
+        "3C"
       ],
-      "category": "遊戲娛樂",
+      "category": "3C",
       "status": "candidate",
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
@@ -8318,7 +8934,7 @@
       "body_note": "",
       "published_at": "2026-10-28T03:17:43+08:00",
       "first_seen_at": "2026-10-28T08:05:27+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "遊戲娛樂",
         "餐飲食品",
@@ -8358,7 +8974,7 @@
       "body_note": "",
       "published_at": "2026-10-27T19:25:01+08:00",
       "first_seen_at": "2026-10-27T23:52:23+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "其他"
       ],
@@ -8419,25 +9035,25 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "a9e4ebe823159ca7",
+      "id": "2fdeb200afaa9e24",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "免費吃炸雞、咖啡買3送3！職棒總冠軍出爐 9天優惠一次看 - 壹蘋新聞網",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5aX0lpUGxYLXhKbkx5WURkSHY1ZmNxRDl5WFI2Q09TT293Uk9iX1R4ZmVaenR2OWxXUFJ5dGJEYVFyS1VvY1hYaU1zNVJock9yN2V1TGRJV0d3X3ByWTZFVGhzbHlwcEFGN2lJMUUtcVd6N0NRT3dFVnNMRlZrZw?oc=5",
+      "title": "7-11咖啡優惠10/14起快閃14天開賣，6款咖啡「17杯組合」限量開賣，美式、拿鐵和西西里咖啡全都有！ - Cosmopolitan",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUHFQcnRCdnlqOXpFazI4VHJCRGlqdjJhSlBsTFd5aE1pZm5wdHBlZGlJUkJlakI0ZnZ1THRuNkJIZXF1bXZDRjJmb0hudnFERW94eU1EZ0tkNnUyUWg3NmxKNXFEdzFkb3dXUERfWXoybzRRbEgyLWFqMVI4YkRHeVdTcmtsalE?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "免費吃炸雞、咖啡買3送3！職棒總冠軍出爐 9天優惠一次看 壹蘋新聞網",
-      "benefit": "免費吃炸雞、咖啡買3送3！職棒總冠軍出爐 9天優惠一次看 壹蘋新聞網",
+      "summary": "7-11咖啡優惠10/14起快閃14天開賣，6款咖啡「17杯組合」限量開賣，美式、拿鐵和西西里咖啡全都有！ Cosmopolitan",
+      "benefit": "7-11咖啡優惠10/14起快閃14天開賣，6款咖啡「17杯組合」限量開賣，美式、拿鐵和西西里咖啡全都有！ - Cosmopolitan",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
+      "limits": "7-11咖啡優惠10/14起快閃14天開賣，6款咖啡「17杯組合」限量開賣，美式、拿鐵和西西里咖啡全都有！ Cosmopolitan",
       "coupon_code": "",
-      "evidence": "免費吃炸雞、咖啡買3送3！職棒總冠軍出爐 9天優惠一次看 壹蘋新聞網",
-      "evidence_excerpt": "免費吃炸雞、咖啡買3送3！職棒總冠軍出爐 9天優惠一次看 壹蘋新聞網",
+      "evidence": "7-11咖啡優惠10/14起快閃14天開賣，6款咖啡「17杯組合」限量開賣，美式、拿鐵和西西里咖啡全都有！ Cosmopolitan",
+      "evidence_excerpt": "7-11咖啡優惠10/14起快閃14天開賣，6款咖啡「17杯組合」限量開賣，美式、拿鐵和西西里咖啡全都有！ Cosmopolitan",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-27T14:00:00+08:00",
-      "first_seen_at": "2026-10-27T13:00:08+08:00",
+      "published_at": "2026-10-27T15:00:00+08:00",
+      "first_seen_at": "2026-10-29T00:36:48+08:00",
       "checked_at": null,
       "tags": [
         "餐飲食品"
@@ -8477,7 +9093,7 @@
       "body_note": "",
       "published_at": "2026-10-27T11:50:50+08:00",
       "first_seen_at": "2026-10-27T13:00:08+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "其他"
       ],
@@ -8516,7 +9132,7 @@
       "body_note": "",
       "published_at": "2026-10-27T11:11:24+08:00",
       "first_seen_at": "2026-10-27T13:00:08+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "其他"
       ],
@@ -8525,45 +9141,6 @@
       "reasons": [
         "折扣幅度或免費條件未獲數字佐證",
         "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 0,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "df72765ea2d57527",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "「轉軸異響、內螢幕裂開亮線」，蘋果承認少數iPhone Duo機型受影響、提供免費換機 - Mashdigi",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNemppYkNqOFRYNHFoTlV1X29IMm5peG1sS251NXpHR0tKOEU5LUdFS256QVpxbkdHcllkRWZmVDFDOGhYWXVKV3M2ZXplcWxRSHhUMUdNNWdDWllOZlFDTmI5Vi1ISzB1VWxkLUpqd2JwVlZOUC1ySG5ZYklQbENUQTlmQzQwZi0zeHlqamEybWpBWGZ6elBJdEEzOFZQd0pQQUxfZUVqbmEzWVVnRy1nQlVzU0lkZXgxbjVQeTc1SUhfLXFHU2tSQ1Y1d3hEV0l4aXRucW45dTY0WjE5RmdyNHEtMVpTT1Ruc0V2aDVzcFhKclJFMlB3OGlzaFdibGYyaS1XRQ?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "「轉軸異響、內螢幕裂開亮線」，蘋果承認少數iPhone Duo機型受影響、提供免費換機 Mashdigi",
-      "benefit": "「轉軸異響、內螢幕裂開亮線」，蘋果承認少數iPhone Duo機型受影響、提供免費換機 Mashdigi",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "「轉軸異響、內螢幕裂開亮線」，蘋果承認少數iPhone Duo機型受影響、提供免費換機 Mashdigi",
-      "evidence_excerpt": "「轉軸異響、內螢幕裂開亮線」，蘋果承認少數iPhone Duo機型受影響、提供免費換機 Mashdigi",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-27T09:00:17+08:00",
-      "first_seen_at": "2026-10-27T13:00:08+08:00",
-      "checked_at": null,
-      "tags": [
-        "3C"
-      ],
-      "category": "3C",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
       ],
       "hurdles": [],
       "end_date": null,
@@ -8593,7 +9170,7 @@
       "body_note": "",
       "published_at": "2026-10-27T01:10:54+08:00",
       "first_seen_at": "2026-10-27T08:05:26+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "遊戲娛樂",
         "金融支付",
@@ -8633,7 +9210,7 @@
       "body_note": "",
       "published_at": "2026-10-27T00:53:53+08:00",
       "first_seen_at": "2026-10-27T08:05:26+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "餐飲食品"
       ],
@@ -8692,85 +9269,6 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "52f9b2fa4408d565",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "台灣大賽／味全龍封王 逾30家合作夥伴同慶！買1送1、現金折扣一次看 - 三立新聞",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02d1dqQldoTkhhdl9lQU9uVW9peHNHbXJHVDdKaE9uS1k1cFUtUWhFODFpbS1qUzJmSG1kNGVJX2Y1ZUVaekFPMNIBTEFVX3lxTFA2ckpSYkNWT2liclJVRk1IelVxbzltdkkweFNxdnkwZlhWZ1NfTGhEMS0yZ0tZWFROM3psRWlaMEZGNHR4NWJlTlZvYUg?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "台灣大賽／味全龍封王 逾30家合作夥伴同慶！買1送1、現金折扣一次看 三立新聞",
-      "benefit": "台灣大賽／味全龍封王 逾30家合作夥伴同慶！買1送1、現金折扣一次看 三立新聞",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "台灣大賽／味全龍封王　逾30家合作夥伴同慶！買1送1、現金折扣一次看 三立新聞",
-      "evidence_excerpt": "台灣大賽／味全龍封王 逾30家合作夥伴同慶！買1送1、現金折扣一次看 三立新聞",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-26T20:55:00+08:00",
-      "first_seen_at": "2026-10-27T08:05:26+08:00",
-      "checked_at": null,
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 0,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "b6f38a376ffd4456",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "不用買也能玩！Steam突發免費週末，《文明帝國7》直接送你玩到過癮 - SuperDope.Games",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8tVDktWHJ4enVDaWlBYmxveVNIdURtcjhIXzZ2UTVLN1dGQ0U2TXBVQXVrSXBHMTRadmtVY1QwaWs2VDM3SkljQk9aakdiTlo1dVpkbQ?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "不用買也能玩！Steam突發免費週末，《文明帝國7》直接送你玩到過癮 SuperDope.Games",
-      "benefit": "不用買也能玩！Steam突發免費週末，《文明帝國7》直接送你玩到過癮 SuperDope.Games",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "不用買也能玩！Steam突發免費週末，《文明帝國7》直接送你玩到過癮 SuperDope.Games",
-      "evidence_excerpt": "不用買也能玩！Steam突發免費週末，《文明帝國7》直接送你玩到過癮 SuperDope.Games",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-26T12:27:06+08:00",
-      "first_seen_at": "2026-10-25T22:21:43+08:00",
-      "checked_at": null,
-      "tags": [
-        "遊戲娛樂"
-      ],
-      "category": "遊戲娛樂",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 0,
-      "deal_strength": "unknown"
-    },
-    {
       "id": "327ce08b59b0afcb",
       "source_key": "ptt",
       "source_name": "PTT 省錢板",
@@ -8790,7 +9288,7 @@
       "body_note": "",
       "published_at": "2026-10-26T10:27:39+08:00",
       "first_seen_at": "2026-10-26T12:43:12+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "餐飲食品"
       ],
@@ -8828,7 +9326,7 @@
       "body_note": "",
       "published_at": "2026-10-25T23:40:17+08:00",
       "first_seen_at": "2026-10-26T08:05:25+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "3C"
       ],
@@ -8866,7 +9364,7 @@
       "body_note": "",
       "published_at": "2026-10-25T19:05:33+08:00",
       "first_seen_at": "2026-10-25T22:21:43+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "3C"
       ],
@@ -8904,7 +9402,7 @@
       "body_note": "",
       "published_at": "2026-10-25T01:43:16+08:00",
       "first_seen_at": "2026-10-25T08:05:26+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "其他"
       ],
@@ -8943,7 +9441,7 @@
       "body_note": "",
       "published_at": "2026-10-24T21:31:31+08:00",
       "first_seen_at": "2026-10-24T22:00:21+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "家電日用"
       ],
@@ -8983,7 +9481,7 @@
       "body_note": "",
       "published_at": "2026-10-24T12:45:02+08:00",
       "first_seen_at": "2026-10-24T22:00:21+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "其他"
       ],
@@ -9022,7 +9520,7 @@
       "body_note": "",
       "published_at": "2026-10-23T20:58:26+08:00",
       "first_seen_at": "2026-10-24T08:05:31+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "3C",
         "遊戲娛樂"
@@ -9041,37 +9539,38 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "68459dbfc50a5ce4",
-      "source_key": "ptt_steam",
-      "source_name": "PTT Steam 遊戲情報",
-      "source_type": "community",
-      "title": "Sker Ritual 等3款 (Epic)",
-      "url": "https://www.ptt.cc/bbs/Steam/M.1792733936.A.7B9.html",
-      "brand": "PTT Steam 遊戲情報",
-      "summary": "【 遊 戲 名 稱 】： 1. Sker Ritual 斯蓋爾儀式 79%極度好評 (6k) 2. Terraspace 3. GetHigh.EXE 【限時／限量免費網址】： 1. https://store.epicgames.com/p/sker-ritual-aac702",
-      "benefit": "【限時／限量免費網址】：",
+      "id": "08d7f5bc28686868",
+      "source_key": "news_radar",
+      "source_name": "即時優惠雷達",
+      "source_type": "discovery",
+      "title": "小米Redmi Watch 5 Lite特價1295元 1.96吋螢幕、內建GPS、續航力18天 #GNSS (253337) - Cool3c",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5aYnNSa3N4b05oZnptQU9pSFRrUUljLUhTT1ItMUJyY1l6bXpObkNxTXdvREZKWTYzMl9ScTBIbGo5YnBROFhiUlpTWjM0dw?oc=5",
+      "brand": "即時優惠雷達",
+      "summary": "小米Redmi Watch 5 Lite特價1295元 1.96吋螢幕、內建GPS、續航力18天 #GNSS (253337) Cool3c",
+      "benefit": "小米Redmi Watch 5 Lite特價1295元 1.96吋螢幕、內建GPS、續航力18天 #GNSS (253337) Cool3c",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
-      "limits": "【限時／限量免費網址】：",
+      "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "【  遊  戲  名  稱  】：\n1. Sker Ritual  斯蓋爾儀式  79%極度好評 (6k)\n2. Terraspace\n3. GetHigh.EXE\n\n【限時／限量免費網址】：\n1.\nhttps://store.epicgames.com/p/sker-ritual-aac702\n2.\nhttps://store.epicgames.com/p/dimond-hunt-03a766\n3.\nhttps://store.epicgames.com/p/gethighexe-c83d1f\n【  介紹／商店連結  】：\n1.\nhttps://store.steampowered.com/app/1492070\n2.\nhttps://store.steampowered.com/app/3535330\n3.\nhttps://store.steampowered.com/app/4331890\n【  領  取  條  件  】：鴿子\n\n【  附          註  】：\n1. 到10/29/2026 11:00 PM\n2. 到10/28/2026 04:00 AM\n3. 到11/03/2026 12:00 AM\n\n鎖區遊戲可嘗試領看看\nHome - A Unique Horror Adventure\nhttps://store.epicgames.com/p/home-19212a\nhttps://store.epicgames.com/p/home-android-9ba07f\nhttps://store.epicgames.com/p/home-ios-69cfcf\nhttps://store.steampowered.com/app/215670",
-      "evidence_excerpt": "【 遊 戲 名 稱 】： 1. Sker Ritual 斯蓋爾儀式 79%極度好評 (6k) 2. Terraspace 3. GetHigh.EXE 【限時／限量免費網址】： 1. https://store.epicgames.com/p/sker-ritual-aac702 2. https://store.epicgames.com/p/dimond-hunt-03a766 3. https://store.epicgames.com/p/gethighexe-c83d1f 【 介紹／商店連結 】： 1. https://store.steampowered.com/app/14920",
-      "body_read": true,
-      "body_note": "",
-      "published_at": "2026-10-23T13:38:56+08:00",
-      "first_seen_at": "2026-10-24T08:05:31+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "evidence": "小米Redmi Watch 5 Lite特價1295元 1.96吋螢幕、內建GPS、續航力18天 #GNSS (253337) Cool3c",
+      "evidence_excerpt": "小米Redmi Watch 5 Lite特價1295元 1.96吋螢幕、內建GPS、續航力18天 #GNSS (253337) Cool3c",
+      "body_read": false,
+      "body_note": "新聞索引摘要，尚未讀到原始條款",
+      "published_at": "2026-10-23T17:16:00+08:00",
+      "first_seen_at": "2026-10-28T08:05:27+08:00",
+      "checked_at": null,
       "tags": [
-        "遊戲娛樂"
+        "3C"
       ],
-      "category": "遊戲娛樂",
+      "category": "3C",
       "status": "candidate",
       "reasons": [
+        "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
         "領取／購買方式未確認"
       ],
       "hurdles": [],
-      "end_date": "2026-10-28",
+      "end_date": null,
       "discount": null,
       "discount_label": "折扣尚未確認",
       "ease_label": "待確認",
@@ -9098,7 +9597,7 @@
       "body_note": "",
       "published_at": "2026-10-23T02:07:47+08:00",
       "first_seen_at": "2026-10-24T08:05:31+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "遊戲娛樂",
         "餐飲食品",
@@ -9157,25 +9656,25 @@
       "deal_strength": "unknown"
     },
     {
-      "id": "5d9e4e6cbe83cbba",
+      "id": "422585d0f105d339",
       "source_key": "news_radar",
       "source_name": "即時優惠雷達",
       "source_type": "discovery",
-      "title": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 - Yahoo股市",
-      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPdl9vVkJVa3VjdTRsWFExVFBxZTZqekllSHRzY1o3QTJtU1BrMzJxV3Y2eEllS1RSWkhNb0VjOHJnRVF2eXFKLUJKVTRWd29KNW1objk2Snh4RXFVOEk2ckdoamI3dFUxdmtyRV9XVnc3OGU0TFZSRnNPYXNCSGVkVkY2c3JhUXp3a0JBaGRmSjVTNkt1bUc1SUs1OFh5TmJzM3JMYmt0dDZnMmRzX3hieHUtWHJuZTBQQzFyenNyMTBNLUNjZ29rYV9MYVNoZ25JZnlURzA0dXR2VVZzNGlYY0ZHOFB6bkl3M1JZVWxER2ZnUmZjSzlNdkY2RVViM1RBd0htaWNua0pvcWx1SXBqS2NLU0lEeVNPR1Fn?oc=5",
+      "title": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 - 蕃新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE16OGtkNkpqX3hQVy1yZUhlVm4yVnJlVTBGcWxwNjl0VkpOTW41MEQ4MW1YMFFlYlZKRXJ4MGpubW96aHMtUV8xUVhVeEJybENKeGc?oc=5",
       "brand": "即時優惠雷達",
-      "summary": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 Yahoo股市",
-      "benefit": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 - Yahoo股市",
+      "summary": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 蕃新聞",
+      "benefit": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 - 蕃新聞",
       "eligibility": "內文未列明額外資格；不代表所有人都適用",
       "steps": "內文未確認操作方式",
       "limits": "庫存、名額與完整限制未確認",
       "coupon_code": "",
-      "evidence": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 Yahoo股市",
-      "evidence_excerpt": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 Yahoo股市",
+      "evidence": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 蕃新聞",
+      "evidence_excerpt": "三星黑五早鳥優惠開跑 電競螢幕、Galaxy S26 Ultra 下殺 蕃新聞",
       "body_read": false,
       "body_note": "新聞索引摘要，尚未讀到原始條款",
       "published_at": "2026-10-22T07:56:48+08:00",
-      "first_seen_at": "2026-10-22T08:05:29+08:00",
+      "first_seen_at": "2026-10-27T08:05:26+08:00",
       "checked_at": null,
       "tags": [
         "3C"
@@ -9185,8 +9684,7 @@
       "reasons": [
         "只取得標題或摘要，未讀到活動內文",
         "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "超過 72 小時未重新讀取，需重查"
+        "領取／購買方式未確認"
       ],
       "hurdles": [],
       "end_date": null,
@@ -9216,7 +9714,7 @@
       "body_note": "",
       "published_at": "2026-10-22T00:55:33+08:00",
       "first_seen_at": "2026-10-24T08:05:31+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
+      "checked_at": "2026-10-29T00:36:48+08:00",
       "tags": [
         "其他"
       ],
@@ -9225,127 +9723,6 @@
       "reasons": [
         "折扣幅度或免費條件未獲數字佐證",
         "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 0,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "ddbff0f8e8c8a9ff",
-      "source_key": "ptt",
-      "source_name": "PTT 省錢板",
-      "source_type": "community",
-      "title": "LP+1 （LINE TODAY看中職比分）",
-      "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792579247.A.B9C.html",
-      "brand": "PTT 省錢板",
-      "summary": "https://files.catbox.moe/lha2e2.png https://files.catbox.moe/9xd0uw.png Line TODAY看中職比分 不知為何突然拿到一點 ----- Sent from PttX on my iPhone",
-      "benefit": "LP+1 （LINE TODAY看中職比分）",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "內文未確認操作方式",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "https://files.catbox.moe/lha2e2.png\nhttps://files.catbox.moe/9xd0uw.png\nLine TODAY看中職比分\n不知為何突然拿到一點\n-----\nSent from\nPttX\non my iPhone\n",
-      "evidence_excerpt": "https://files.catbox.moe/lha2e2.png https://files.catbox.moe/9xd0uw.png Line TODAY看中職比分 不知為何突然拿到一點 ----- Sent from PttX on my iPhone",
-      "body_read": true,
-      "body_note": "",
-      "published_at": "2026-10-21T18:40:47+08:00",
-      "first_seen_at": "2026-10-24T08:05:31+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
-      "tags": [
-        "其他"
-      ],
-      "category": "其他",
-      "status": "candidate",
-      "reasons": [
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "品類尚未確認，暫不因陌生品牌直接排除"
-      ],
-      "hurdles": [],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 0,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "29d5d8d5b37e16fd",
-      "source_key": "ptt",
-      "source_name": "PTT 省錢板",
-      "source_type": "community",
-      "title": "街口券滿百七折",
-      "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792575036.A.764.html",
-      "brand": "PTT 省錢板",
-      "summary": "https://i.imgur.com/zybuhO0.png 可能是分眾 限量5700名 滿100元七折 上限折抵30元 使用通路很廣 網購 超商現場刷條碼都能帶出街口券 買了個沒料平日必勝客 街口我大哥",
-      "benefit": "滿100元七折 上限折抵30元",
-      "eligibility": "可能是分眾 限量5700名",
-      "steps": "內文未確認操作方式",
-      "limits": "可能是分眾 限量5700名",
-      "coupon_code": "",
-      "evidence": "https://i.imgur.com/zybuhO0.png\n可能是分眾  限量5700名\n\n滿100元七折  上限折抵30元\n\n使用通路很廣\n\n網購  超商現場刷條碼都能帶出街口券\n\n買了個沒料平日必勝客\n\n街口我大哥\n",
-      "evidence_excerpt": "https://i.imgur.com/zybuhO0.png 可能是分眾 限量5700名 滿100元七折 上限折抵30元 使用通路很廣 網購 超商現場刷條碼都能帶出街口券 買了個沒料平日必勝客 街口我大哥",
-      "body_read": true,
-      "body_note": "",
-      "published_at": "2026-10-21T17:30:36+08:00",
-      "first_seen_at": "2026-10-24T08:05:31+08:00",
-      "checked_at": "2026-10-28T13:38:27+08:00",
-      "tags": [
-        "餐飲食品",
-        "金融支付"
-      ],
-      "category": "餐飲食品",
-      "status": "candidate",
-      "reasons": [
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認"
-      ],
-      "hurdles": [
-        "指定受邀資格",
-        "名額／登錄競爭"
-      ],
-      "end_date": null,
-      "discount": null,
-      "discount_label": "折扣尚未確認",
-      "ease_label": "待確認",
-      "score": 0,
-      "deal_strength": "unknown"
-    },
-    {
-      "id": "c7e64cf190bdbc39",
-      "source_key": "news_radar",
-      "source_name": "即時優惠雷達",
-      "source_type": "discovery",
-      "title": "27吋4K螢幕特價5799元小米A27Ui支援USB-C輸入與反向充電還加送螢幕掛燈有便宜#usb type-c (253223) - Cool3c",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE52LVNWRXdXSXpteVdDQWFINmJrZTVwNGs3Nmk5cnF3dlU5d240a2Y3dW81NW11aWNNc0Q0OVhiTjVaemUta2lNLWducW02Zw?oc=5",
-      "brand": "即時優惠雷達",
-      "summary": "27吋4K螢幕特價5799元小米A27Ui支援USB-C輸入與反向充電還加送螢幕掛燈有便宜#usb type-c (253223) Cool3c",
-      "benefit": "27吋4K螢幕特價5799元小米A27Ui支援USB-C輸入與反向充電還加送螢幕掛燈有便宜#usb type-c (253223) Cool3c",
-      "eligibility": "內文未列明額外資格；不代表所有人都適用",
-      "steps": "27吋4K螢幕特價5799元小米A27Ui支援USB-C輸入與反向充電還加送螢幕掛燈有便宜#usb type-c (253223) Cool3c",
-      "limits": "庫存、名額與完整限制未確認",
-      "coupon_code": "",
-      "evidence": "27吋4K螢幕特價5799元小米A27Ui支援USB-C輸入與反向充電還加送螢幕掛燈有便宜#usb type-c (253223) Cool3c",
-      "evidence_excerpt": "27吋4K螢幕特價5799元小米A27Ui支援USB-C輸入與反向充電還加送螢幕掛燈有便宜#usb type-c (253223) Cool3c",
-      "body_read": false,
-      "body_note": "新聞索引摘要，尚未讀到原始條款",
-      "published_at": "2026-10-21T14:03:00+08:00",
-      "first_seen_at": "2026-10-21T23:13:25+08:00",
-      "checked_at": null,
-      "tags": [
-        "3C"
-      ],
-      "category": "3C",
-      "status": "candidate",
-      "reasons": [
-        "只取得標題或摘要，未讀到活動內文",
-        "折扣幅度或免費條件未獲數字佐證",
-        "領取／購買方式未確認",
-        "超過 72 小時未重新讀取，需重查"
       ],
       "hurdles": [],
       "end_date": null,

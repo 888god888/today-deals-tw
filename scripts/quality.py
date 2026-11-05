@@ -10,6 +10,18 @@ def canonical_url(url):
     return urlunsplit((parts.scheme, parts.netloc.lower(), parts.path.rstrip("/"), urlencode(query), ""))
 
 
+def product_link(body):
+    """Recognize a product-page pointer; never imply a verified store or checkout."""
+    for match in re.finditer(r"https://[^\s<>\"']+", body):
+        url = match.group().rstrip("。，、；;）)]}")
+        parts = urlsplit(url)
+        if not parts.hostname or parts.username or parts.password:
+            continue
+        if re.search(r"/(?:goods|gdsale|products?|items?)/[^/]+", parts.path, re.I):
+            return url
+    return None
+
+
 DATE = r"(?:(20\d{2}|1[01]\d)[年/.-])?(\d{1,2})[月/.-](\d{1,2})日?"
 
 
@@ -135,7 +147,12 @@ def triage(raw, now):
     elif not signal["strong"]:
         reasons.append("未達大折扣門檻")
     action = re.search(r"購買|下單|結帳|領取|兌換|下載|加入好友|填寫|問卷|簽到|輸入.{0,8}(優惠碼|折扣碼)|輸入.{0,3}[A-Z0-9]{3,}", body)
-    if not action:
+    link = product_link(body) if deal.get("body_read") else None
+    if not action and link:
+        hurdles.append("附商品連結，商品頁與結帳條件未核對")
+        deal["steps"] = f"內文附商品頁，可開啟核對資格與購買方式：{link}"
+        deal["purchase_url"] = link
+    elif not action:
         reasons.append("領取／購買方式未確認")
     end = deadline(text, now)
     if end and end < now.date().isoformat():
@@ -169,3 +186,4 @@ def triage(raw, now):
                 score=round(score + (10 if deal.get("source_type") == "official" else 0)),
                 deal_strength="strong" if signal and signal["strong"] else "unknown")
     return deal, None
+

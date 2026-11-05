@@ -35,13 +35,13 @@
       <button data-mode="all" aria-pressed="false">全部優惠</button>
     </nav>
     <div class="digest-note" id="digestNote" role="status"></div>
-    <details class="toolbar" id="filterPanel"><summary>挑類型、搜尋與更多篩選 <span id="activeFilterLabel"></span></summary><div class="toolbar-content">
+    <section class="browse-categories" aria-label="優惠分區與商品分類">
       <div class="tabs" id="statusTabs" role="group" aria-label="核對程度">
         <button class="tab active" data-status="easy" aria-pressed="true">大折扣・少門檻 <b id="easyTotal">0</b></button>
         <button class="tab" data-status="conditional" aria-pressed="false">有參加條件 <b id="conditionalTotal">0</b></button>
         <button class="tab" data-status="candidate" aria-pressed="false">待核對情報 <b id="pendingTotal">0</b></button>
       </div>
-      <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜尋優惠或條件</span><input id="searchInput" type="search" placeholder="搜尋優惠、商品或條件…" autocomplete="off"><kbd>/</kbd></label>
+      <p class="category-hint">挑你想看的商品類型 <span>同一筆可有多個標籤</span></p>
       <div class="filters" id="filters" role="group" aria-label="分類">
         <button class="filter active" data-category="全部" aria-pressed="true">全部</button>
         <button class="filter" data-category="免費" aria-pressed="false">免費領</button>
@@ -52,7 +52,17 @@
         <button class="filter" data-category="家電日用" aria-pressed="false">家電日用</button>
         <button class="filter" data-category="男性運動" aria-pressed="false">男性運動</button>
         <button class="filter" data-category="金融支付" aria-pressed="false">金融支付</button>
+        <button class="filter" data-category="其他" aria-pressed="false">其他／未辨識</button>
       </div>
+    </section>
+    <section id="pendingControls" class="pending-controls" aria-label="待核對情報篩選" hidden>
+      <h2>先選類型，再看缺少哪些資訊</h2>
+      <div id="pendingStages" class="pending-stages" role="group" aria-label="情報完整程度"></div>
+      <p id="pendingStageHint"></p>
+    </section>
+    <div id="catalogNotice" class="notice catalog-notice" role="status" hidden><p id="catalogCopy"></p><button id="browsePending">按分類看待核對情報 →</button></div>
+    <details class="toolbar" id="filterPanel"><summary>搜尋、來源與排序 <span id="activeFilterLabel"></span></summary><div class="toolbar-content">
+      <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜尋優惠或條件</span><input id="searchInput" type="search" placeholder="搜尋優惠、商品或條件…" autocomplete="off"><kbd>/</kbd></label>
       <div class="sort-row"><label><input id="officialOnly" type="checkbox"> 官方頁面來源</label><label>排序 <select id="sortSelect"><option value="recommended">照我的口味</option><option value="discount">折扣幅度</option><option value="newest">最新發現</option><option value="ending">即將截止</option></select></label></div>
     </div></details>
     <section class="results-head"><div><h2 id="resultTitle">大折扣・少門檻</h2><p id="statusExplanation">已讀內文、達折扣門檻，且未辨識到特殊資格；不代表已確認庫存或結帳價。</p></div><p id="resultCount" aria-live="polite">載入中…</p></section>
@@ -69,7 +79,7 @@
       <div class="recommendation-line"><span class="pick-number"></span><span class="new-badge"></span></div><div class="deal-top"><div class="deal-badges"><span class="category-badge"></span><span class="source-badge"></span></div><button class="save-deal" aria-label="收藏優惠" aria-pressed="false">♡</button></div>
       <h3></h3>
       <p class="benefit-text"></p><p class="benefit-description"></p><p class="recommendation-reason"></p><p class="ease-text"></p>
-      <p class="steps-preview"></p><div class="hurdles"></div>
+      <p class="steps-preview"></p><p class="missing-summary" hidden></p><div class="hurdles"></div>
       <div class="deal-meta"><span class="deadline"></span><span class="checked-at"></span></div>
       <details class="deal-details"><summary>看條件與來源證據</summary><dl><div><dt>參加條件</dt><dd class="eligibility-text"></dd></div><div><dt>操作方式</dt><dd class="steps-text"></dd></div><div><dt>注意限制</dt><dd class="limits-text"></dd></div><div class="code-row" hidden><dt>優惠碼</dt><dd><code class="coupon-code"></code><button class="copy-code">複製</button></dd></div></dl><p class="evidence-label"></p><blockquote class="evidence-text"></blockquote><p class="source-name"></p></details>
       <div class="card-actions"><a class="deal-link" target="_blank" rel="noopener noreferrer">查看原文 ↗</a><button class="hide-deal">不實用，隱藏</button></div>
@@ -77,3 +87,4 @@
   </template>
 </body>
 </html>
+

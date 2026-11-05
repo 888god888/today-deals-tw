@@ -11,7 +11,7 @@ function readObject(key, fallback = {}) {
 }
 function writeObject(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; } }
 const storedPrefs = readObject("deal-preferences-v7");
-const state = { deals: [], status: "easy", category: "全部", query: "", officialOnly: false, savedOnly: false, sort: "recommended", mode: "digest", saved: readLocal("deal-saves"), hidden: readLocal("deal-hidden"), seen: readObject("deal-read-v7"), prefs: {
+const state = { deals: [], status: "easy", pendingStage: "all", category: "全部", query: "", officialOnly: false, savedOnly: false, sort: "recommended", mode: "digest", saved: readLocal("deal-saves"), hidden: readLocal("deal-hidden"), seen: readObject("deal-read-v7"), prefs: {
   watch: Array.isArray(storedPrefs.watch) ? storedPrefs.watch.filter(v => typeof v === "string" && v.trim()).slice(0, 20) : [],
   mute: Array.isArray(storedPrefs.mute) ? storedPrefs.mute.filter(v => typeof v === "string" && v.trim()).slice(0, 20) : [],
   priority: Array.isArray(storedPrefs.priority) ? storedPrefs.priority.filter(v => F.categories.includes(v)) : []
@@ -39,18 +39,20 @@ function currentDeals() {
     const first = Date.parse(d.published_at || d.first_seen_at);
     return Number.isFinite(first) && now - first <= (d.end_date ? 30 : 7) * 86400000;
   }).map(d => {
+    d = { ...d, tags: F.topics(d) };
     const check = Date.parse(d.checked_at);
     return d.status !== "candidate" && (!Number.isFinite(check) || now - check > 72 * 3600000)
       ? { ...d, status: "candidate", reasons: [...(d.reasons || []), "超過 72 小時未重新讀取，需重查"] } : d;
   });
 }
-function visibleDeals() {
+function matchingDeals({ ignoreCategory = false, ignoreStage = false } = {}) {
   const q = state.query.toLowerCase();
   let items = currentDeals().filter(d => {
     if (state.savedOnly ? !state.saved.has(d.id) : d.status !== state.status) return false;
     if (!state.savedOnly && state.mode === "watch" && !F.matches(d, state.prefs.watch)) return false;
     if (!state.savedOnly && state.mode === "updates" && F.novelty(d, state.seen) === "seen") return false;
-    if (state.category !== "全部" && !(d.tags || [d.category]).includes(state.category)) return false;
+    if (!ignoreCategory && state.category !== "全部" && !(d.tags || [d.category]).includes(state.category)) return false;
+    if (!ignoreStage && !state.savedOnly && state.status === "candidate" && state.pendingStage !== "all" && F.pendingStage(d) !== state.pendingStage) return false;
     if (state.officialOnly && d.source_type !== "official") return false;
     const text = [d.title, d.summary, d.benefit, d.eligibility, d.steps, d.limits, d.coupon_code, d.source_name, ...(d.hurdles || [])].join(" ").toLowerCase();
     return !q || text.includes(q);
@@ -58,10 +60,15 @@ function visibleDeals() {
     if (state.sort === "newest") return String(b.published_at || b.first_seen_at).localeCompare(String(a.published_at || a.first_seen_at));
     if (state.sort === "ending") return String(a.end_date || "9999").localeCompare(String(b.end_date || "9999"));
     if (state.sort === "discount") return (b.discount?.percent || 0) - (a.discount?.percent || 0);
+    if (!state.savedOnly && state.status === "candidate" && F.pendingRank(a) !== F.pendingRank(b)) return F.pendingRank(a) - F.pendingRank(b);
     const options = { prefs: state.prefs, seen: state.seen, saved: state.saved, now: Date.now() };
     return F.score(b, options) - F.score(a, options) || a.id.localeCompare(b.id);
   });
-  return !state.savedOnly && state.mode === "digest" ? F.digest(items, 5) : items;
+  return items;
+}
+function visibleDeals() {
+  const items = matchingDeals();
+  return !state.savedOnly && state.mode === "digest" && state.status !== "candidate" ? F.digest(items, 5) : items;
 }
 function recommendation(d) {
   const reasons = [];
@@ -75,13 +82,24 @@ function recommendation(d) {
 function render() {
   const deals = visibleDeals();
   els.grid.replaceChildren();
-  for (const [index, d] of deals.entries()) {
+  const grouped = !state.savedOnly && state.status === "candidate";
+  els.grid.classList.toggle("grouped-results", grouped);
+  const groups = new Map();
+  const topicOrder = [...F.categories.filter(t => !["免費", "任務"].includes(t)), "免費", "任務", "其他"];
+  for (const d of deals) {
+    const topic = F.primary(d);
+    if (!groups.has(topic)) groups.set(topic, []);
+    groups.get(topic).push(d);
+  }
+  const ordered = grouped ? [...groups.entries()].sort((a, b) => topicOrder.indexOf(a[0]) - topicOrder.indexOf(b[0])).flatMap(([, items]) => items) : deals;
+  const containers = new Map();
+  for (const [index, d] of ordered.entries()) {
     const node = els.template.content.cloneNode(true), card = node.querySelector(".deal-card");
     const set = (selector, text) => { node.querySelector(selector).textContent = text || "未提供"; };
     const novelty = F.novelty(d, state.seen);
     set(".new-badge", novelty === "unread" ? "還沒看過" : novelty === "changed" ? "內容有變動" : "已讀");
     node.querySelector(".new-badge").classList.toggle("was-read", novelty === "seen");
-    set(".pick-number", !state.savedOnly && state.mode === "digest" ? `PICK ${String(index + 1).padStart(2, "0")}` : labels[d.status]);
+    set(".pick-number", !state.savedOnly && state.mode === "digest" && !grouped ? `PICK ${String(index + 1).padStart(2, "0")}` : labels[d.status]);
     set(".recommendation-reason", recommendation(d));
     const description = node.querySelector(".benefit-description");
     description.textContent = d.benefit && d.benefit !== d.title ? d.benefit : "";
@@ -91,10 +109,13 @@ function render() {
     set(".category-badge", (d.tags || [d.category]).slice(0, 2).join(" · "));
     set(".source-badge", d.source_type === "official" ? "官方頁面" : d.source_type === "community" ? "論壇情報" : "公開索引情報");
     set("h3", d.title); set(".benefit-text", d.discount_label);
-    set(".ease-text", d.status === "easy" ? "未見特殊資格 · 庫存仍須核對" : labels[d.status]);
+    const pendingLabel = F.pendingStages.find(s => s.key === F.pendingStage(d)).label;
+    set(".ease-text", d.status === "easy" ? "未見特殊資格 · 庫存仍須核對" : d.status === "candidate" ? pendingLabel : labels[d.status]);
+    const missing = node.querySelector(".missing-summary");
+    missing.hidden = d.status !== "candidate"; missing.textContent = `還缺：${(d.reasons || ["完整活動條件"]).join("；")}`;
     set(".steps-preview", `怎麼拿：${d.steps || "方式未確認"}`);
     set(".eligibility-text", d.eligibility); set(".steps-text", d.steps); set(".limits-text", d.limits);
-    for (const reason of [...(d.hurdles || []), ...(d.reasons || [])]) { const badge = document.createElement("span"); badge.textContent = reason; node.querySelector(".hurdles").append(badge); }
+    for (const reason of [...(d.hurdles || []), ...(d.status === "candidate" ? [] : d.reasons || [])]) { const badge = document.createElement("span"); badge.textContent = reason; node.querySelector(".hurdles").append(badge); }
     if (d.coupon_code) {
       node.querySelector(".code-row").hidden = false; set(".coupon-code", d.coupon_code);
       const copy = node.querySelector(".copy-code"); copy.addEventListener("click", async () => { try { await navigator.clipboard.writeText(d.coupon_code); copy.textContent = "已複製"; } catch { copy.textContent = "請手動選取"; } });
@@ -106,7 +127,17 @@ function render() {
     const save = node.querySelector(".save-deal"), saved = state.saved.has(d.id); save.textContent = saved ? "♥" : "♡"; save.setAttribute("aria-pressed", String(saved)); save.setAttribute("aria-label", `${saved ? "取消收藏" : "收藏"}：${d.title}`);
     save.addEventListener("click", () => { state.saved.has(d.id) ? state.saved.delete(d.id) : state.saved.add(d.id); persist("deal-saves", state.saved); render(); });
     node.querySelector(".hide-deal").addEventListener("click", () => { state.hidden.add(d.id); persist("deal-hidden", state.hidden); render(); });
-    els.grid.append(node);
+    if (grouped) {
+      const topic = F.primary(d);
+      if (!containers.has(topic)) {
+        const section = document.createElement(topic === "其他" ? "details" : "section"), heading = document.createElement(topic === "其他" ? "summary" : "h2"), grid = document.createElement("div");
+        section.className = "pending-topic"; section.dataset.topic = topic;
+        heading.className = "topic-heading"; heading.textContent = `${topic === "其他" ? "其他／未辨識" : topic} · ${groups.get(topic).length} 則`;
+        grid.className = "topic-grid";
+        section.append(heading, grid); els.grid.append(section); containers.set(topic, grid);
+      }
+      containers.get(topic).append(node);
+    } else els.grid.append(node);
   }
   els.empty.hidden = deals.length > 0; els.grid.hidden = !deals.length;
   els.count.textContent = `${deals.length} 筆`; $("#resultTitle").textContent = state.savedOnly ? "我的收藏（跨區）" : labels[state.status]; $("#statusExplanation").textContent = state.savedOnly ? "收藏仍會排除已過期項目；超過 72 小時未重查的項目會標為待核對。" : explanations[state.status];
@@ -117,6 +148,7 @@ function render() {
   $("#emptyCopy").textContent = state.deals.length ? "可能是篩選、已隱藏、已過期，或情報尚未讀到完整條款。可清除篩選或查看待核對情報；不以宣傳標題充數。" : "本輪尚無可顯示的優惠。查看來源狀態，確認是尚未執行、讀取失敗，或未找到符合門檻的內容。";
   $("#viewPending").hidden = state.status === "candidate" && !state.savedOnly;
   renderViewContext(deals, current);
+  renderPendingNavigation();
 
   for (const b of els.tabs.querySelectorAll("button")) { const active = b.dataset.status === state.status && !state.savedOnly; b.classList.toggle("active", active); b.setAttribute("aria-pressed", String(active)); }
   for (const b of els.filters.querySelectorAll("button")) { const active = b.dataset.category === state.category; b.classList.toggle("active", active); b.setAttribute("aria-pressed", String(active)); }
@@ -151,14 +183,16 @@ async function loadDeals() {
     $("#updatedAt").textContent = "資料讀取失敗"; render(); const notice = $("#coverageNotice"); notice.hidden = false; notice.textContent = "無法讀取優惠資料。請確認 app.js 與 dist/data/deals.json 一起更新，並透過網站網址開啟。"; console.error(error);
   }
 }
-els.tabs.addEventListener("click", e => { const b = e.target.closest("[data-status]"); if (b) { state.status = b.dataset.status; state.savedOnly = false; render(); } });
+els.tabs.addEventListener("click", e => { const b = e.target.closest("[data-status]"); if (b) { state.status = b.dataset.status; state.savedOnly = false; state.pendingStage = "all"; render(); } });
 els.filters.addEventListener("click", e => { const b = e.target.closest("[data-category]"); if (b) { state.category = b.dataset.category; render(); } });
 els.search.addEventListener("input", e => { state.query = e.target.value.trim(); render(); });
 els.official.addEventListener("change", e => { state.officialOnly = e.target.checked; render(); });
 els.sort.addEventListener("change", e => { state.sort = e.target.value; render(); });
 els.savedButton.addEventListener("click", () => { state.savedOnly = !state.savedOnly; render(); });
-$("#clearFilters").addEventListener("click", () => { Object.assign(state, { category: "全部", query: "", officialOnly: false, savedOnly: false, mode: "all" }); els.search.value = ""; els.official.checked = false; render(); });
-$("#viewPending").addEventListener("click", () => { state.status = "candidate"; state.mode = "all"; state.savedOnly = false; state.category = "全部"; state.query = ""; state.officialOnly = false; els.search.value = ""; els.official.checked = false; render(); });
+$("#clearFilters").addEventListener("click", () => { Object.assign(state, { category: "全部", query: "", officialOnly: false, savedOnly: false, mode: "all", pendingStage: "all" }); els.search.value = ""; els.official.checked = false; render(); });
+function browsePending() { Object.assign(state, { status: "candidate", pendingStage: "all", mode: "all", savedOnly: false, category: "全部", query: "", officialOnly: false }); els.search.value = ""; els.official.checked = false; render(); }
+$("#viewPending").addEventListener("click", browsePending);
+$("#browsePending").addEventListener("click", browsePending);
 $("#resetHidden").addEventListener("click", () => { state.hidden.clear(); persist("deal-hidden", state.hidden); render(); });
 document.addEventListener("keydown", e => { if (e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) { e.preventDefault(); $("#filterPanel").open = true; els.search.focus(); } });
 function renderViewContext(deals, current) {
@@ -172,7 +206,7 @@ function renderViewContext(deals, current) {
   $("#digestNote").textContent = state.savedOnly ? "想下手之前，回來看你的收藏。過期情報會自動退出列表。"
     : state.mode === "watch" ? (state.prefs.watch.length ? `正在留意：${state.prefs.watch.join("、")}。只比對已收集的商品標題與優惠內容。` : "還沒填想找的東西。打開「我的口味」，寫下耳機、免費遊戲等關鍵字。")
     : state.mode === "updates" ? (unread.length ? `此分類還有 ${unread.length} 則未讀或內容變更；重複抓取相同內容不會算更新。` : "這個分類已看完。可以換個分類，或等下一次資料更新。")
-    : state.mode === "digest" ? `每次最多 5 則，分散品類、照你的關注與口味排序。${unread.length ? `這個分類有 ${unread.length} 則未讀或內容變動。` : "目前沒有未讀更新，以下是仍有效的優惠。"}`
+    : state.mode === "digest" ? `每次最多 5 則，分散品類、照你的關注與口味排序。${unread.length ? `這個分類有 ${unread.length} 則未讀或內容變動。` : "目前沒有未讀更新。"}`
     : "自己逛全部情報；有資格限制、待核對內容，仍分區呈現。";
   $("#markRead").hidden = !deals.length;
   $("#endOfBatch").hidden = !deals.length || state.savedOnly;
@@ -192,6 +226,42 @@ function renderViewContext(deals, current) {
     $("#emptyCopy").textContent = "查看全部仍有效的優惠，或等下次更新。重複讀取同一批資料，不會重新算成新消息。";
   }
 }
+function renderPendingNavigation() {
+  const pending = !state.savedOnly && state.status === "candidate";
+  $("#pendingControls").hidden = !pending;
+  const candidates = matchingDeals({ ignoreStage: true });
+  const stages = [{ key: "all", label: "全部情報", description: "依商品類型分組；同一類先列已讀內文、有明確折扣的情報。" }, ...F.pendingStages];
+  const stageButtons = $("#pendingStages"); stageButtons.replaceChildren();
+  for (const stage of stages) {
+    const button = document.createElement("button");
+    const count = stage.key === "all" ? candidates.length : candidates.filter(d => F.pendingStage(d) === stage.key).length;
+    button.dataset.stage = stage.key; button.textContent = `${stage.label} ${count}`;
+    const active = state.pendingStage === stage.key;
+    button.classList.toggle("active", active); button.setAttribute("aria-pressed", String(active));
+    stageButtons.append(button);
+  }
+  $("#pendingStageHint").textContent = stages.find(s => s.key === state.pendingStage)?.description || "";
+  const categoryBase = matchingDeals({ ignoreCategory: true });
+  for (const button of els.filters.querySelectorAll("[data-category]")) {
+    const category = button.dataset.category;
+    const count = category === "全部" ? categoryBase.length : categoryBase.filter(d => (d.tags || []).includes(category)).length;
+    const label = category === "其他" ? "其他／未辨識" : category === "免費" ? "免費領" : category === "任務" ? "簡單任務" : category;
+    button.textContent = `${label} ${count}`;
+  }
+  const all = currentDeals(), totalEasy = all.filter(d => d.status === "easy").length, pendingCount = all.filter(d => d.status === "candidate").length;
+  const notice = $("#catalogNotice");
+  notice.hidden = state.savedOnly || state.status !== "easy" || totalEasy > 0 || !pendingCount;
+  $("#catalogCopy").textContent = `目前沒有通過全部條件的少門檻優惠，另有 ${pendingCount} 則待核對情報。可按商品類型與缺少資訊查看，不代表今天沒有活動。`;
+  if (pending) {
+    $("#resultTitle").textContent = "待核對情報 · 按商品類型分組";
+    $("#digestNote").textContent = "先挑餐飲、3C、遊戲等類型，再選情報完整程度；每則會列出尚缺的資訊。";
+  }
+}
+$("#pendingStages").addEventListener("click", e => {
+  const button = e.target.closest("[data-stage]"); if (!button) return;
+  const stage = button.dataset.stage; state.pendingStage = stage; render();
+  $("#pendingStages").querySelector(`[data-stage="${stage}"]`)?.focus();
+});
 function openPreferences(open = true) {
   $("#preferencesPanel").hidden = !open;
   $("#preferencesButton").setAttribute("aria-expanded", String(open));
@@ -233,3 +303,4 @@ $("#preferencesForm").addEventListener("submit", e => {
 $("#resetPreferences").addEventListener("click", () => { state.prefs = { watch: [], mute: [], priority: [] }; writeObject("deal-preferences-v7", state.prefs); openPreferences(); render(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#preferencesPanel").hidden) openPreferences(false); });
 loadDeals();
+

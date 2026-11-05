@@ -61,3 +61,4 @@ async function setup(data=fixture, storage={}) {
  check(corrupt.window.document.querySelectorAll('.deal-card').length,5);corrupt.window.close();
  console.log(`PASS: ${checks} personalization and return-visit assertions`);
 })().catch(e=>{console.error(e);process.exitCode=1;});
+

@@ -104,6 +104,25 @@ class DateTests(unittest.TestCase):
 
 
 class TriageTests(unittest.TestCase):
+
+    def test_product_link_has_honest_conditional_action(self):
+        raw = item("餅乾買一送一。https://shop.example.org/goods/12345")
+        deal, reason = triage(raw, NOW)
+        self.assertIsNone(reason)
+        self.assertEqual(deal["status"], "conditional")
+        self.assertIn("未核對", deal["hurdles"][0])
+        self.assertIn("https://shop.example.org/goods/12345", deal["steps"])
+
+    def test_generic_and_image_links_are_not_buying_steps(self):
+        for url in ["https://example.org/", "https://example.org/image.png"]:
+            deal = triage(item("耳機5折。" + url), NOW)[0]
+            self.assertEqual(deal["status"], "candidate")
+            self.assertIn("領取／購買方式未確認", deal["reasons"])
+
+    def test_unread_product_link_does_not_promote(self):
+        deal = triage(item("耳機5折。https://example.org/products/1", body_read=False), NOW)[0]
+        self.assertEqual(deal["status"], "candidate")
+
     def test_easy(self):
         d, reason = triage(item(), NOW)
         self.assertIsNone(reason); self.assertEqual(d["status"], "easy")
@@ -261,3 +280,4 @@ class CollectorTests(unittest.TestCase):
 
 
 if __name__ == "__main__": unittest.main()
+

@@ -51,3 +51,4 @@ async function setup(data, storage = "corrupt") {
   const stale = await setup(staleData); check(stale.window.document.querySelectorAll(".deal-card").length, 0); check(stale.window.document.querySelector("#pendingTotal").textContent, "2"); stale.window.close();
   console.log(`PASS: ${checks} DOM assertions; no browser layout claim`);
 })().catch(e => { console.error(e); process.exitCode = 1; });
+

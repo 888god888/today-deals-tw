@@ -69,3 +69,4 @@ const fixture = { schema_version: 6, is_demo: false, updated_at: now, attempted_
     console.log(`PASS: ${checks} browser assertions (390px, 1280px, corrupt/disabled storage, empty production data)`);
   } finally { if (browser) await browser.close(); await new Promise(resolve => server.close(resolve)); }
 })().catch(e => { console.error(e); process.exitCode = 1; });
+
